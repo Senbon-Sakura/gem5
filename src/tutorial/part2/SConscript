@@ -1,0 +1,5 @@
+# Import('*')
+
+# SimObject('PrintObject.py')
+# Source('print_object.cc')
+# # DebugFlag('Print')

@@ -1,0 +1,2544 @@
+scons: Reading SConscript files ...
+[?1049h[22;0;0t[1;56r(B[m[4l[?7h[56;1H[?1049l[23;0;0t[?1l>Warning: Your compiler doesn't support incremental linking and lto at the same time, so lto is being disabled. To force lto on anyway, use the --force-lto option. That will disable partial linking.
+Warning: Protocol buffer compiler (protoc) not found.
+         Please install protobuf-compiler for tracing support.
+Info: Using Python config: python3-config
+Checking for C header file Python.h... yes
+Checking for C library python3.6m... yes
+Checking for C library pthread... yes
+Checking for C library dl... yes
+Checking for C library util... yes
+Checking for C library m... yes
+Checking for accept(0,0,0) in C++ library None... yes
+Checking for zlibVersion() in C++ library z... yes
+Checking for C header file valgrind/valgrind.h... no
+Checking for clock_nanosleep(0,0,NULL,NULL) in C library None... yes
+Checking for timer_create(CLOCK_MONOTONIC, NULL, NULL) in C library None... no
+Checking for timer_create(CLOCK_MONOTONIC, NULL, NULL) in C library rt... yes
+Checking for C library tcmalloc... yes
+Checking for char temp; backtrace_symbols_fd((void*)&temp, 0, 0) in C library None... yes
+Checking for C header file fenv.h... yes
+Checking for C header file png.h... yes
+Checking for C header file linux/kvm.h... yes
+Checking for C header file linux/if_tun.h... yes
+Checking size of struct kvm_xsave ... yes
+Checking for member exclude_host in struct perf_event_attr...yes
+Checking for hdf5-serial using pkg-config... yes
+Checking for H5Fcreate("", 0, 0, 0) in C library hdf5... yes
+Checking for H5::H5File("", 0) in C++ library hdf5_cpp... yes
+Checking whether __i386__ is declared... no
+Checking whether __x86_64__ is declared... yes
+Building in /home/wzw/Documents/docker/gem5/build/X86
+Variables file /home/wzw/Documents/docker/gem5/build/variables/X86 not found,
+  using defaults in /home/wzw/Documents/docker/gem5/build_opts/X86
+scons: done reading SConscript files.
+scons: Building targets ...
+ [     CXX] X86/sim/main.cc -> .o
+ [     CXX] X86/systemc/channel/messages.cc -> .o
+ [ENUMDECL] ByteOrder -> X86/enums/ByteOrder.hh
+ [ TRACING]  -> X86/debug/Event.hh
+ [SO PARAM] SystemC_Kernel -> X86/params/SystemC_Kernel.hh
+ [SO PARAM] SimObject -> X86/params/SimObject.hh
+ [CONFIG H] HAVE_VALGRIND, 0 -> X86/config/have_valgrind.hh
+ [     CXX] X86/systemc/channel/sc_event_queue.cc -> .o
+ [     CXX] X86/systemc/channel/sc_in_resolved.cc -> .o
+ [     CXX] X86/systemc/channel/sc_clock.cc -> .o
+ [     CXX] X86/systemc/channel/sc_inout_resolved.cc -> .o
+ [     CXX] X86/systemc/channel/sc_out_resolved.cc -> .o
+ [     CXX] X86/systemc/channel/sc_mutex.cc -> .o
+ [     CXX] X86/systemc/channel/sc_semaphore.cc -> .o
+ [     CXX] X86/systemc/channel/sc_signal.cc -> .o
+ [     CXX] X86/systemc/channel/sc_signal_resolved.cc -> .o
+ [ TRACING]  -> X86/debug/RubyTest.hh
+ [   SLICC] src/mem/ruby/protocol/MI_example.slicc -> X86/mem/ruby/protocol/AccessPermission.cc, X86/mem/ruby/protocol/AccessPermission.hh, X86/mem/ruby/protocol/AccessType.cc, X86/mem/ruby/protocol/AccessType.hh, X86/mem/ruby/protocol/CacheRequestType.cc, X86/mem/ruby/protocol/CacheRequestType.hh, X86/mem/ruby/protocol/CacheResourceType.cc, X86/mem/ruby/protocol/CacheResourceType.hh, X86/mem/ruby/protocol/CoherenceRequestType.cc, X86/mem/ruby/protocol/CoherenceRequestType.hh, X86/mem/ruby/protocol/CoherenceResponseType.cc, X86/mem/ruby/protocol/CoherenceResponseType.hh, X86/mem/ruby/protocol/DMARequestMsg.cc, X86/mem/ruby/protocol/DMARequestMsg.hh, X86/mem/ruby/protocol/DMARequestType.cc, X86/mem/ruby/protocol/DMARequestType.hh, X86/mem/ruby/protocol/DMAResponseMsg.cc, X86/mem/ruby/protocol/DMAResponseMsg.hh, X86/mem/ruby/protocol/DMAResponseType.cc, X86/mem/ruby/protocol/DMAResponseType.hh, X86/mem/ruby/protocol/DMASequencerRequestType.cc, X86/mem/ruby/protocol/DMASequencerRequestType.hh, X86/mem/ruby/protocol/DMA_Controller.cc, X86/mem/ruby/protocol/DMA_Controller.hh, X86/mem/ruby/protocol/DMA_Controller.py, X86/mem/ruby/protocol/DMA_Event.cc, X86/mem/ruby/protocol/DMA_Event.hh, X86/mem/ruby/protocol/DMA_State.cc, X86/mem/ruby/protocol/DMA_State.hh, X86/mem/ruby/protocol/DMA_TBE.cc, X86/mem/ruby/protocol/DMA_TBE.hh, X86/mem/ruby/protocol/DMA_Transitions.cc, X86/mem/ruby/protocol/DMA_Wakeup.cc, X86/mem/ruby/protocol/DirectoryRequestType.cc, X86/mem/ruby/protocol/DirectoryRequestType.hh, X86/mem/ruby/protocol/Directory_Controller.cc, X86/mem/ruby/protocol/Directory_Controller.hh, X86/mem/ruby/protocol/Directory_Controller.py, X86/mem/ruby/protocol/Directory_Entry.cc, X86/mem/ruby/protocol/Directory_Entry.hh, X86/mem/ruby/protocol/Directory_Event.cc, X86/mem/ruby/protocol/Directory_Event.hh, X86/mem/ruby/protocol/Directory_State.cc, X86/mem/ruby/protocol/Directory_State.hh, X86/mem/ruby/protocol/Directory_TBE.cc, X86/mem/ruby/protocol/Directory_TBE.hh, X86/mem/ruby/protocol/Directory_Transitions.cc, X86/mem/ruby/protocol/Directory_Wakeup.cc, X86/mem/ruby/protocol/HtmCallbackMode.cc, X86/mem/ruby/protocol/HtmCallbackMode.hh, X86/mem/ruby/protocol/HtmFailedInCacheReason.cc, X86/mem/ruby/protocol/HtmFailedInCacheReason.hh, X86/mem/ruby/protocol/InvalidateGeneratorStatus.cc, X86/mem/ruby/protocol/InvalidateGeneratorStatus.hh, X86/mem/ruby/protocol/L1Cache_Controller.cc, X86/mem/ruby/protocol/L1Cache_Controller.hh, X86/mem/ruby/protocol/L1Cache_Controller.py, X86/mem/ruby/protocol/L1Cache_Entry.cc, X86/mem/ruby/protocol/L1Cache_Entry.hh, X86/mem/ruby/protocol/L1Cache_Event.cc, X86/mem/ruby/protocol/L1Cache_Event.hh, X86/mem/ruby/protocol/L1Cache_State.cc, X86/mem/ruby/protocol/L1Cache_State.hh, X86/mem/ruby/protocol/L1Cache_TBE.cc, X86/mem/ruby/protocol/L1Cache_TBE.hh, X86/mem/ruby/protocol/L1Cache_Transitions.cc, X86/mem/ruby/protocol/L1Cache_Wakeup.cc, X86/mem/ruby/protocol/LinkDirection.cc, X86/mem/ruby/protocol/LinkDirection.hh, X86/mem/ruby/protocol/LockStatus.cc, X86/mem/ruby/protocol/LockStatus.hh, X86/mem/ruby/protocol/MachineType.cc, X86/mem/ruby/protocol/MachineType.hh, X86/mem/ruby/protocol/MaskPredictorIndex.cc, X86/mem/ruby/protocol/MaskPredictorIndex.hh, X86/mem/ruby/protocol/MaskPredictorTraining.cc, X86/mem/ruby/protocol/MaskPredictorTraining.hh, X86/mem/ruby/protocol/MaskPredictorType.cc, X86/mem/ruby/protocol/MaskPredictorType.hh, X86/mem/ruby/protocol/MemoryControlRequestType.cc, X86/mem/ruby/protocol/MemoryControlRequestType.hh, X86/mem/ruby/protocol/MemoryMsg.cc, X86/mem/ruby/protocol/MemoryMsg.hh, X86/mem/ruby/protocol/MemoryRequestType.cc, X86/mem/ruby/protocol/MemoryRequestType.hh, X86/mem/ruby/protocol/MessageSizeType.cc, X86/mem/ruby/protocol/MessageSizeType.hh, X86/mem/ruby/protocol/PrefetchBit.cc, X86/mem/ruby/protocol/PrefetchBit.hh, X86/mem/ruby/protocol/RequestMsg.cc, X86/mem/ruby/protocol/RequestMsg.hh, X86/mem/ruby/protocol/RequestStatus.cc, X86/mem/ruby/protocol/RequestStatus.hh, X86/mem/ruby/protocol/ResponseMsg.cc, X86/mem/ruby/protocol/ResponseMsg.hh, X86/mem/ruby/protocol/RubyAccessMode.cc, X86/mem/ruby/protocol/RubyAccessMode.hh, X86/mem/ruby/protocol/RubyRequestType.cc, X86/mem/ruby/protocol/RubyRequestType.hh, X86/mem/ruby/protocol/SequencerMsg.cc, X86/mem/ruby/protocol/SequencerMsg.hh, X86/mem/ruby/protocol/SequencerRequestType.cc, X86/mem/ruby/protocol/SequencerRequestType.hh, X86/mem/ruby/protocol/SequencerStatus.cc, X86/mem/ruby/protocol/SequencerStatus.hh, X86/mem/ruby/protocol/SeriesRequestGeneratorStatus.cc, X86/mem/ruby/protocol/SeriesRequestGeneratorStatus.hh, X86/mem/ruby/protocol/TesterStatus.cc, X86/mem/ruby/protocol/TesterStatus.hh, X86/mem/ruby/protocol/TransitionResult.cc, X86/mem/ruby/protocol/TransitionResult.hh, X86/mem/ruby/protocol/Types.hh
+ [SO PARAM] RubyTester -> X86/params/RubyTester.hh
+ [GENERATE] x86 -> X86/arch/isa_traits.hh
+ [ CFG ISA]  -> X86/config/the_isa.hh
+ [ENUMDECL] MemoryMode -> X86/enums/MemoryMode.hh
+ [SO PARAM] System -> X86/params/System.hh
+ [SO PARAM] ClockedObject -> X86/params/ClockedObject.hh
+ [ TRACING]  -> X86/debug/Mwait.hh
+ [SO PARAM] RedirectPath -> X86/params/RedirectPath.hh
+ [SO PARAM] Workload -> X86/params/Workload.hh
+ [SO PARAM] ClockDomain -> X86/params/ClockDomain.hh
+ [SO PARAM] DerivedClockDomain -> X86/params/DerivedClockDomain.hh
+ [SO PARAM] SrcClockDomain -> X86/params/SrcClockDomain.hh
+ [ENUMDECL] PwrState -> X86/enums/PwrState.hh
+ [SO PARAM] PowerState -> X86/params/PowerState.hh
+ [SO PARAM] BaseInterrupts -> X86/params/BaseInterrupts.hh
+ [GENERATE] x86 -> X86/arch/registers.hh
+ [GENERATE] x86 -> X86/arch/types.hh
+ [ENUMDECL] StaticInstFlags -> X86/enums/StaticInstFlags.hh
+ [ENUMDECL] OpClass -> X86/enums/OpClass.hh
+ [SO PARAM] PowerModel -> X86/params/PowerModel.hh
+MI_example-cache.sm:179: Warning: Non-void return ignored, return type is 'bool'
+MI_example-cache.sm:181: Warning: Non-void return ignored, return type is 'bool'
+MI_example-cache.sm:339: Warning: Non-void return ignored, return type is 'Tick'
+MI_example-cache.sm:353: Warning: Non-void return ignored, return type is 'Scalar'
+MI_example-cache.sm:357: Warning: Non-void return ignored, return type is 'Scalar'
+MI_example-dir.sm:185: Warning: Non-void return ignored, return type is 'bool'
+MI_example-dir.sm:401: Warning: Non-void return ignored, return type is 'Tick'
+MI_example-dir.sm:405: Warning: Non-void return ignored, return type is 'Tick'
+MI_example-dir.sm:513: Warning: Non-void return ignored, return type is 'Tick'
+MI_example-dir.sm:280: Warning: Unused action: a_sendWriteBackAck, Send writeback ack to requestor
+MI_example-dma.sm:189: Warning: Non-void return ignored, return type is 'Tick'
+MI_example-dma.sm:193: Warning: Non-void return ignored, return type is 'Tick'
+ [SO PARAM] AbstractMemory -> X86/params/AbstractMemory.hh
+ [SO PARAM] KvmVM -> X86/params/KvmVM.hh
+ [SO PARAM] ThermalModel -> X86/params/ThermalModel.hh
+ [SO PARAM] VoltageDomain -> X86/params/VoltageDomain.hh
+ [ENUMDECL] PMType -> X86/enums/PMType.hh
+ [SO PARAM] PowerModelState -> X86/params/PowerModelState.hh
+ [SO PARAM] SubSystem -> X86/params/SubSystem.hh
+ [ TRACING]  -> X86/debug/RubyNetwork.hh
+ [SO PARAM] CreditLink -> X86/params/CreditLink.hh
+ [SO PARAM] GarnetExtLink -> X86/params/GarnetExtLink.hh
+ [SO PARAM] GarnetIntLink -> X86/params/GarnetIntLink.hh
+ [SO PARAM] NetworkBridge -> X86/params/NetworkBridge.hh
+ [SO PARAM] NetworkLink -> X86/params/NetworkLink.hh
+ [SO PARAM] BasicExtLink -> X86/params/BasicExtLink.hh
+ [SO PARAM] BasicIntLink -> X86/params/BasicIntLink.hh
+ [SO PARAM] BasicLink -> X86/params/BasicLink.hh
+ [SO PARAM] BasicRouter -> X86/params/BasicRouter.hh
+ [SO PARAM] RubyController -> X86/params/RubyController.hh
+ [ TRACING]  -> X86/debug/RubyQueue.hh
+ [SO PARAM] MessageBuffer -> X86/params/MessageBuffer.hh
+ [SO PARAM] GarnetNetwork -> X86/params/GarnetNetwork.hh
+ [SO PARAM] GarnetNetworkInterface -> X86/params/GarnetNetworkInterface.hh
+ [SO PARAM] GarnetRouter -> X86/params/GarnetRouter.hh
+ [SO PARAM] RubySystem -> X86/params/RubySystem.hh
+ [SO PARAM] RubyNetwork -> X86/params/RubyNetwork.hh
+ [SO PARAM] FaultModel -> X86/params/FaultModel.hh
+ [ENUMDECL] CDCType -> X86/enums/CDCType.hh
+ [SO PARAM] ThermalDomain -> X86/params/ThermalDomain.hh
+ [ TRACING]  -> X86/debug/DirectedTest.hh
+ [SO PARAM] DirectedGenerator -> X86/params/DirectedGenerator.hh
+ [SO PARAM] RubyDirectedTester -> X86/params/RubyDirectedTester.hh
+ [ISA DESC] X86/arch/x86/isa/main.isa -> generated/decoder-g.cc.inc, generated/decoder-ns.cc.inc, generated/decode-method.cc.inc, generated/decoder.hh, generated/decoder-g.hh.inc, generated/decoder-ns.hh.inc, generated/exec-g.cc.inc, generated/exec-ns.cc.inc, generated/max_inst_regs.hh, generated/decoder.cc, generated/inst-constrs.cc, generated/generic_cpu_exec.cc
+ [SO PARAM] SeriesRequestGenerator -> X86/params/SeriesRequestGenerator.hh
+ [SO PARAM] InvalidateGenerator -> X86/params/InvalidateGenerator.hh
+ [     CXX] X86/systemc/core/channel.cc -> .o
+ [     CXX] X86/cpu/testers/directedtest/InvalidateGenerator.cc -> .o
+ [     CXX] X86/cpu/testers/directedtest/SeriesRequestGenerator.cc -> .o
+ [     CXX] X86/mem/ruby/network/garnet/Credit.cc -> .o
+ [SO PARAM] SimpleMemory -> X86/params/SimpleMemory.hh
+ [     CXX] X86/mem/ruby/network/garnet/NetworkLink.cc -> .o
+ [     CXX] X86/mem/ruby/network/garnet/flit.cc -> .o
+ [     CXX] X86/mem/ruby/network/garnet/NetworkBridge.cc -> .o
+ [     CXX] X86/cpu/testers/directedtest/DirectedGenerator.cc -> .o
+ [     CXX] X86/cpu/testers/rubytest/RubyTester.cc -> .o
+ [    LINK]  -> X86/systemc/channel/lib.o.partial
+ [     CXX] X86/mem/ruby/network/garnet/RoutingUnit.cc -> .o
+ [     CXX] X86/mem/ruby/network/garnet/CrossbarSwitch.cc -> .o
+ [     CXX] X86/mem/ruby/network/garnet/OutputUnit.cc -> .o
+ [     CXX] X86/mem/ruby/network/garnet/flitBuffer.cc -> .o
+ [     CXX] X86/mem/ruby/network/garnet/NetworkInterface.cc -> .o
+ [     CXX] X86/cpu/testers/rubytest/CheckTable.cc -> .o
+ [     CXX] X86/cpu/testers/rubytest/Check.cc -> .o
+ [     CXX] X86/mem/ruby/network/garnet/SwitchAllocator.cc -> .o
+ [     CXX] X86/mem/ruby/network/garnet/Router.cc -> .o
+ [     CXX] X86/mem/ruby/network/garnet/VirtualChannel.cc -> .o
+ [     CXX] X86/mem/ruby/network/garnet/GarnetLink.cc -> .o
+ [     CXX] X86/mem/ruby/network/garnet/InputUnit.cc -> .o
+ [     CXX] X86/mem/ruby/network/garnet/GarnetNetwork.cc -> .o
+ [     CXX] X86/mem/ruby/network/garnet/OutVcState.cc -> .o
+ [     CXX] X86/cpu/testers/directedtest/RubyDirectedTester.cc -> .o
+ [    LINK]  -> X86/cpu/testers/rubytest/lib.o.partial
+ [     CXX] X86/systemc/core/event.cc -> .o
+ [     CXX] X86/systemc/core/kernel.cc -> .o
+ [     CXX] X86/systemc/core/messages.cc -> .o
+ [     CXX] X86/systemc/core/module.cc -> .o
+ [     CXX] X86/systemc/core/object.cc -> .o
+ [     CXX] X86/systemc/core/port.cc -> .o
+ [     CXX] X86/systemc/core/process.cc -> .o
+ [    LINK]  -> X86/cpu/testers/directedtest/lib.o.partial
+ [     CXX] X86/systemc/core/scheduler.cc -> .o
+ [     CXX] X86/systemc/core/sched_event.cc -> .o
+ [     CXX] X86/systemc/core/sensitivity.cc -> .o
+ [     CXX] X86/systemc/core/time.cc -> .o
+ [     CXX] X86/systemc/core/sc_attr.cc -> .o
+ [     CXX] X86/systemc/core/sc_event.cc -> .o
+ [     CXX] X86/systemc/core/sc_export.cc -> .o
+ [     CXX] X86/systemc/core/sc_interface.cc -> .o
+ [     CXX] X86/systemc/core/sc_join.cc -> .o
+ [     CXX] X86/systemc/core/sc_main.cc -> .o
+ [     CXX] X86/systemc/core/sc_main_fiber.cc -> .o
+ [    LINK]  -> X86/mem/ruby/network/garnet/lib.o.partial
+ [     CXX] X86/systemc/core/sc_module.cc -> .o
+ [     CXX] X86/systemc/core/sc_module_name.cc -> .o
+ [     CXX] X86/systemc/core/sc_object.cc -> .o
+ [     CXX] X86/systemc/core/sc_port.cc -> .o
+ [     CXX] X86/systemc/core/sc_process_handle.cc -> .o
+ [     CXX] X86/systemc/core/sc_prim.cc -> .o
+ [     CXX] X86/systemc/core/sc_sensitive.cc -> .o
+ [     CXX] X86/systemc/core/sc_simcontext.cc -> .o
+ [     CXX] X86/systemc/core/sc_spawn.cc -> .o
+ [     CXX] X86/systemc/core/sc_time.cc -> .o
+ [     CXX] X86/systemc/core/python.cc -> .o
+ [     CXX] X86/systemc/core/sc_main_python.cc -> .o
+ [     CXX] X86/systemc/core/sc_time_python.cc -> .o
+ [     CXX] X86/mem/protocol/atomic.cc -> .o
+ [     CXX] X86/mem/protocol/functional.cc -> .o
+ [     CXX] X86/mem/protocol/timing.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/AccessPermission.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/AccessType.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/CacheRequestType.cc -> .o
+ [    LINK]  -> X86/mem/protocol/lib.o.partial
+ [     CXX] X86/mem/ruby/protocol/CacheResourceType.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/CoherenceRequestType.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/CoherenceResponseType.cc -> .o
+ [MAKE INC] X86/mem/ruby/common/DataBlock.hh -> protocol/DataBlock.hh
+ [MAKE INC] X86/mem/ruby/common/MachineID.hh -> protocol/MachineID.hh
+ [MAKE INC] X86/mem/ruby/slicc_interface/Message.hh -> protocol/Message.hh
+ [MAKE INC] X86/mem/ruby/common/NetDest.hh -> protocol/NetDest.hh
+ [ TRACING]  -> X86/debug/RubySlicc.hh
+ [     CXX] X86/mem/ruby/protocol/DMARequestMsg.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/DMARequestType.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/DMAResponseMsg.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/DMAResponseType.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/DMASequencerRequestType.cc -> .o
+ [ TRACING]  -> X86/debug/RubyGenerated.hh
+ [MAKE INC] X86/mem/ruby/structures/TBETable.hh -> protocol/TBETable.hh
+ [SO PARAM] DMA_Controller -> X86/params/DMA_Controller.hh
+ [MAKE INC] X86/mem/ruby/common/BoolVec.hh -> protocol/BoolVec.hh
+ [MAKE INC] X86/mem/ruby/slicc_interface/RubyRequest.hh -> protocol/RubyRequest.hh
+ [SO PARAM] RubyCache -> X86/params/RubyCache.hh
+ [SO PARAM] BaseReplacementPolicy -> X86/params/BaseReplacementPolicy.hh
+ [SO PARAM] RubyDirectoryMemory -> X86/params/RubyDirectoryMemory.hh
+ [SO PARAM] DMASequencer -> X86/params/DMASequencer.hh
+ [MAKE INC] X86/mem/ruby/structures/CacheMemory.hh -> protocol/CacheMemory.hh
+ [SO PARAM] RubyPort -> X86/params/RubyPort.hh
+ [MAKE INC] X86/mem/ruby/structures/DirectoryMemory.hh -> protocol/DirectoryMemory.hh
+ [MAKE INC] X86/mem/ruby/system/DMASequencer.hh -> protocol/DMASequencer.hh
+ [SO PARAM] RubyHTMSequencer -> X86/params/RubyHTMSequencer.hh
+ [SO PARAM] RubySequencer -> X86/params/RubySequencer.hh
+ [MAKE INC] X86/mem/ruby/network/MessageBuffer.hh -> protocol/MessageBuffer.hh
+ [MAKE INC] X86/mem/ruby/system/HTMSequencer.hh -> protocol/HTMSequencer.hh
+ [SO PARAM] RubyPrefetcher -> X86/params/RubyPrefetcher.hh
+ [MAKE INC] X86/mem/ruby/system/Sequencer.hh -> protocol/Sequencer.hh
+ [MAKE INC] X86/mem/ruby/structures/RubyPrefetcher.hh -> protocol/RubyPrefetcher.hh
+ [MAKE INC] X86/mem/ruby/common/Set.hh -> protocol/Set.hh
+ [MAKE INC] X86/mem/ruby/structures/TimerTable.hh -> protocol/TimerTable.hh
+ [SO PARAM] RubyWireBuffer -> X86/params/RubyWireBuffer.hh
+ [MAKE INC] X86/mem/ruby/structures/WireBuffer.hh -> protocol/WireBuffer.hh
+ [MAKE INC] X86/mem/ruby/common/WriteMask.hh -> protocol/WriteMask.hh
+ [MAKE INC] X86/mem/ruby/slicc_interface/AbstractCacheEntry.hh -> protocol/AbstractCacheEntry.hh
+ [     CXX] X86/mem/ruby/protocol/DMA_Event.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/DMA_Controller.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/DMA_State.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/DMA_TBE.cc -> .o
+ [ TRACING]  -> X86/debug/ProtocolTrace.hh
+ [     CXX] X86/mem/ruby/protocol/DMA_Transitions.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/DMA_Wakeup.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/DirectoryRequestType.cc -> .o
+ [SO PARAM] Directory_Controller -> X86/params/Directory_Controller.hh
+ [     CXX] X86/mem/ruby/protocol/Directory_Controller.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/Directory_Entry.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/Directory_Event.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/Directory_State.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/Directory_TBE.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/Directory_Transitions.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/Directory_Wakeup.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/HtmCallbackMode.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/HtmFailedInCacheReason.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/InvalidateGeneratorStatus.cc -> .o
+ [SO PARAM] L1Cache_Controller -> X86/params/L1Cache_Controller.hh
+ [     CXX] X86/mem/ruby/protocol/L1Cache_Controller.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/L1Cache_Entry.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/L1Cache_Event.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/L1Cache_State.cc -> .o
+ [    LINK]  -> X86/systemc/core/lib.o.partial
+ [     CXX] X86/mem/ruby/protocol/L1Cache_TBE.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/L1Cache_Transitions.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/L1Cache_Wakeup.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/LinkDirection.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/LockStatus.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/MachineType.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/MaskPredictorIndex.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/MaskPredictorTraining.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/MaskPredictorType.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/MemoryControlRequestType.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/MemoryMsg.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/MemoryRequestType.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/MessageSizeType.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/PrefetchBit.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/RequestMsg.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/RequestStatus.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/ResponseMsg.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/RubyAccessMode.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/RubyRequestType.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/SequencerMsg.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/SequencerRequestType.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/SequencerStatus.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/SeriesRequestGeneratorStatus.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/TesterStatus.cc -> .o
+ [     CXX] X86/mem/ruby/protocol/TransitionResult.cc -> .o
+ [GENERATE] x86 -> X86/arch/locked_mem.hh
+ [GENERATE] x86 -> X86/arch/utility.hh
+ [ TRACING]  -> X86/debug/Drain.hh
+ [ TRACING]  -> X86/debug/ExecFaulting.hh
+ [ TRACING]  -> X86/debug/SimpleCPU.hh
+ [SO PARAM] AtomicSimpleCPU -> X86/params/AtomicSimpleCPU.hh
+ [ TRACING]  -> X86/debug/ExecEnable.hh
+ [SO PARAM] ExeTracer -> X86/params/ExeTracer.hh
+ [ TRACING]  -> X86/debug/Checker.hh
+ [SO PARAM] CheckerCPU -> X86/params/CheckerCPU.hh
+ [GENERATE] x86 -> X86/arch/decoder.hh
+ [GENERATE] x86 -> X86/arch/isa.hh
+ [ TRACING]  -> X86/debug/CCRegs.hh
+ [ TRACING]  -> X86/debug/FloatRegs.hh
+ [ TRACING]  -> X86/debug/IntRegs.hh
+ [ TRACING]  -> X86/debug/VecPredRegs.hh
+ [ TRACING]  -> X86/debug/VecRegs.hh
+ [ TRACING]  -> X86/debug/HtmCpu.hh
+ [ TRACING]  -> X86/debug/Vma.hh
+ [SO PARAM] NonCachingSimpleCPU -> X86/params/NonCachingSimpleCPU.hh
+ [SO PARAM] BaseSimpleCPU -> X86/params/BaseSimpleCPU.hh
+ [SO PARAM] InstTracer -> X86/params/InstTracer.hh
+ [SO PARAM] BaseCPU -> X86/params/BaseCPU.hh
+ [ TRACING]  -> X86/debug/Decoder.hh
+ [ TRACING]  -> X86/debug/Config.hh
+ [SO PARAM] BranchPredictor -> X86/params/BranchPredictor.hh
+ [SO PARAM] BaseISA -> X86/params/BaseISA.hh
+ [SO PARAM] BaseTLB -> X86/params/BaseTLB.hh
+ [SO PARAM] Process -> X86/params/Process.hh
+ [SO PARAM] IndirectPredictor -> X86/params/IndirectPredictor.hh
+ [SO PARAM] EmulatedDriver -> X86/params/EmulatedDriver.hh
+ [SO PARAM] TimingSimpleCPU -> X86/params/TimingSimpleCPU.hh
+ [     CXX] X86/cpu/simple/timing.cc -> .o
+ [     CXX] X86/cpu/simple/atomic.cc -> .o
+ [     CXX] X86/cpu/simple/noncaching.cc -> .o
+ [ TRACING]  -> X86/debug/Decode.hh
+ [ TRACING]  -> X86/debug/Fetch.hh
+ [ TRACING]  -> X86/debug/Quiesce.hh
+ [     CXX] X86/cpu/simple/base.cc -> .o
+ [     CXX] X86/systemc/dt/bit/messages.cc -> .o
+ [     CXX] X86/systemc/dt/bit/sc_bit.cc -> .o
+ [     CXX] X86/systemc/dt/bit/sc_bv_base.cc -> .o
+ [     CXX] X86/systemc/dt/bit/sc_logic.cc -> .o
+ [     CXX] X86/systemc/dt/bit/sc_lv_base.cc -> .o
+ [     CXX] X86/mem/ruby/network/BasicLink.cc -> .o
+ [    LINK]  -> X86/mem/ruby/protocol/lib.o.partial
+ [     CXX] X86/mem/ruby/network/BasicRouter.cc -> .o
+ [     CXX] X86/mem/ruby/network/MessageBuffer.cc -> .o
+ [     CXX] X86/mem/ruby/network/Network.cc -> .o
+ [     CXX] X86/mem/ruby/network/Topology.cc -> .o
+ [     CXX] X86/systemc/tlm_core/2/quantum/global_quantum.cc -> .o
+ [     CXX] X86/systemc/tlm_core/2/quantum/global_quantum_python.cc -> .o
+ [SO PARAM] BaseMemProbe -> X86/params/BaseMemProbe.hh
+ [     CXX] X86/mem/probes/base.cc -> .o
+ [    LINK]  -> X86/systemc/dt/bit/lib.o.partial
+ [SO PARAM] StackDistProbe -> X86/params/StackDistProbe.hh
+ [     CXX] X86/mem/probes/stack_dist.cc -> .o
+ [SO PARAM] MemFootprintProbe -> X86/params/MemFootprintProbe.hh
+ [     CXX] X86/mem/probes/mem_footprint.cc -> .o
+ [ TRACING]  -> X86/debug/IdeCtrl.hh
+ [SO PARAM] IdeController -> X86/params/IdeController.hh
+ [SO PARAM] IntrControl -> X86/params/IntrControl.hh
+ [SO PARAM] IdeDisk -> X86/params/IdeDisk.hh
+ [SO PARAM] BasicPioDevice -> X86/params/BasicPioDevice.hh
+ [SO PARAM] PioDevice -> X86/params/PioDevice.hh
+ [SO PARAM] PciDevice -> X86/params/PciDevice.hh
+ [SO PARAM] CowDiskImage -> X86/params/CowDiskImage.hh
+ [SO PARAM] DiskImage -> X86/params/DiskImage.hh
+ [SO PARAM] RawDiskImage -> X86/params/RawDiskImage.hh
+ [SO PARAM] DmaDevice -> X86/params/DmaDevice.hh
+ [ENUMDECL] IdeID -> X86/enums/IdeID.hh
+ [SO PARAM] PciHost -> X86/params/PciHost.hh
+ [     CXX] X86/dev/storage/ide_ctrl.cc -> .o
+ [ TRACING]  -> X86/debug/IdeDisk.hh
+ [     CXX] X86/dev/storage/ide_disk.cc -> .o
+ [ TRACING]  -> X86/debug/DiskImageRead.hh
+ [ TRACING]  -> X86/debug/DiskImageWrite.hh
+ [     CXX] X86/dev/storage/disk_image.cc -> .o
+ [ TRACING]  -> X86/debug/SimpleDisk.hh
+ [ TRACING]  -> X86/debug/SimpleDiskData.hh
+ [SO PARAM] SimpleDisk -> X86/params/SimpleDisk.hh
+ [     CXX] X86/dev/storage/simple_disk.cc -> .o
+ [     CXX] X86/sim/power/power_model.cc -> .o
+ [    LINK]  -> X86/mem/probes/lib.o.partial
+ [SO PARAM] MathExprPowerModel -> X86/params/MathExprPowerModel.hh
+ [    LINK]  -> X86/cpu/simple/lib.o.partial
+ [SO PARAM] ThermalCapacitor -> X86/params/ThermalCapacitor.hh
+ [SO PARAM] ThermalReference -> X86/params/ThermalReference.hh
+ [SO PARAM] ThermalResistor -> X86/params/ThermalResistor.hh
+ [     CXX] X86/sim/power/mathexpr_powermodel.cc -> .o
+ [ TRACING]  -> X86/debug/ThermalDomain.hh
+ [     CXX] X86/sim/power/thermal_domain.cc -> .o
+ [    LINK]  -> X86/mem/ruby/network/lib.o.partial
+ [     CXX] X86/sim/power/thermal_model.cc -> .o
+ [    LINK]  -> X86/systemc/tlm_core/2/quantum/lib.o.partial
+ [SO PARAM] ThermalNode -> X86/params/ThermalNode.hh
+ [     CXX] X86/sim/power/thermal_node.cc -> .o
+ [SO PARAM] BloomFilterBlock -> X86/params/BloomFilterBlock.hh
+ [SO PARAM] BloomFilterBase -> X86/params/BloomFilterBase.hh
+ [     CXX] X86/base/filters/block_bloom_filter.cc -> .o
+ [SO PARAM] BloomFilterBulk -> X86/params/BloomFilterBulk.hh
+ [SO PARAM] BloomFilterMultiBitSel -> X86/params/BloomFilterMultiBitSel.hh
+ [     CXX] X86/base/filters/bulk_bloom_filter.cc -> .o
+ [SO PARAM] BloomFilterH3 -> X86/params/BloomFilterH3.hh
+ [     CXX] X86/base/filters/h3_bloom_filter.cc -> .o
+ [     CXX] X86/base/filters/multi_bit_sel_bloom_filter.cc -> .o
+ [SO PARAM] BloomFilterMulti -> X86/params/BloomFilterMulti.hh
+ [     CXX] X86/base/filters/multi_bloom_filter.cc -> .o
+ [SO PARAM] BloomFilterPerfect -> X86/params/BloomFilterPerfect.hh
+ [     CXX] X86/base/filters/perfect_bloom_filter.cc -> .o
+ [    LINK]  -> X86/dev/storage/lib.o.partial
+ [ TRACING]  -> X86/debug/Checkpoint.hh
+ [ TRACING]  -> X86/debug/Kvm.hh
+ [ TRACING]  -> X86/debug/KvmIO.hh
+ [ TRACING]  -> X86/debug/KvmRun.hh
+ [SO PARAM] BaseKvmCPU -> X86/params/BaseKvmCPU.hh
+ [CONFIG H] HAVE_PERF_ATTR_EXCLUDE_HOST, 1 -> X86/config/have_perf_attr_exclude_host.hh
+ [     CXX] X86/cpu/kvm/base.cc -> .o
+ [     CXX] X86/cpu/kvm/device.cc -> .o
+ [     CXX] X86/cpu/kvm/vm.cc -> .o
+ [     CXX] X86/cpu/kvm/perfevent.cc -> .o
+ [ TRACING]  -> X86/debug/KvmTimer.hh
+ [     CXX] X86/cpu/kvm/timer.cc -> .o
+ [    LINK]  -> X86/sim/power/lib.o.partial
+ [ TRACING]  -> X86/debug/KvmContext.hh
+ [ TRACING]  -> X86/debug/KvmInt.hh
+ [SO PARAM] X86LocalApic -> X86/params/X86LocalApic.hh
+ [SO PARAM] X86KvmCPU -> X86/params/X86KvmCPU.hh
+ [SO PARAM] X86TLB -> X86/params/X86TLB.hh
+ [ TRACING]  -> X86/debug/MMU.hh
+ [SO PARAM] X86PagetableWalker -> X86/params/X86PagetableWalker.hh
+ [     CXX] X86/cpu/kvm/x86_cpu.cc -> .o
+ [     CXX] X86/systemc/utils/functions.cc -> .o
+ [     CXX] X86/systemc/utils/messages.cc -> .o
+ [     CXX] X86/systemc/utils/report.cc -> .o
+ [     CXX] X86/systemc/utils/sc_report.cc -> .o
+ [    LINK]  -> X86/base/filters/lib.o.partial
+ [     CXX] X86/systemc/utils/sc_report_handler.cc -> .o
+ [     CXX] X86/systemc/utils/sc_trace_file.cc -> .o
+ [     CXX] X86/systemc/utils/sc_vector.cc -> .o
+ [     CXX] X86/systemc/utils/tracefile.cc -> .o
+ [     CXX] X86/systemc/utils/vcd.cc -> .o
+ [     CXX] X86/arch/generic/htm.cc -> .o
+ [     CXX] X86/arch/generic/decode_cache.cc -> .o
+ [     CXX] X86/arch/generic/decoder.cc -> .o
+ [     CXX] X86/arch/generic/pseudo_inst.cc -> .o
+ [     CXX] X86/systemc/dt/int/messages.cc -> .o
+ [     CXX] X86/systemc/dt/int/sc_int_base.cc -> .o
+ [     CXX] X86/systemc/dt/int/sc_int_mask.cc -> .o
+ [     CXX] X86/systemc/dt/int/sc_length_param.cc -> .o
+ [    LINK]  -> X86/arch/generic/lib.o.partial
+ [     CXX] X86/systemc/dt/int/sc_nbexterns.cc -> .o
+ [     CXX] X86/systemc/dt/int/sc_nbutils.cc -> .o
+ [     CXX] X86/systemc/dt/int/sc_signed.cc -> .o
+ [     CXX] X86/systemc/dt/int/sc_uint_base.cc -> .o
+ [     CXX] X86/systemc/dt/int/sc_unsigned.cc -> .o
+ [     CXX] X86/arch/x86/regs/msr.cc -> .o
+ [    LINK]  -> X86/arch/x86/regs/lib.o.partial
+ [SO PARAM] I82094AA -> X86/params/I82094AA.hh
+ [SO PARAM] I8254 -> X86/params/I8254.hh
+ [ENUMDECL] X86I8259CascadeMode -> X86/enums/X86I8259CascadeMode.hh
+ [SO PARAM] I8259 -> X86/params/I8259.hh
+ [SO PARAM] Pc -> X86/params/Pc.hh
+ [SO PARAM] SouthBridge -> X86/params/SouthBridge.hh
+ [ TRACING]  -> X86/debug/Intel8254Timer.hh
+ [SO PARAM] Platform -> X86/params/Platform.hh
+ [SO PARAM] Cmos -> X86/params/Cmos.hh
+ [SO PARAM] I8042 -> X86/params/I8042.hh
+ [SO PARAM] I8237 -> X86/params/I8237.hh
+ [SO PARAM] PcSpeaker -> X86/params/PcSpeaker.hh
+ [ TRACING]  -> X86/debug/CMOS.hh
+ [SO PARAM] PS2Device -> X86/params/PS2Device.hh
+ [     CXX] X86/dev/x86/cmos.cc -> .o
+ [ TRACING]  -> X86/debug/I8259.hh
+ [ TRACING]  -> X86/debug/I8254.hh
+ [     CXX] X86/dev/x86/i8259.cc -> .o
+ [     CXX] X86/dev/x86/pc.cc -> .o
+ [     CXX] X86/dev/x86/i8254.cc -> .o
+ [    LINK]  -> X86/cpu/kvm/lib.o.partial
+ [     CXX] X86/dev/x86/south_bridge.cc -> .o
+ [    LINK]  -> X86/systemc/utils/lib.o.partial
+ [     CXX] X86/dev/x86/i8237.cc -> .o
+ [ TRACING]  -> X86/debug/I8042.hh
+ [     CXX] X86/dev/x86/i8042.cc -> .o
+ [ TRACING]  -> X86/debug/PcSpeaker.hh
+ [     CXX] X86/dev/x86/speaker.cc -> .o
+ [ TRACING]  -> X86/debug/I82094AA.hh
+ [     CXX] X86/dev/x86/i82094aa.cc -> .o
+ [ TRACING]  -> X86/debug/RubyCache.hh
+ [ TRACING]  -> X86/debug/RubyStats.hh
+ [     CXX] X86/mem/ruby/structures/DirectoryMemory.cc -> .o
+ [ TRACING]  -> X86/debug/HtmMem.hh
+ [ TRACING]  -> X86/debug/RubyCacheTrace.hh
+ [ TRACING]  -> X86/debug/RubyResourceStalls.hh
+ [     CXX] X86/mem/ruby/structures/CacheMemory.cc -> .o
+ [     CXX] X86/mem/ruby/structures/WireBuffer.cc -> .o
+ [     CXX] X86/mem/ruby/structures/PersistentTable.cc -> .o
+ [ TRACING]  -> X86/debug/RubyPrefetcher.hh
+ [     CXX] X86/mem/ruby/structures/RubyPrefetcher.cc -> .o
+ [     CXX] X86/mem/ruby/structures/TimerTable.cc -> .o
+ [     CXX] X86/mem/ruby/structures/BankedArray.cc -> .o
+ [ TRACING]  -> X86/debug/VNC.hh
+ [SO PARAM] VncInput -> X86/params/VncInput.hh
+ [ENUMDECL] ImageFormat -> X86/enums/ImageFormat.hh
+ [     CXX] X86/base/vnc/vncinput.cc -> .o
+ [    LINK]  -> X86/systemc/dt/int/lib.o.partial
+ [SO PARAM] VncServer -> X86/params/VncServer.hh
+ [     CXX] X86/base/vnc/vncserver.cc -> .o
+ [     CXX] X86/arch/x86/cpuid.cc -> .o
+ [     CXX] X86/arch/x86/decoder.cc -> .o
+ [     CXX] X86/arch/x86/decoder_tables.cc -> .o
+ [     CXX] X86/arch/x86/emulenv.cc -> .o
+ [ TRACING]  -> X86/debug/Faults.hh
+ [ TRACING]  -> X86/debug/X86.hh
+ [     CXX] X86/arch/x86/faults.cc -> .o
+ [    LINK]  -> X86/dev/x86/lib.o.partial
+ [SO PARAM] X86FsWorkload -> X86/params/X86FsWorkload.hh
+ [ENUMDECL] X86IntelMPAddressType -> X86/enums/X86IntelMPAddressType.hh
+ [ENUMDECL] X86IntelMPInterruptType -> X86/enums/X86IntelMPInterruptType.hh
+ [ENUMDECL] X86IntelMPPolarity -> X86/enums/X86IntelMPPolarity.hh
+ [ENUMDECL] X86IntelMPRangeList -> X86/enums/X86IntelMPRangeList.hh
+ [ENUMDECL] X86IntelMPTriggerMode -> X86/enums/X86IntelMPTriggerMode.hh
+ [ENUMDECL] Characteristic -> X86/enums/Characteristic.hh
+ [ENUMDECL] ExtCharacteristic -> X86/enums/ExtCharacteristic.hh
+ [SO PARAM] KernelWorkload -> X86/params/KernelWorkload.hh
+ [SO PARAM] X86ACPIRSDP -> X86/params/X86ACPIRSDP.hh
+ [SO PARAM] X86IntelMPConfigTable -> X86/params/X86IntelMPConfigTable.hh
+ [SO PARAM] X86IntelMPFloatingPointer -> X86/params/X86IntelMPFloatingPointer.hh
+ [SO PARAM] X86SMBiosSMBiosTable -> X86/params/X86SMBiosSMBiosTable.hh
+ [SO PARAM] X86ACPIRSDT -> X86/params/X86ACPIRSDT.hh
+ [SO PARAM] X86ACPIXSDT -> X86/params/X86ACPIXSDT.hh
+ [SO PARAM] X86IntelMPBaseConfigEntry -> X86/params/X86IntelMPBaseConfigEntry.hh
+ [SO PARAM] X86IntelMPExtConfigEntry -> X86/params/X86IntelMPExtConfigEntry.hh
+ [SO PARAM] X86SMBiosSMBiosStructure -> X86/params/X86SMBiosSMBiosStructure.hh
+ [SO PARAM] X86ACPISysDescTable -> X86/params/X86ACPISysDescTable.hh
+ [     CXX] X86/arch/x86/fs_workload.cc -> .o
+ [     CXX] X86/arch/x86/insts/badmicroop.cc -> .o
+ [     CXX] X86/arch/x86/insts/microfpop.cc -> .o
+ [     CXX] X86/arch/x86/insts/microldstop.cc -> .o
+ [     CXX] X86/arch/x86/insts/micromediaop.cc -> .o
+ [     CXX] X86/arch/x86/insts/microop.cc -> .o
+ [    LINK]  -> X86/base/vnc/lib.o.partial
+ [     CXX] X86/arch/x86/insts/microregop.cc -> .o
+ [    LINK]  -> X86/mem/ruby/structures/lib.o.partial
+ [     CXX] X86/arch/x86/insts/static_inst.cc -> .o
+ [ TRACING]  -> X86/debug/LocalApic.hh
+ [     CXX] X86/arch/x86/interrupts.cc -> .o
+ [SO PARAM] X86ISA -> X86/params/X86ISA.hh
+ [     CXX] X86/arch/x86/isa.cc -> .o
+ [SO PARAM] X86FsLinux -> X86/params/X86FsLinux.hh
+ [SO PARAM] X86E820Entry -> X86/params/X86E820Entry.hh
+ [SO PARAM] X86E820Table -> X86/params/X86E820Table.hh
+ [     CXX] X86/arch/x86/linux/fs_workload.cc -> .o
+ [     CXX] X86/arch/x86/linux/linux.cc -> .o
+ [ TRACING]  -> X86/debug/SyscallBase.hh
+ [ TRACING]  -> X86/debug/SyscallVerbose.hh
+ [     CXX] X86/arch/x86/linux/process.cc -> .o
+ [ TRACING]  -> X86/debug/ExecRegDelta.hh
+ [SO PARAM] X86NativeTrace -> X86/params/X86NativeTrace.hh
+ [SO PARAM] NativeTrace -> X86/params/NativeTrace.hh
+ [     CXX] X86/arch/x86/nativetrace.cc -> .o
+ [     CXX] X86/arch/x86/pagetable.cc -> .o
+ [ TRACING]  -> X86/debug/PageTableWalker.hh
+ [     CXX] X86/arch/x86/pagetable_walker.cc -> .o
+ [ TRACING]  -> X86/debug/Stack.hh
+ [     CXX] X86/arch/x86/process.cc -> .o
+ [ TRACING]  -> X86/debug/PseudoInst.hh
+ [     CXX] X86/arch/x86/pseudo_inst.cc -> .o
+ [ TRACING]  -> X86/debug/GDBAcc.hh
+ [     CXX] X86/arch/x86/remote_gdb.cc -> .o
+ [ TRACING]  -> X86/debug/TLB.hh
+ [GENERATE] x86 -> X86/arch/pseudo_inst.hh
+ [     CXX] X86/arch/x86/types.cc -> .o
+ [     CXX] X86/arch/x86/tlb.cc -> .o
+ [     CXX] X86/arch/x86/utility.cc -> .o
+ [     CXX] X86/arch/x86/generated/decoder.cc -> .o
+ [     CXX] X86/arch/x86/generated/inst-constrs.cc -> .o
+ [     CXX] X86/arch/x86/generated/generic_cpu_exec.cc -> .o
+ [ TRACING]  -> X86/debug/CacheComp.hh
+ [SO PARAM] BaseCacheCompressor -> X86/params/BaseCacheCompressor.hh
+ [     CXX] X86/mem/cache/compressors/base.cc -> .o
+ [SO PARAM] BaseDictionaryCompressor -> X86/params/BaseDictionaryCompressor.hh
+ [     CXX] X86/mem/cache/compressors/base_dictionary_compressor.cc -> .o
+ [SO PARAM] Base16Delta8 -> X86/params/Base16Delta8.hh
+ [SO PARAM] Base32Delta16 -> X86/params/Base32Delta16.hh
+ [SO PARAM] Base32Delta8 -> X86/params/Base32Delta8.hh
+ [SO PARAM] Base64Delta16 -> X86/params/Base64Delta16.hh
+ [SO PARAM] Base64Delta32 -> X86/params/Base64Delta32.hh
+ [SO PARAM] Base64Delta8 -> X86/params/Base64Delta8.hh
+ [     CXX] X86/mem/cache/compressors/base_delta.cc -> .o
+ [SO PARAM] CPack -> X86/params/CPack.hh
+ [     CXX] X86/mem/cache/compressors/cpack.cc -> .o
+ [SO PARAM] FPCD -> X86/params/FPCD.hh
+ [     CXX] X86/mem/cache/compressors/fpcd.cc -> .o
+ [SO PARAM] MultiCompressor -> X86/params/MultiCompressor.hh
+ [     CXX] X86/mem/cache/compressors/multi.cc -> .o
+ [SO PARAM] PerfectCompressor -> X86/params/PerfectCompressor.hh
+ [     CXX] X86/mem/cache/compressors/perfect.cc -> .o
+ [SO PARAM] RepeatedQwordsCompressor -> X86/params/RepeatedQwordsCompressor.hh
+ [     CXX] X86/mem/cache/compressors/repeated_qwords.cc -> .o
+ [SO PARAM] ZeroCompressor -> X86/params/ZeroCompressor.hh
+ [     CXX] X86/mem/cache/compressors/zero.cc -> .o
+ [     CXX] X86/systemc/tlm_core/2/generic_payload/gp.cc -> .o
+ [     CXX] X86/systemc/tlm_core/2/generic_payload/phase.cc -> .o
+ [SO PARAM] SimpleNetwork -> X86/params/SimpleNetwork.hh
+ [SO PARAM] Switch -> X86/params/Switch.hh
+ [     CXX] X86/mem/ruby/network/simple/PerfectSwitch.cc -> .o
+ [SO PARAM] SimpleExtLink -> X86/params/SimpleExtLink.hh
+ [SO PARAM] SimpleIntLink -> X86/params/SimpleIntLink.hh
+ [     CXX] X86/mem/ruby/network/simple/SimpleLink.cc -> .o
+ [    LINK]  -> X86/systemc/tlm_core/2/generic_payload/lib.o.partial
+ [     CXX] X86/mem/ruby/network/simple/SimpleNetwork.cc -> .o
+ [     CXX] X86/mem/ruby/network/simple/Switch.cc -> .o
+ [     CXX] X86/mem/ruby/network/simple/Throttle.cc -> .o
+ [    LINK]  -> X86/mem/cache/compressors/lib.o.partial
+ [ TRACING]  -> X86/debug/DynInst.hh
+ [ TRACING]  -> X86/debug/IQ.hh
+ [SO PARAM] DerivO3CPU -> X86/params/DerivO3CPU.hh
+ [ TRACING]  -> X86/debug/Scoreboard.hh
+ [ENUMDECL] CommitPolicy -> X86/enums/CommitPolicy.hh
+ [ENUMDECL] FetchPolicy -> X86/enums/FetchPolicy.hh
+ [ TRACING]  -> X86/debug/FreeList.hh
+ [ TRACING]  -> X86/debug/IEW.hh
+ [ENUMDECL] SMTQueuePolicy -> X86/enums/SMTQueuePolicy.hh
+ [ TRACING]  -> X86/debug/LSQUnit.hh
+ [ TRACING]  -> X86/debug/MemDepUnit.hh
+ [ENUMDECL] VecRegRenameMode -> X86/enums/VecRegRenameMode.hh
+ [SO PARAM] FUPool -> X86/params/FUPool.hh
+ [SO PARAM] FUDesc -> X86/params/FUDesc.hh
+ [SO PARAM] OpDesc -> X86/params/OpDesc.hh
+ [     CXX] X86/cpu/o3/base_dyn_inst.cc -> .o
+ [ TRACING]  -> X86/debug/Activity.hh
+ [ TRACING]  -> X86/debug/Commit.hh
+ [ TRACING]  -> X86/debug/CommitRate.hh
+ [ TRACING]  -> X86/debug/O3PipeView.hh
+ [     CXX] X86/cpu/o3/commit.cc -> .o
+ [ TRACING]  -> X86/debug/O3CPU.hh
+ [     CXX] X86/cpu/o3/cpu.cc -> .o
+ [     CXX] X86/cpu/o3/deriv.cc -> .o
+ [    LINK]  -> X86/mem/ruby/network/simple/lib.o.partial
+ [     CXX] X86/cpu/o3/decode.cc -> .o
+ [     CXX] X86/cpu/o3/dyn_inst.cc -> .o
+ [     CXX] X86/cpu/o3/fetch.cc -> .o
+ [     CXX] X86/cpu/o3/free_list.cc -> .o
+ [     CXX] X86/cpu/o3/fu_pool.cc -> .o
+ [     CXX] X86/cpu/o3/iew.cc -> .o
+ [     CXX] X86/cpu/o3/inst_queue.cc -> .o
+ [ TRACING]  -> X86/debug/LSQ.hh
+ [ TRACING]  -> X86/debug/Writeback.hh
+ [     CXX] X86/cpu/o3/lsq.cc -> .o
+ [     CXX] X86/cpu/o3/lsq_unit.cc -> .o
+ [     CXX] X86/cpu/o3/mem_dep_unit.cc -> .o
+ [     CXX] X86/cpu/o3/regfile.cc -> .o
+ [ TRACING]  -> X86/debug/Rename.hh
+ [     CXX] X86/cpu/o3/rename.cc -> .o
+ [     CXX] X86/cpu/o3/rename_map.cc -> .o
+ [ TRACING]  -> X86/debug/ROB.hh
+ [     CXX] X86/cpu/o3/rob.cc -> .o
+ [     CXX] X86/cpu/o3/scoreboard.cc -> .o
+ [ TRACING]  -> X86/debug/StoreSet.hh
+ [     CXX] X86/cpu/o3/store_set.cc -> .o
+ [     CXX] X86/cpu/o3/thread_context.cc -> .o
+ [SO PARAM] O3Checker -> X86/params/O3Checker.hh
+ [     CXX] X86/cpu/o3/checker.cc -> .o
+ [ TRACING]  -> X86/debug/HWPrefetch.hh
+ [SO PARAM] AMPMPrefetcher -> X86/params/AMPMPrefetcher.hh
+ [SO PARAM] AccessMapPatternMatching -> X86/params/AccessMapPatternMatching.hh
+ [SO PARAM] BaseIndexingPolicy -> X86/params/BaseIndexingPolicy.hh
+ [SO PARAM] QueuedPrefetcher -> X86/params/QueuedPrefetcher.hh
+ [SO PARAM] BasePrefetcher -> X86/params/BasePrefetcher.hh
+ [     CXX] X86/mem/cache/prefetch/access_map_pattern_matching.cc -> .o
+ [ TRACING]  -> X86/debug/Cache.hh
+ [ TRACING]  -> X86/debug/CachePort.hh
+ [ENUMDECL] Clusivity -> X86/enums/Clusivity.hh
+ [SO PARAM] WriteAllocator -> X86/params/WriteAllocator.hh
+ [SO PARAM] BaseTags -> X86/params/BaseTags.hh
+ [     CXX] X86/mem/cache/prefetch/base.cc -> .o
+ [SO PARAM] MultiPrefetcher -> X86/params/MultiPrefetcher.hh
+ [     CXX] X86/mem/cache/prefetch/multi.cc -> .o
+ [SO PARAM] BOPPrefetcher -> X86/params/BOPPrefetcher.hh
+ [     CXX] X86/mem/cache/prefetch/bop.cc -> .o
+ [SO PARAM] DCPTPrefetcher -> X86/params/DCPTPrefetcher.hh
+ [SO PARAM] DeltaCorrelatingPredictionTables -> X86/params/DeltaCorrelatingPredictionTables.hh
+ [     CXX] X86/mem/cache/prefetch/delta_correlating_prediction_tables.cc -> .o
+ [SO PARAM] IrregularStreamBufferPrefetcher -> X86/params/IrregularStreamBufferPrefetcher.hh
+ [     CXX] X86/mem/cache/prefetch/irregular_stream_buffer.cc -> .o
+ [SO PARAM] IndirectMemoryPrefetcher -> X86/params/IndirectMemoryPrefetcher.hh
+ [     CXX] X86/mem/cache/prefetch/indirect_memory.cc -> .o
+ [SO PARAM] PIFPrefetcher -> X86/params/PIFPrefetcher.hh
+ [     CXX] X86/mem/cache/prefetch/pif.cc -> .o
+ [     CXX] X86/mem/cache/prefetch/queued.cc -> .o
+ [SO PARAM] SBOOEPrefetcher -> X86/params/SBOOEPrefetcher.hh
+ [     CXX] X86/mem/cache/prefetch/sbooe.cc -> .o
+ [SO PARAM] SignaturePathPrefetcher -> X86/params/SignaturePathPrefetcher.hh
+ [     CXX] X86/mem/cache/prefetch/signature_path.cc -> .o
+ [SO PARAM] SignaturePathPrefetcherV2 -> X86/params/SignaturePathPrefetcherV2.hh
+ [     CXX] X86/mem/cache/prefetch/signature_path_v2.cc -> .o
+ [    LINK]  -> X86/cpu/o3/lib.o.partial
+ [SO PARAM] SlimAMPMPrefetcher -> X86/params/SlimAMPMPrefetcher.hh
+ [     CXX] X86/mem/cache/prefetch/slim_ampm.cc -> .o
+ [SO PARAM] STeMSPrefetcher -> X86/params/STeMSPrefetcher.hh
+ [     CXX] X86/mem/cache/prefetch/spatio_temporal_memory_streaming.cc -> .o
+ [SO PARAM] StridePrefetcher -> X86/params/StridePrefetcher.hh
+ [SO PARAM] StridePrefetcherHashedSetAssociative -> X86/params/StridePrefetcherHashedSetAssociative.hh
+ [SO PARAM] SetAssociative -> X86/params/SetAssociative.hh
+ [     CXX] X86/mem/cache/prefetch/stride.cc -> .o
+ [SO PARAM] TaggedPrefetcher -> X86/params/TaggedPrefetcher.hh
+ [     CXX] X86/mem/cache/prefetch/tagged.cc -> .o
+ [     CXX] X86/systemc/dt/misc/sc_concatref.cc -> .o
+ [     CXX] X86/systemc/dt/misc/sc_value_base.cc -> .o
+ [     CXX] X86/mem/ruby/slicc_interface/AbstractController.cc -> .o
+ [    LINK]  -> X86/systemc/dt/misc/lib.o.partial
+ [     CXX] X86/mem/ruby/slicc_interface/AbstractCacheEntry.cc -> .o
+ [     CXX] X86/mem/ruby/slicc_interface/RubyRequest.cc -> .o
+ [     CXX] X86/mem/ruby/profiler/AccessTraceForAddress.cc -> .o
+ [     CXX] X86/mem/ruby/profiler/AddressProfiler.cc -> .o
+ [ CFG ISA]  -> X86/config/the_gpu_isa.hh
+ [     CXX] X86/mem/ruby/profiler/Profiler.cc -> .o
+ [     CXX] X86/mem/ruby/profiler/StoreTrace.cc -> .o
+ [    LINK]  -> X86/mem/cache/prefetch/lib.o.partial
+ [SO PARAM] I2CBus -> X86/params/I2CBus.hh
+ [SO PARAM] I2CDevice -> X86/params/I2CDevice.hh
+ [     CXX] X86/dev/i2c/bus.cc -> .o
+ [     CXX] X86/systemc/dt/fx/messages.cc -> .o
+ [     CXX] X86/systemc/dt/fx/sc_fxcast_switch.cc -> .o
+ [     CXX] X86/systemc/dt/fx/sc_fxdefs.cc -> .o
+ [     CXX] X86/systemc/dt/fx/scfx_mant.cc -> .o
+ [     CXX] X86/systemc/dt/fx/sc_fxnum.cc -> .o
+ [     CXX] X86/systemc/dt/fx/sc_fxnum_observer.cc -> .o
+ [     CXX] X86/systemc/dt/fx/scfx_pow10.cc -> .o
+ [     CXX] X86/systemc/dt/fx/scfx_rep.cc -> .o
+ [     CXX] X86/systemc/dt/fx/sc_fxtype_params.cc -> .o
+ [     CXX] X86/systemc/dt/fx/scfx_utils.cc -> .o
+ [     CXX] X86/systemc/dt/fx/sc_fxval.cc -> .o
+ [     CXX] X86/systemc/dt/fx/sc_fxval_observer.cc -> .o
+ [ TRACING]  -> X86/debug/SimpleTrace.hh
+ [SO PARAM] SimpleTrace -> X86/params/SimpleTrace.hh
+ [SO PARAM] ProbeListenerObject -> X86/params/ProbeListenerObject.hh
+ [     CXX] X86/cpu/o3/probe/simple_trace.cc -> .o
+ [    LINK]  -> X86/dev/i2c/lib.o.partial
+ [SO PARAM] Gem5ToTlmBridge32 -> X86/params/Gem5ToTlmBridge32.hh
+ [    LINK]  -> X86/mem/ruby/slicc_interface/lib.o.partial
+ [SO PARAM] Gem5ToTlmBridge64 -> X86/params/Gem5ToTlmBridge64.hh
+ [SO PARAM] Gem5ToTlmBridgeBase -> X86/params/Gem5ToTlmBridgeBase.hh
+ [SO PARAM] SystemC_ScModule -> X86/params/SystemC_ScModule.hh
+ [SO PARAM] SystemC_ScObject -> X86/params/SystemC_ScObject.hh
+ [     CXX] X86/systemc/tlm_bridge/gem5_to_tlm.cc -> .o
+ [     CXX] X86/systemc/tlm_bridge/sc_ext.cc -> .o
+ [     CXX] X86/systemc/tlm_bridge/sc_mm.cc -> .o
+ [SO PARAM] TlmToGem5Bridge32 -> X86/params/TlmToGem5Bridge32.hh
+ [SO PARAM] TlmToGem5Bridge64 -> X86/params/TlmToGem5Bridge64.hh
+ [SO PARAM] TlmToGem5BridgeBase -> X86/params/TlmToGem5BridgeBase.hh
+ [     CXX] X86/systemc/tlm_bridge/tlm_to_gem5.cc -> .o
+ [     CXX] X86/unittest/unittest.cc -> .o
+ [ TRACING]  -> X86/debug/QOS.hh
+ [SO PARAM] QoSMemCtrl -> X86/params/QoSMemCtrl.hh
+ [ENUMDECL] QoSQPolicy -> X86/enums/QoSQPolicy.hh
+ [SO PARAM] QoSPolicy -> X86/params/QoSPolicy.hh
+ [SO PARAM] QoSTurnaroundPolicy -> X86/params/QoSTurnaroundPolicy.hh
+ [     CXX] X86/mem/qos/policy.cc -> .o
+ [    LINK]  -> X86/mem/ruby/profiler/lib.o.partial
+ [SO PARAM] QoSFixedPriorityPolicy -> X86/params/QoSFixedPriorityPolicy.hh
+ [     CXX] X86/mem/qos/policy_fixed_prio.cc -> .o
+ [    LINK]  -> X86/unittest/lib.o.partial
+ [SO PARAM] QoSPropFairPolicy -> X86/params/QoSPropFairPolicy.hh
+ [     CXX] X86/mem/qos/policy_pf.cc -> .o
+ [SO PARAM] QoSTurnaroundPolicyIdeal -> X86/params/QoSTurnaroundPolicyIdeal.hh
+ [     CXX] X86/mem/qos/turnaround_policy_ideal.cc -> .o
+ [     CXX] X86/mem/qos/q_policy.cc -> .o
+ [    LINK]  -> X86/cpu/o3/probe/lib.o.partial
+ [     CXX] X86/mem/qos/mem_ctrl.cc -> .o
+ [SO PARAM] QoSMemSinkInterface -> X86/params/QoSMemSinkInterface.hh
+ [SO PARAM] QoSMemSinkCtrl -> X86/params/QoSMemSinkCtrl.hh
+ [     CXX] X86/mem/qos/mem_sink.cc -> .o
+ [    LINK]  -> X86/systemc/dt/fx/lib.o.partial
+ [    LINK]  -> X86/systemc/tlm_bridge/lib.o.partial
+ [     CXX] X86/sim/async.cc -> .o
+ [     CXX] X86/sim/backtrace_glibc.cc -> .o
+ [     CXX] X86/sim/core.cc -> .o
+ [VER TAGS]  -> X86/sim/tags.cc
+ [     CXX] X86/sim/tags.cc -> .o
+ [     CXX] X86/sim/cxx_config.cc -> .o
+ [ TRACING]  -> X86/debug/CxxConfig.hh
+ [     CXX] X86/sim/cxx_manager.cc -> .o
+ [     CXX] X86/sim/cxx_config_ini.cc -> .o
+ [     CXX] X86/sim/debug.cc -> .o
+ [     CXX] X86/sim/py_interact.cc -> .o
+ [     CXX] X86/sim/eventq.cc -> .o
+ [     CXX] X86/sim/futex_map.cc -> .o
+ [     CXX] X86/sim/global_event.cc -> .o
+ [CONFIG H] HAVE_PROTOBUF, 0 -> X86/config/have_protobuf.hh
+ [     CXX] X86/sim/init.cc -> .o
+ [     CXX] X86/sim/init_signals.cc -> .o
+ [ TRACING]  -> X86/debug/Loader.hh
+ [     CXX] X86/sim/kernel_workload.cc -> .o
+ [     CXX] X86/sim/port.cc -> .o
+ [     CXX] X86/sim/python.cc -> .o
+ [     CXX] X86/sim/redirect_path.cc -> .o
+ [ TRACING]  -> X86/debug/TimeSync.hh
+ [SO PARAM] Root -> X86/params/Root.hh
+ [     CXX] X86/sim/root.cc -> .o
+ [     CXX] X86/sim/serialize.cc -> .o
+ [     CXX] X86/sim/drain.cc -> .o
+ [     CXX] X86/sim/sim_events.cc -> .o
+ [    LINK]  -> X86/mem/qos/lib.o.partial
+ [     CXX] X86/sim/sim_object.cc -> .o
+ [     CXX] X86/sim/sub_system.cc -> .o
+ [SO PARAM] TickedObject -> X86/params/TickedObject.hh
+ [     CXX] X86/sim/ticked_object.cc -> .o
+ [     CXX] X86/sim/simulate.cc -> .o
+ [     CXX] X86/sim/stat_control.cc -> .o
+ [     CXX] X86/sim/stat_register.cc -> .o
+ [ TRACING]  -> X86/debug/ClockDomain.hh
+ [     CXX] X86/sim/clock_domain.cc -> .o
+ [ TRACING]  -> X86/debug/VoltageDomain.hh
+ [     CXX] X86/sim/voltage_domain.cc -> .o
+ [     CXX] X86/sim/se_signal.cc -> .o
+ [     CXX] X86/sim/linear_solver.cc -> .o
+ [GENERATE] x86 -> X86/arch/remote_gdb.hh
+ [CONFIG H] USE_KVM, 1 -> X86/config/use_kvm.hh
+ [ TRACING]  -> X86/debug/WorkItems.hh
+ [ TRACING]  -> X86/debug/DVFS.hh
+ [     CXX] X86/sim/system.cc -> .o
+ [SO PARAM] DVFSHandler -> X86/params/DVFSHandler.hh
+ [     CXX] X86/sim/dvfs_handler.cc -> .o
+ [     CXX] X86/sim/clocked_object.cc -> .o
+ [     CXX] X86/sim/mathexpr.cc -> .o
+ [ TRACING]  -> X86/debug/PowerDomain.hh
+ [SO PARAM] PowerDomain -> X86/params/PowerDomain.hh
+ [     CXX] X86/sim/power_state.cc -> .o
+ [     CXX] X86/sim/power_domain.cc -> .o
+ [ TRACING]  -> X86/debug/Fault.hh
+ [     CXX] X86/sim/faults.cc -> .o
+ [     CXX] X86/sim/process.cc -> .o
+ [     CXX] X86/sim/fd_array.cc -> .o
+ [     CXX] X86/sim/fd_entry.cc -> .o
+ [     CXX] X86/sim/mem_state.cc -> .o
+ [     CXX] X86/sim/pseudo_inst.cc -> .o
+ [     CXX] X86/sim/syscall_emul.cc -> .o
+ [     CXX] X86/sim/syscall_desc.cc -> .o
+ [     CXX] X86/sim/vma.cc -> .o
+ [     CXX] X86/systemc/dt/sc_mempool.cc -> .o
+ [    LINK]  -> X86/systemc/dt/lib.o.partial
+ [ TRACING]  -> X86/debug/PciDevice.hh
+ [     CXX] X86/dev/pci/device.cc -> .o
+ [ TRACING]  -> X86/debug/PciHost.hh
+ [SO PARAM] GenericPciHost -> X86/params/GenericPciHost.hh
+ [     CXX] X86/dev/pci/host.cc -> .o
+ [ TRACING]  -> X86/debug/DMACopyEngine.hh
+ [SO PARAM] CopyEngine -> X86/params/CopyEngine.hh
+ [     CXX] X86/dev/pci/copy_engine.cc -> .o
+ [SO PARAM] SimPoint -> X86/params/SimPoint.hh
+ [     CXX] X86/cpu/simple/probes/simpoint.cc -> .o
+ [ TRACING]  -> X86/debug/MemTest.hh
+ [SO PARAM] MemTest -> X86/params/MemTest.hh
+ [     CXX] X86/cpu/testers/memtest/memtest.cc -> .o
+ [ TRACING]  -> X86/debug/TrafficGen.hh
+ [ENUMDECL] AddrMap -> X86/enums/AddrMap.hh
+ [SO PARAM] BaseTrafficGen -> X86/params/BaseTrafficGen.hh
+ [ENUMDECL] StreamGenType -> X86/enums/StreamGenType.hh
+ [     CXX] X86/cpu/testers/traffic_gen/base.cc -> .o
+ [     CXX] X86/cpu/testers/traffic_gen/base_gen.cc -> .o
+ [    LINK]  -> X86/sim/lib.o.partial
+ [     CXX] X86/cpu/testers/traffic_gen/dram_gen.cc -> .o
+ [     CXX] X86/cpu/testers/traffic_gen/dram_rot_gen.cc -> .o
+ [    LINK]  -> X86/cpu/simple/probes/lib.o.partial
+ [     CXX] X86/cpu/testers/traffic_gen/exit_gen.cc -> .o
+ [     CXX] X86/cpu/testers/traffic_gen/hybrid_gen.cc -> .o
+ [    LINK]  -> X86/dev/pci/lib.o.partial
+ [    LINK]  -> X86/cpu/testers/memtest/lib.o.partial
+ [     CXX] X86/cpu/testers/traffic_gen/idle_gen.cc -> .o
+ [     CXX] X86/cpu/testers/traffic_gen/linear_gen.cc -> .o
+ [     CXX] X86/cpu/testers/traffic_gen/nvm_gen.cc -> .o
+ [     CXX] X86/cpu/testers/traffic_gen/random_gen.cc -> .o
+ [     CXX] X86/cpu/testers/traffic_gen/stream_gen.cc -> .o
+ [SO PARAM] PyTrafficGen -> X86/params/PyTrafficGen.hh
+ [     CXX] X86/cpu/testers/traffic_gen/pygen.cc -> .o
+ [ TRACING]  -> X86/debug/PS2.hh
+ [     CXX] X86/dev/ps2/device.cc -> .o
+ [SO PARAM] PS2Keyboard -> X86/params/PS2Keyboard.hh
+ [     CXX] X86/dev/ps2/keyboard.cc -> .o
+ [SO PARAM] PS2Mouse -> X86/params/PS2Mouse.hh
+ [     CXX] X86/dev/ps2/mouse.cc -> .o
+ [SO PARAM] PS2TouchKit -> X86/params/PS2TouchKit.hh
+ [     CXX] X86/dev/ps2/touchkit.cc -> .o
+ [     CXX] X86/dev/ps2/types.cc -> .o
+ [     CXX] X86/python/pybind11/core.cc -> .o
+ [     CXX] X86/python/pybind11/debug.cc -> .o
+ [     CXX] X86/python/pybind11/event.cc -> .o
+ [CONFIG H] USE_HDF5, 1 -> X86/config/use_hdf5.hh
+ [     CXX] X86/python/pybind11/stats.cc -> .o
+ [ TRACING]  -> X86/debug/ProbeVerbose.hh
+ [     CXX] X86/sim/probe/probe.cc -> .o
+ [SO PARAM] SimpleObject -> X86/params/SimpleObject.hh
+ [     CXX] X86/learning_gem5/part2/simple_object.cc -> .o
+ [    LINK]  -> X86/dev/ps2/lib.o.partial
+ [ TRACING]  -> X86/debug/HelloExample.hh
+ [SO PARAM] HelloObject -> X86/params/HelloObject.hh
+ [SO PARAM] GoodbyeObject -> X86/params/GoodbyeObject.hh
+ [     CXX] X86/learning_gem5/part2/hello_object.cc -> .o
+ [     CXX] X86/learning_gem5/part2/goodbye_object.cc -> .o
+ [    LINK]  -> X86/sim/probe/lib.o.partial
+ [ TRACING]  -> X86/debug/SimpleMemobj.hh
+ [SO PARAM] SimpleMemobj -> X86/params/SimpleMemobj.hh
+ [     CXX] X86/learning_gem5/part2/simple_memobj.cc -> .o
+ [ TRACING]  -> X86/debug/SimpleCache.hh
+ [SO PARAM] SimpleCache -> X86/params/SimpleCache.hh
+ [     CXX] X86/learning_gem5/part2/simple_cache.cc -> .o
+ [ TRACING]  -> X86/debug/GarnetSyntheticTraffic.hh
+ [SO PARAM] GarnetSyntheticTraffic -> X86/params/GarnetSyntheticTraffic.hh
+ [     CXX] X86/cpu/testers/garnet_synthetic_traffic/GarnetSyntheticTraffic.cc -> .o
+ [    LINK]  -> X86/cpu/testers/traffic_gen/lib.o.partial
+ [SO PARAM] SerialDevice -> X86/params/SerialDevice.hh
+ [SO PARAM] SerialNullDevice -> X86/params/SerialNullDevice.hh
+ [     CXX] X86/dev/serial/serial.cc -> .o
+ [SO PARAM] SimpleUart -> X86/params/SimpleUart.hh
+ [SO PARAM] Uart -> X86/params/Uart.hh
+ [     CXX] X86/dev/serial/simple.cc -> .o
+ [ TRACING]  -> X86/debug/Terminal.hh
+ [ TRACING]  -> X86/debug/TerminalVerbose.hh
+ [SO PARAM] Terminal -> X86/params/Terminal.hh
+ [ENUMDECL] TerminalDump -> X86/enums/TerminalDump.hh
+ [     CXX] X86/dev/serial/terminal.cc -> .o
+ [     CXX] X86/dev/serial/uart.cc -> .o
+ [ TRACING]  -> X86/debug/Uart.hh
+ [SO PARAM] Uart8250 -> X86/params/Uart8250.hh
+ [     CXX] X86/dev/serial/uart8250.cc -> .o
+ [    LINK]  -> X86/cpu/testers/garnet_synthetic_traffic/lib.o.partial
+ [     CXX] X86/mem/cache/tags/indexing_policies/base.cc -> .o
+ [    LINK]  -> X86/learning_gem5/part2/lib.o.partial
+ [     CXX] X86/mem/cache/tags/indexing_policies/set_associative.cc -> .o
+ [SO PARAM] SkewedAssociative -> X86/params/SkewedAssociative.hh
+ [     CXX] X86/mem/cache/tags/indexing_policies/skewed_associative.cc -> .o
+ [ TRACING]  -> X86/debug/DebugPrintf.hh
+ [     CXX] X86/kern/linux/linux.cc -> .o
+ [     CXX] X86/kern/linux/events.cc -> .o
+ [     CXX] X86/kern/linux/helpers.cc -> .o
+ [    LINK]  -> X86/mem/cache/tags/indexing_policies/lib.o.partial
+ [     CXX] X86/kern/linux/printk.cc -> .o
+ [     CXX] X86/kern/freebsd/events.cc -> .o
+ [     CXX] X86/kern/operatingsystem.cc -> .o
+ [ TRACING]  -> X86/debug/PCEvent.hh
+ [     CXX] X86/kern/system_events.cc -> .o
+ [    LINK]  -> X86/dev/serial/lib.o.partial
+ [ENUM STR] AddrMap, True -> X86/enums/AddrMap.cc
+ [     CXX] X86/enums/AddrMap.cc -> .o
+ [ENUM STR] ByteOrder, True -> X86/enums/ByteOrder.cc
+ [     CXX] X86/enums/ByteOrder.cc -> .o
+ [ENUM STR] CDCType, True -> X86/enums/CDCType.cc
+ [     CXX] X86/enums/CDCType.cc -> .o
+ [ENUM STR] Characteristic, True -> X86/enums/Characteristic.cc
+ [     CXX] X86/enums/Characteristic.cc -> .o
+ [ENUM STR] Clusivity, True -> X86/enums/Clusivity.cc
+ [     CXX] X86/enums/Clusivity.cc -> .o
+ [ENUM STR] CommitPolicy, True -> X86/enums/CommitPolicy.cc
+ [     CXX] X86/enums/CommitPolicy.cc -> .o
+ [ENUM STR] Enum, True -> X86/enums/Enum.cc
+ [ENUMDECL] Enum -> X86/enums/Enum.hh
+ [     CXX] X86/enums/Enum.cc -> .o
+ [    LINK]  -> X86/python/lib.o.partial
+ [ENUM STR] ExtCharacteristic, True -> X86/enums/ExtCharacteristic.cc
+ [     CXX] X86/enums/ExtCharacteristic.cc -> .o
+ [ENUM STR] FetchPolicy, True -> X86/enums/FetchPolicy.cc
+ [     CXX] X86/enums/FetchPolicy.cc -> .o
+ [ENUM STR] IdeID, True -> X86/enums/IdeID.cc
+ [     CXX] X86/enums/IdeID.cc -> .o
+ [ENUM STR] ImageFormat, True -> X86/enums/ImageFormat.cc
+ [     CXX] X86/enums/ImageFormat.cc -> .o
+ [ENUM STR] MemSched, True -> X86/enums/MemSched.cc
+ [ENUMDECL] MemSched -> X86/enums/MemSched.hh
+ [     CXX] X86/enums/MemSched.cc -> .o
+ [ENUM STR] MemoryMode, True -> X86/enums/MemoryMode.cc
+ [     CXX] X86/enums/MemoryMode.cc -> .o
+ [ENUM STR] OpClass, True -> X86/enums/OpClass.cc
+ [     CXX] X86/enums/OpClass.cc -> .o
+ [ENUM STR] PMType, True -> X86/enums/PMType.cc
+ [     CXX] X86/enums/PMType.cc -> .o
+ [ENUM STR] PageManage, True -> X86/enums/PageManage.cc
+ [ENUMDECL] PageManage -> X86/enums/PageManage.hh
+ [     CXX] X86/enums/PageManage.cc -> .o
+ [ENUM STR] PwrState, True -> X86/enums/PwrState.cc
+ [     CXX] X86/enums/PwrState.cc -> .o
+ [ENUM STR] QoSQPolicy, True -> X86/enums/QoSQPolicy.cc
+ [     CXX] X86/enums/QoSQPolicy.cc -> .o
+ [ENUM STR] SMTQueuePolicy, True -> X86/enums/SMTQueuePolicy.cc
+ [     CXX] X86/enums/SMTQueuePolicy.cc -> .o
+ [ENUM STR] ScopedEnum, True -> X86/enums/ScopedEnum.cc
+ [ENUMDECL] ScopedEnum -> X86/enums/ScopedEnum.hh
+ [     CXX] X86/enums/ScopedEnum.cc -> .o
+ [ENUM STR] StaticInstFlags, True -> X86/enums/StaticInstFlags.cc
+ [     CXX] X86/enums/StaticInstFlags.cc -> .o
+ [ENUM STR] StreamGenType, True -> X86/enums/StreamGenType.cc
+ [     CXX] X86/enums/StreamGenType.cc -> .o
+ [ENUM STR] TerminalDump, True -> X86/enums/TerminalDump.cc
+ [     CXX] X86/enums/TerminalDump.cc -> .o
+ [ENUM STR] TimingExprOp, True -> X86/enums/TimingExprOp.cc
+ [ENUMDECL] TimingExprOp -> X86/enums/TimingExprOp.hh
+ [     CXX] X86/enums/TimingExprOp.cc -> .o
+ [ENUM STR] VecRegRenameMode, True -> X86/enums/VecRegRenameMode.cc
+ [     CXX] X86/enums/VecRegRenameMode.cc -> .o
+ [ENUM STR] X86I8259CascadeMode, True -> X86/enums/X86I8259CascadeMode.cc
+ [ENUM STR] X86IntelMPAddressType, True -> X86/enums/X86IntelMPAddressType.cc
+ [     CXX] X86/enums/X86I8259CascadeMode.cc -> .o
+ [     CXX] X86/enums/X86IntelMPAddressType.cc -> .o
+ [ENUM STR] X86IntelMPInterruptType, True -> X86/enums/X86IntelMPInterruptType.cc
+ [     CXX] X86/enums/X86IntelMPInterruptType.cc -> .o
+ [ENUM STR] X86IntelMPPolarity, True -> X86/enums/X86IntelMPPolarity.cc
+ [     CXX] X86/enums/X86IntelMPPolarity.cc -> .o
+ [ENUM STR] X86IntelMPRangeList, True -> X86/enums/X86IntelMPRangeList.cc
+ [     CXX] X86/enums/X86IntelMPRangeList.cc -> .o
+ [ENUM STR] X86IntelMPTriggerMode, True -> X86/enums/X86IntelMPTriggerMode.cc
+ [     CXX] X86/enums/X86IntelMPTriggerMode.cc -> .o
+ [SO PyBind] AMPMPrefetcher -> X86/python/_m5/param_AMPMPrefetcher.cc
+ [     CXX] X86/python/_m5/param_AMPMPrefetcher.cc -> .o
+ [SO PyBind] AbstractMemory -> X86/python/_m5/param_AbstractMemory.cc
+ [     CXX] X86/python/_m5/param_AbstractMemory.cc -> .o
+ [SO PyBind] AccessMapPatternMatching -> X86/python/_m5/param_AccessMapPatternMatching.cc
+ [     CXX] X86/python/_m5/param_AccessMapPatternMatching.cc -> .o
+ [    LINK]  -> X86/arch/x86/lib.o.partial
+ [SO PyBind] AddrMapper -> X86/python/_m5/param_AddrMapper.cc
+ [SO PARAM] AddrMapper -> X86/params/AddrMapper.hh
+ [SO PARAM] RangeAddrMapper -> X86/params/RangeAddrMapper.hh
+ [     CXX] X86/python/_m5/param_AddrMapper.cc -> .o
+ [SO PyBind] AtomicSimpleCPU -> X86/python/_m5/param_AtomicSimpleCPU.cc
+ [     CXX] X86/python/_m5/param_AtomicSimpleCPU.cc -> .o
+ [SO PyBind] BIPRP -> X86/python/_m5/param_BIPRP.cc
+ [SO PARAM] BIPRP -> X86/params/BIPRP.hh
+ [SO PARAM] LRURP -> X86/params/LRURP.hh
+ [     CXX] X86/python/_m5/param_BIPRP.cc -> .o
+ [SO PyBind] BOPPrefetcher -> X86/python/_m5/param_BOPPrefetcher.cc
+ [     CXX] X86/python/_m5/param_BOPPrefetcher.cc -> .o
+ [SO PyBind] BRRIPRP -> X86/python/_m5/param_BRRIPRP.cc
+ [SO PARAM] BRRIPRP -> X86/params/BRRIPRP.hh
+ [     CXX] X86/python/_m5/param_BRRIPRP.cc -> .o
+ [SO PyBind] BadDevice -> X86/python/_m5/param_BadDevice.cc
+ [SO PARAM] BadDevice -> X86/params/BadDevice.hh
+ [     CXX] X86/python/_m5/param_BadDevice.cc -> .o
+ [SO PyBind] Base16Delta8 -> X86/python/_m5/param_Base16Delta8.cc
+ [     CXX] X86/python/_m5/param_Base16Delta8.cc -> .o
+ [SO PyBind] Base32Delta16 -> X86/python/_m5/param_Base32Delta16.cc
+ [     CXX] X86/python/_m5/param_Base32Delta16.cc -> .o
+ [SO PyBind] Base32Delta8 -> X86/python/_m5/param_Base32Delta8.cc
+ [     CXX] X86/python/_m5/param_Base32Delta8.cc -> .o
+ [SO PyBind] Base64Delta16 -> X86/python/_m5/param_Base64Delta16.cc
+ [     CXX] X86/python/_m5/param_Base64Delta16.cc -> .o
+ [SO PyBind] Base64Delta32 -> X86/python/_m5/param_Base64Delta32.cc
+ [     CXX] X86/python/_m5/param_Base64Delta32.cc -> .o
+ [SO PyBind] Base64Delta8 -> X86/python/_m5/param_Base64Delta8.cc
+ [     CXX] X86/python/_m5/param_Base64Delta8.cc -> .o
+ [SO PyBind] BaseCPU -> X86/python/_m5/param_BaseCPU.cc
+ [     CXX] X86/python/_m5/param_BaseCPU.cc -> .o
+ [SO PyBind] BaseCache -> X86/python/_m5/param_BaseCache.cc
+ [SO PARAM] BaseCache -> X86/params/BaseCache.hh
+ [     CXX] X86/python/_m5/param_BaseCache.cc -> .o
+ [SO PyBind] BaseCacheCompressor -> X86/python/_m5/param_BaseCacheCompressor.cc
+ [     CXX] X86/python/_m5/param_BaseCacheCompressor.cc -> .o
+ [SO PyBind] BaseDictionaryCompressor -> X86/python/_m5/param_BaseDictionaryCompressor.cc
+ [     CXX] X86/python/_m5/param_BaseDictionaryCompressor.cc -> .o
+ [SO PyBind] BaseISA -> X86/python/_m5/param_BaseISA.cc
+ [     CXX] X86/python/_m5/param_BaseISA.cc -> .o
+ [SO PyBind] BaseIndexingPolicy -> X86/python/_m5/param_BaseIndexingPolicy.cc
+ [     CXX] X86/python/_m5/param_BaseIndexingPolicy.cc -> .o
+ [SO PyBind] BaseInterrupts -> X86/python/_m5/param_BaseInterrupts.cc
+ [     CXX] X86/python/_m5/param_BaseInterrupts.cc -> .o
+ [SO PyBind] BaseKvmCPU -> X86/python/_m5/param_BaseKvmCPU.cc
+ [     CXX] X86/python/_m5/param_BaseKvmCPU.cc -> .o
+ [SO PyBind] BaseMemProbe -> X86/python/_m5/param_BaseMemProbe.cc
+ [     CXX] X86/python/_m5/param_BaseMemProbe.cc -> .o
+ [SO PyBind] BasePrefetcher -> X86/python/_m5/param_BasePrefetcher.cc
+ [     CXX] X86/python/_m5/param_BasePrefetcher.cc -> .o
+ [SO PyBind] BaseReplacementPolicy -> X86/python/_m5/param_BaseReplacementPolicy.cc
+ [     CXX] X86/python/_m5/param_BaseReplacementPolicy.cc -> .o
+ [SO PyBind] BaseSetAssoc -> X86/python/_m5/param_BaseSetAssoc.cc
+ [SO PARAM] BaseSetAssoc -> X86/params/BaseSetAssoc.hh
+ [     CXX] X86/python/_m5/param_BaseSetAssoc.cc -> .o
+ [SO PyBind] BaseSimpleCPU -> X86/python/_m5/param_BaseSimpleCPU.cc
+ [     CXX] X86/python/_m5/param_BaseSimpleCPU.cc -> .o
+ [SO PyBind] BaseTLB -> X86/python/_m5/param_BaseTLB.cc
+ [     CXX] X86/python/_m5/param_BaseTLB.cc -> .o
+ [SO PyBind] BaseTags -> X86/python/_m5/param_BaseTags.cc
+ [     CXX] X86/python/_m5/param_BaseTags.cc -> .o
+ [SO PyBind] BaseTrafficGen -> X86/python/_m5/param_BaseTrafficGen.cc
+ [     CXX] X86/python/_m5/param_BaseTrafficGen.cc -> .o
+ [SO PyBind] BaseXBar -> X86/python/_m5/param_BaseXBar.cc
+ [SO PARAM] BaseXBar -> X86/params/BaseXBar.hh
+ [     CXX] X86/python/_m5/param_BaseXBar.cc -> .o
+ [SO PyBind] BasicExtLink -> X86/python/_m5/param_BasicExtLink.cc
+ [     CXX] X86/python/_m5/param_BasicExtLink.cc -> .o
+ [SO PyBind] BasicIntLink -> X86/python/_m5/param_BasicIntLink.cc
+ [     CXX] X86/python/_m5/param_BasicIntLink.cc -> .o
+ [SO PyBind] BasicLink -> X86/python/_m5/param_BasicLink.cc
+ [     CXX] X86/python/_m5/param_BasicLink.cc -> .o
+ [SO PyBind] BasicPioDevice -> X86/python/_m5/param_BasicPioDevice.cc
+ [     CXX] X86/python/_m5/param_BasicPioDevice.cc -> .o
+ [SO PyBind] BasicRouter -> X86/python/_m5/param_BasicRouter.cc
+ [     CXX] X86/python/_m5/param_BasicRouter.cc -> .o
+ [SO PyBind] BiModeBP -> X86/python/_m5/param_BiModeBP.cc
+ [SO PARAM] BiModeBP -> X86/params/BiModeBP.hh
+ [     CXX] X86/python/_m5/param_BiModeBP.cc -> .o
+ [SO PyBind] BloomFilterBase -> X86/python/_m5/param_BloomFilterBase.cc
+ [     CXX] X86/python/_m5/param_BloomFilterBase.cc -> .o
+ [SO PyBind] BloomFilterBlock -> X86/python/_m5/param_BloomFilterBlock.cc
+ [     CXX] X86/python/_m5/param_BloomFilterBlock.cc -> .o
+ [SO PyBind] BloomFilterBulk -> X86/python/_m5/param_BloomFilterBulk.cc
+ [     CXX] X86/python/_m5/param_BloomFilterBulk.cc -> .o
+ [SO PyBind] BloomFilterH3 -> X86/python/_m5/param_BloomFilterH3.cc
+ [     CXX] X86/python/_m5/param_BloomFilterH3.cc -> .o
+ [SO PyBind] BloomFilterMulti -> X86/python/_m5/param_BloomFilterMulti.cc
+ [     CXX] X86/python/_m5/param_BloomFilterMulti.cc -> .o
+ [SO PyBind] BloomFilterMultiBitSel -> X86/python/_m5/param_BloomFilterMultiBitSel.cc
+ [     CXX] X86/python/_m5/param_BloomFilterMultiBitSel.cc -> .o
+ [SO PyBind] BloomFilterPerfect -> X86/python/_m5/param_BloomFilterPerfect.cc
+ [     CXX] X86/python/_m5/param_BloomFilterPerfect.cc -> .o
+ [SO PyBind] BranchPredictor -> X86/python/_m5/param_BranchPredictor.cc
+ [     CXX] X86/python/_m5/param_BranchPredictor.cc -> .o
+ [SO PyBind] Bridge -> X86/python/_m5/param_Bridge.cc
+ [SO PARAM] Bridge -> X86/params/Bridge.hh
+ [     CXX] X86/python/_m5/param_Bridge.cc -> .o
+ [SO PyBind] CPack -> X86/python/_m5/param_CPack.cc
+ [     CXX] X86/python/_m5/param_CPack.cc -> .o
+ [SO PyBind] Cache -> X86/python/_m5/param_Cache.cc
+ [SO PARAM] Cache -> X86/params/Cache.hh
+ [     CXX] X86/python/_m5/param_Cache.cc -> .o
+ [SO PyBind] CheckerCPU -> X86/python/_m5/param_CheckerCPU.cc
+ [     CXX] X86/python/_m5/param_CheckerCPU.cc -> .o
+ [SO PyBind] ClockDomain -> X86/python/_m5/param_ClockDomain.cc
+ [     CXX] X86/python/_m5/param_ClockDomain.cc -> .o
+ [SO PyBind] ClockedObject -> X86/python/_m5/param_ClockedObject.cc
+ [     CXX] X86/python/_m5/param_ClockedObject.cc -> .o
+ [SO PyBind] Cmos -> X86/python/_m5/param_Cmos.cc
+ [     CXX] X86/python/_m5/param_Cmos.cc -> .o
+ [SO PyBind] CoherentXBar -> X86/python/_m5/param_CoherentXBar.cc
+ [SO PARAM] CoherentXBar -> X86/params/CoherentXBar.hh
+ [SO PARAM] SnoopFilter -> X86/params/SnoopFilter.hh
+ [     CXX] X86/python/_m5/param_CoherentXBar.cc -> .o
+ [SO PyBind] CommMonitor -> X86/python/_m5/param_CommMonitor.cc
+ [SO PARAM] CommMonitor -> X86/params/CommMonitor.hh
+ [     CXX] X86/python/_m5/param_CommMonitor.cc -> .o
+ [SO PyBind] CompressedTags -> X86/python/_m5/param_CompressedTags.cc
+ [SO PARAM] CompressedTags -> X86/params/CompressedTags.hh
+ [SO PARAM] SectorTags -> X86/params/SectorTags.hh
+ [     CXX] X86/python/_m5/param_CompressedTags.cc -> .o
+ [SO PyBind] CopyEngine -> X86/python/_m5/param_CopyEngine.cc
+ [     CXX] X86/python/_m5/param_CopyEngine.cc -> .o
+ [SO PyBind] CowDiskImage -> X86/python/_m5/param_CowDiskImage.cc
+ [     CXX] X86/python/_m5/param_CowDiskImage.cc -> .o
+ [SO PyBind] CreditLink -> X86/python/_m5/param_CreditLink.cc
+ [     CXX] X86/python/_m5/param_CreditLink.cc -> .o
+ [SO PyBind] DCPTPrefetcher -> X86/python/_m5/param_DCPTPrefetcher.cc
+ [     CXX] X86/python/_m5/param_DCPTPrefetcher.cc -> .o
+ [SO PyBind] DMASequencer -> X86/python/_m5/param_DMASequencer.cc
+ [     CXX] X86/python/_m5/param_DMASequencer.cc -> .o
+ [SO PyBind] DMA_Controller -> X86/python/_m5/param_DMA_Controller.cc
+ [     CXX] X86/python/_m5/param_DMA_Controller.cc -> .o
+ [SO PyBind] DRAMInterface -> X86/python/_m5/param_DRAMInterface.cc
+ [SO PARAM] DRAMInterface -> X86/params/DRAMInterface.hh
+ [SO PARAM] MemInterface -> X86/params/MemInterface.hh
+ [SO PARAM] NVMInterface -> X86/params/NVMInterface.hh
+ [SO PARAM] MemCtrl -> X86/params/MemCtrl.hh
+ [     CXX] X86/python/_m5/param_DRAMInterface.cc -> .o
+ [SO PyBind] DVFSHandler -> X86/python/_m5/param_DVFSHandler.cc
+ [     CXX] X86/python/_m5/param_DVFSHandler.cc -> .o
+ [SO PyBind] DeltaCorrelatingPredictionTables -> X86/python/_m5/param_DeltaCorrelatingPredictionTables.cc
+ [     CXX] X86/python/_m5/param_DeltaCorrelatingPredictionTables.cc -> .o
+ [SO PyBind] DerivO3CPU -> X86/python/_m5/param_DerivO3CPU.cc
+ [     CXX] X86/python/_m5/param_DerivO3CPU.cc -> .o
+ [SO PyBind] DerivedClockDomain -> X86/python/_m5/param_DerivedClockDomain.cc
+ [     CXX] X86/python/_m5/param_DerivedClockDomain.cc -> .o
+ [SO PyBind] DirectedGenerator -> X86/python/_m5/param_DirectedGenerator.cc
+ [     CXX] X86/python/_m5/param_DirectedGenerator.cc -> .o
+ [SO PyBind] Directory_Controller -> X86/python/_m5/param_Directory_Controller.cc
+ [     CXX] X86/python/_m5/param_Directory_Controller.cc -> .o
+ [SO PyBind] DiskImage -> X86/python/_m5/param_DiskImage.cc
+ [     CXX] X86/python/_m5/param_DiskImage.cc -> .o
+ [SO PyBind] DistEtherLink -> X86/python/_m5/param_DistEtherLink.cc
+ [SO PARAM] DistEtherLink -> X86/params/DistEtherLink.hh
+ [SO PARAM] EtherDump -> X86/params/EtherDump.hh
+ [SO PARAM] EtherLink -> X86/params/EtherLink.hh
+ [     CXX] X86/python/_m5/param_DistEtherLink.cc -> .o
+ [SO PyBind] DmaDevice -> X86/python/_m5/param_DmaDevice.cc
+ [     CXX] X86/python/_m5/param_DmaDevice.cc -> .o
+ [SO PyBind] DummyChecker -> X86/python/_m5/param_DummyChecker.cc
+ [SO PARAM] DummyChecker -> X86/params/DummyChecker.hh
+ [     CXX] X86/python/_m5/param_DummyChecker.cc -> .o
+ [SO PyBind] EmulatedDriver -> X86/python/_m5/param_EmulatedDriver.cc
+ [     CXX] X86/python/_m5/param_EmulatedDriver.cc -> .o
+ [SO PyBind] EtherBus -> X86/python/_m5/param_EtherBus.cc
+ [SO PARAM] EtherBus -> X86/params/EtherBus.hh
+ [     CXX] X86/python/_m5/param_EtherBus.cc -> .o
+ [SO PyBind] EtherDevBase -> X86/python/_m5/param_EtherDevBase.cc
+ [SO PARAM] EtherDevBase -> X86/params/EtherDevBase.hh
+ [SO PARAM] EtherDevice -> X86/params/EtherDevice.hh
+ [     CXX] X86/python/_m5/param_EtherDevBase.cc -> .o
+ [SO PyBind] EtherDevice -> X86/python/_m5/param_EtherDevice.cc
+ [     CXX] X86/python/_m5/param_EtherDevice.cc -> .o
+ [SO PyBind] EtherDump -> X86/python/_m5/param_EtherDump.cc
+ [     CXX] X86/python/_m5/param_EtherDump.cc -> .o
+ [SO PyBind] EtherLink -> X86/python/_m5/param_EtherLink.cc
+ [     CXX] X86/python/_m5/param_EtherLink.cc -> .o
+ [SO PyBind] EtherSwitch -> X86/python/_m5/param_EtherSwitch.cc
+ [SO PARAM] EtherSwitch -> X86/params/EtherSwitch.hh
+ [     CXX] X86/python/_m5/param_EtherSwitch.cc -> .o
+ [SO PyBind] EtherTap -> X86/python/_m5/param_EtherTap.cc
+ [SO PARAM] EtherTap -> X86/params/EtherTap.hh
+ [CONFIG H] USE_TUNTAP, 1 -> X86/config/use_tuntap.hh
+ [SO PARAM] EtherTapStub -> X86/params/EtherTapStub.hh
+ [SO PARAM] EtherTapBase -> X86/params/EtherTapBase.hh
+ [     CXX] X86/python/_m5/param_EtherTap.cc -> .o
+ [SO PyBind] EtherTapBase -> X86/python/_m5/param_EtherTapBase.cc
+ [     CXX] X86/python/_m5/param_EtherTapBase.cc -> .o
+ [SO PyBind] EtherTapStub -> X86/python/_m5/param_EtherTapStub.cc
+ [     CXX] X86/python/_m5/param_EtherTapStub.cc -> .o
+ [SO PyBind] ExeTracer -> X86/python/_m5/param_ExeTracer.cc
+ [     CXX] X86/python/_m5/param_ExeTracer.cc -> .o
+ [SO PyBind] ExternalMaster -> X86/python/_m5/param_ExternalMaster.cc
+ [SO PARAM] ExternalMaster -> X86/params/ExternalMaster.hh
+ [     CXX] X86/python/_m5/param_ExternalMaster.cc -> .o
+ [SO PyBind] ExternalSlave -> X86/python/_m5/param_ExternalSlave.cc
+ [SO PARAM] ExternalSlave -> X86/params/ExternalSlave.hh
+ [     CXX] X86/python/_m5/param_ExternalSlave.cc -> .o
+ [SO PyBind] FALRU -> X86/python/_m5/param_FALRU.cc
+ [SO PARAM] FALRU -> X86/params/FALRU.hh
+ [     CXX] X86/python/_m5/param_FALRU.cc -> .o
+ [SO PyBind] FIFORP -> X86/python/_m5/param_FIFORP.cc
+ [SO PARAM] FIFORP -> X86/params/FIFORP.hh
+ [     CXX] X86/python/_m5/param_FIFORP.cc -> .o
+ [SO PyBind] FPCD -> X86/python/_m5/param_FPCD.cc
+ [     CXX] X86/python/_m5/param_FPCD.cc -> .o
+ [SO PyBind] FUDesc -> X86/python/_m5/param_FUDesc.cc
+ [     CXX] X86/python/_m5/param_FUDesc.cc -> .o
+ [SO PyBind] FUPool -> X86/python/_m5/param_FUPool.cc
+ [     CXX] X86/python/_m5/param_FUPool.cc -> .o
+ [SO PyBind] FaultModel -> X86/python/_m5/param_FaultModel.cc
+ [     CXX] X86/python/_m5/param_FaultModel.cc -> .o
+ [SO PyBind] GarnetExtLink -> X86/python/_m5/param_GarnetExtLink.cc
+ [     CXX] X86/python/_m5/param_GarnetExtLink.cc -> .o
+ [SO PyBind] GarnetIntLink -> X86/python/_m5/param_GarnetIntLink.cc
+ [     CXX] X86/python/_m5/param_GarnetIntLink.cc -> .o
+ [SO PyBind] GarnetNetwork -> X86/python/_m5/param_GarnetNetwork.cc
+ [     CXX] X86/python/_m5/param_GarnetNetwork.cc -> .o
+ [SO PyBind] GarnetNetworkInterface -> X86/python/_m5/param_GarnetNetworkInterface.cc
+ [     CXX] X86/python/_m5/param_GarnetNetworkInterface.cc -> .o
+ [SO PyBind] GarnetRouter -> X86/python/_m5/param_GarnetRouter.cc
+ [     CXX] X86/python/_m5/param_GarnetRouter.cc -> .o
+ [SO PyBind] GarnetSyntheticTraffic -> X86/python/_m5/param_GarnetSyntheticTraffic.cc
+ [     CXX] X86/python/_m5/param_GarnetSyntheticTraffic.cc -> .o
+ [SO PyBind] Gem5ToTlmBridge32 -> X86/python/_m5/param_Gem5ToTlmBridge32.cc
+ [     CXX] X86/python/_m5/param_Gem5ToTlmBridge32.cc -> .o
+ [SO PyBind] Gem5ToTlmBridge64 -> X86/python/_m5/param_Gem5ToTlmBridge64.cc
+ [     CXX] X86/python/_m5/param_Gem5ToTlmBridge64.cc -> .o
+ [SO PyBind] Gem5ToTlmBridgeBase -> X86/python/_m5/param_Gem5ToTlmBridgeBase.cc
+ [     CXX] X86/python/_m5/param_Gem5ToTlmBridgeBase.cc -> .o
+ [SO PyBind] GenericPciHost -> X86/python/_m5/param_GenericPciHost.cc
+ [     CXX] X86/python/_m5/param_GenericPciHost.cc -> .o
+ [SO PyBind] GoodbyeObject -> X86/python/_m5/param_GoodbyeObject.cc
+ [     CXX] X86/python/_m5/param_GoodbyeObject.cc -> .o
+ [SO PyBind] HMCController -> X86/python/_m5/param_HMCController.cc
+ [SO PARAM] HMCController -> X86/params/HMCController.hh
+ [SO PARAM] NoncoherentXBar -> X86/params/NoncoherentXBar.hh
+ [     CXX] X86/python/_m5/param_HMCController.cc -> .o
+ [SO PyBind] HelloObject -> X86/python/_m5/param_HelloObject.cc
+ [     CXX] X86/python/_m5/param_HelloObject.cc -> .o
+ [SO PyBind] I2CBus -> X86/python/_m5/param_I2CBus.cc
+ [     CXX] X86/python/_m5/param_I2CBus.cc -> .o
+ [SO PyBind] I2CDevice -> X86/python/_m5/param_I2CDevice.cc
+ [     CXX] X86/python/_m5/param_I2CDevice.cc -> .o
+ [SO PyBind] I8042 -> X86/python/_m5/param_I8042.cc
+ [     CXX] X86/python/_m5/param_I8042.cc -> .o
+ [SO PyBind] I82094AA -> X86/python/_m5/param_I82094AA.cc
+ [     CXX] X86/python/_m5/param_I82094AA.cc -> .o
+ [SO PyBind] I8237 -> X86/python/_m5/param_I8237.cc
+ [     CXX] X86/python/_m5/param_I8237.cc -> .o
+ [SO PyBind] I8254 -> X86/python/_m5/param_I8254.cc
+ [     CXX] X86/python/_m5/param_I8254.cc -> .o
+ [SO PyBind] I8259 -> X86/python/_m5/param_I8259.cc
+ [     CXX] X86/python/_m5/param_I8259.cc -> .o
+ [SO PyBind] IGbE -> X86/python/_m5/param_IGbE.cc
+ [SO PARAM] IGbE -> X86/params/IGbE.hh
+ [ TRACING]  -> X86/debug/EthernetDesc.hh
+ [ TRACING]  -> X86/debug/EthernetIntr.hh
+ [     CXX] X86/python/_m5/param_IGbE.cc -> .o
+ [SO PyBind] IdeController -> X86/python/_m5/param_IdeController.cc
+ [     CXX] X86/python/_m5/param_IdeController.cc -> .o
+ [SO PyBind] IdeDisk -> X86/python/_m5/param_IdeDisk.cc
+ [     CXX] X86/python/_m5/param_IdeDisk.cc -> .o
+ [SO PyBind] IndirectMemoryPrefetcher -> X86/python/_m5/param_IndirectMemoryPrefetcher.cc
+ [     CXX] X86/python/_m5/param_IndirectMemoryPrefetcher.cc -> .o
+ [SO PyBind] IndirectPredictor -> X86/python/_m5/param_IndirectPredictor.cc
+ [     CXX] X86/python/_m5/param_IndirectPredictor.cc -> .o
+ [SO PyBind] InstTracer -> X86/python/_m5/param_InstTracer.cc
+ [     CXX] X86/python/_m5/param_InstTracer.cc -> .o
+ [SO PyBind] IntelTrace -> X86/python/_m5/param_IntelTrace.cc
+ [SO PARAM] IntelTrace -> X86/params/IntelTrace.hh
+ [     CXX] X86/python/_m5/param_IntelTrace.cc -> .o
+ [SO PyBind] IntrControl -> X86/python/_m5/param_IntrControl.cc
+ [     CXX] X86/python/_m5/param_IntrControl.cc -> .o
+ [SO PyBind] InvalidateGenerator -> X86/python/_m5/param_InvalidateGenerator.cc
+ [     CXX] X86/python/_m5/param_InvalidateGenerator.cc -> .o
+ [SO PyBind] IrregularStreamBufferPrefetcher -> X86/python/_m5/param_IrregularStreamBufferPrefetcher.cc
+ [     CXX] X86/python/_m5/param_IrregularStreamBufferPrefetcher.cc -> .o
+ [SO PyBind] IsaFake -> X86/python/_m5/param_IsaFake.cc
+ [SO PARAM] IsaFake -> X86/params/IsaFake.hh
+ [     CXX] X86/python/_m5/param_IsaFake.cc -> .o
+ [SO PyBind] KernelWorkload -> X86/python/_m5/param_KernelWorkload.cc
+ [     CXX] X86/python/_m5/param_KernelWorkload.cc -> .o
+ [SO PyBind] KvmVM -> X86/python/_m5/param_KvmVM.cc
+ [     CXX] X86/python/_m5/param_KvmVM.cc -> .o
+ [SO PyBind] L1Cache_Controller -> X86/python/_m5/param_L1Cache_Controller.cc
+ [     CXX] X86/python/_m5/param_L1Cache_Controller.cc -> .o
+ [SO PyBind] LFURP -> X86/python/_m5/param_LFURP.cc
+ [SO PARAM] LFURP -> X86/params/LFURP.hh
+ [     CXX] X86/python/_m5/param_LFURP.cc -> .o
+ [SO PyBind] LRURP -> X86/python/_m5/param_LRURP.cc
+ [     CXX] X86/python/_m5/param_LRURP.cc -> .o
+ [SO PyBind] LTAGE -> X86/python/_m5/param_LTAGE.cc
+ [SO PARAM] LTAGE -> X86/params/LTAGE.hh
+ [SO PARAM] TAGE -> X86/params/TAGE.hh
+ [SO PARAM] TAGEBase -> X86/params/TAGEBase.hh
+ [SO PARAM] LoopPredictor -> X86/params/LoopPredictor.hh
+ [     CXX] X86/python/_m5/param_LTAGE.cc -> .o
+ [SO PyBind] LocalBP -> X86/python/_m5/param_LocalBP.cc
+ [SO PARAM] LocalBP -> X86/params/LocalBP.hh
+ [     CXX] X86/python/_m5/param_LocalBP.cc -> .o
+ [SO PyBind] LoopPredictor -> X86/python/_m5/param_LoopPredictor.cc
+ [     CXX] X86/python/_m5/param_LoopPredictor.cc -> .o
+ [SO PyBind] MPP_LoopPredictor -> X86/python/_m5/param_MPP_LoopPredictor.cc
+ [SO PARAM] MPP_LoopPredictor -> X86/params/MPP_LoopPredictor.hh
+ [SO PARAM] MPP_StatisticalCorrector -> X86/params/MPP_StatisticalCorrector.hh
+ [SO PARAM] MPP_TAGE -> X86/params/MPP_TAGE.hh
+ [SO PARAM] MultiperspectivePerceptronTAGE -> X86/params/MultiperspectivePerceptronTAGE.hh
+ [SO PARAM] MultiperspectivePerceptron -> X86/params/MultiperspectivePerceptron.hh
+ [SO PARAM] StatisticalCorrector -> X86/params/StatisticalCorrector.hh
+ [     CXX] X86/python/_m5/param_MPP_LoopPredictor.cc -> .o
+ [SO PyBind] MPP_LoopPredictor_8KB -> X86/python/_m5/param_MPP_LoopPredictor_8KB.cc
+ [SO PARAM] MPP_LoopPredictor_8KB -> X86/params/MPP_LoopPredictor_8KB.hh
+ [SO PARAM] MPP_StatisticalCorrector_8KB -> X86/params/MPP_StatisticalCorrector_8KB.hh
+ [SO PARAM] MPP_TAGE_8KB -> X86/params/MPP_TAGE_8KB.hh
+ [SO PARAM] MultiperspectivePerceptronTAGE8KB -> X86/params/MultiperspectivePerceptronTAGE8KB.hh
+ [     CXX] X86/python/_m5/param_MPP_LoopPredictor_8KB.cc -> .o
+ [SO PyBind] MPP_StatisticalCorrector -> X86/python/_m5/param_MPP_StatisticalCorrector.cc
+ [     CXX] X86/python/_m5/param_MPP_StatisticalCorrector.cc -> .o
+ [SO PyBind] MPP_StatisticalCorrector_64KB -> X86/python/_m5/param_MPP_StatisticalCorrector_64KB.cc
+ [SO PARAM] MPP_StatisticalCorrector_64KB -> X86/params/MPP_StatisticalCorrector_64KB.hh
+ [SO PARAM] MultiperspectivePerceptronTAGE64KB -> X86/params/MultiperspectivePerceptronTAGE64KB.hh
+ [     CXX] X86/python/_m5/param_MPP_StatisticalCorrector_64KB.cc -> .o
+ [SO PyBind] MPP_StatisticalCorrector_8KB -> X86/python/_m5/param_MPP_StatisticalCorrector_8KB.cc
+ [     CXX] X86/python/_m5/param_MPP_StatisticalCorrector_8KB.cc -> .o
+ [SO PyBind] MPP_TAGE -> X86/python/_m5/param_MPP_TAGE.cc
+ [     CXX] X86/python/_m5/param_MPP_TAGE.cc -> .o
+ [SO PyBind] MPP_TAGE_8KB -> X86/python/_m5/param_MPP_TAGE_8KB.cc
+ [     CXX] X86/python/_m5/param_MPP_TAGE_8KB.cc -> .o
+ [SO PyBind] MRURP -> X86/python/_m5/param_MRURP.cc
+ [SO PARAM] MRURP -> X86/params/MRURP.hh
+ [     CXX] X86/python/_m5/param_MRURP.cc -> .o
+ [SO PyBind] MathExprPowerModel -> X86/python/_m5/param_MathExprPowerModel.cc
+ [     CXX] X86/python/_m5/param_MathExprPowerModel.cc -> .o
+ [SO PyBind] MemChecker -> X86/python/_m5/param_MemChecker.cc
+ [SO PARAM] MemChecker -> X86/params/MemChecker.hh
+ [ TRACING]  -> X86/debug/MemChecker.hh
+ [     CXX] X86/python/_m5/param_MemChecker.cc -> .o
+ [SO PyBind] MemCheckerMonitor -> X86/python/_m5/param_MemCheckerMonitor.cc
+ [SO PARAM] MemCheckerMonitor -> X86/params/MemCheckerMonitor.hh
+ [     CXX] X86/python/_m5/param_MemCheckerMonitor.cc -> .o
+ [SO PyBind] MemCtrl -> X86/python/_m5/param_MemCtrl.cc
+ [     CXX] X86/python/_m5/param_MemCtrl.cc -> .o
+ [SO PyBind] MemDelay -> X86/python/_m5/param_MemDelay.cc
+ [SO PARAM] MemDelay -> X86/params/MemDelay.hh
+ [     CXX] X86/python/_m5/param_MemDelay.cc -> .o
+ [SO PyBind] MemFootprintProbe -> X86/python/_m5/param_MemFootprintProbe.cc
+ [     CXX] X86/python/_m5/param_MemFootprintProbe.cc -> .o
+ [SO PyBind] MemInterface -> X86/python/_m5/param_MemInterface.cc
+ [     CXX] X86/python/_m5/param_MemInterface.cc -> .o
+ [SO PyBind] MemObject -> X86/python/_m5/param_MemObject.cc
+ [SO PARAM] MemObject -> X86/params/MemObject.hh
+ [     CXX] X86/python/_m5/param_MemObject.cc -> .o
+ [SO PyBind] MemTest -> X86/python/_m5/param_MemTest.cc
+ [     CXX] X86/python/_m5/param_MemTest.cc -> .o
+ [SO PyBind] MessageBuffer -> X86/python/_m5/param_MessageBuffer.cc
+ [     CXX] X86/python/_m5/param_MessageBuffer.cc -> .o
+ [SO PyBind] MultiCompressor -> X86/python/_m5/param_MultiCompressor.cc
+ [     CXX] X86/python/_m5/param_MultiCompressor.cc -> .o
+ [SO PyBind] MultiPrefetcher -> X86/python/_m5/param_MultiPrefetcher.cc
+ [     CXX] X86/python/_m5/param_MultiPrefetcher.cc -> .o
+ [SO PyBind] MultiperspectivePerceptron -> X86/python/_m5/param_MultiperspectivePerceptron.cc
+ [     CXX] X86/python/_m5/param_MultiperspectivePerceptron.cc -> .o
+ [SO PyBind] MultiperspectivePerceptron64KB -> X86/python/_m5/param_MultiperspectivePerceptron64KB.cc
+ [SO PARAM] MultiperspectivePerceptron64KB -> X86/params/MultiperspectivePerceptron64KB.hh
+ [     CXX] X86/python/_m5/param_MultiperspectivePerceptron64KB.cc -> .o
+ [SO PyBind] MultiperspectivePerceptron8KB -> X86/python/_m5/param_MultiperspectivePerceptron8KB.cc
+ [SO PARAM] MultiperspectivePerceptron8KB -> X86/params/MultiperspectivePerceptron8KB.hh
+ [     CXX] X86/python/_m5/param_MultiperspectivePerceptron8KB.cc -> .o
+ [SO PyBind] MultiperspectivePerceptronTAGE -> X86/python/_m5/param_MultiperspectivePerceptronTAGE.cc
+ [     CXX] X86/python/_m5/param_MultiperspectivePerceptronTAGE.cc -> .o
+ [SO PyBind] MultiperspectivePerceptronTAGE64KB -> X86/python/_m5/param_MultiperspectivePerceptronTAGE64KB.cc
+ [     CXX] X86/python/_m5/param_MultiperspectivePerceptronTAGE64KB.cc -> .o
+ [SO PyBind] MultiperspectivePerceptronTAGE8KB -> X86/python/_m5/param_MultiperspectivePerceptronTAGE8KB.cc
+ [     CXX] X86/python/_m5/param_MultiperspectivePerceptronTAGE8KB.cc -> .o
+ [SO PyBind] NSGigE -> X86/python/_m5/param_NSGigE.cc
+ [SO PARAM] NSGigE -> X86/params/NSGigE.hh
+ [     CXX] X86/python/_m5/param_NSGigE.cc -> .o
+ [SO PyBind] NVMInterface -> X86/python/_m5/param_NVMInterface.cc
+ [     CXX] X86/python/_m5/param_NVMInterface.cc -> .o
+ [SO PyBind] NativeTrace -> X86/python/_m5/param_NativeTrace.cc
+ [     CXX] X86/python/_m5/param_NativeTrace.cc -> .o
+ [SO PyBind] NetworkBridge -> X86/python/_m5/param_NetworkBridge.cc
+ [     CXX] X86/python/_m5/param_NetworkBridge.cc -> .o
+ [SO PyBind] NetworkLink -> X86/python/_m5/param_NetworkLink.cc
+ [     CXX] X86/python/_m5/param_NetworkLink.cc -> .o
+ [SO PyBind] NonCachingSimpleCPU -> X86/python/_m5/param_NonCachingSimpleCPU.cc
+ [     CXX] X86/python/_m5/param_NonCachingSimpleCPU.cc -> .o
+ [SO PyBind] NoncoherentCache -> X86/python/_m5/param_NoncoherentCache.cc
+ [SO PARAM] NoncoherentCache -> X86/params/NoncoherentCache.hh
+ [     CXX] X86/python/_m5/param_NoncoherentCache.cc -> .o
+ [SO PyBind] NoncoherentXBar -> X86/python/_m5/param_NoncoherentXBar.cc
+ [     CXX] X86/python/_m5/param_NoncoherentXBar.cc -> .o
+ [SO PyBind] O3Checker -> X86/python/_m5/param_O3Checker.cc
+ [     CXX] X86/python/_m5/param_O3Checker.cc -> .o
+ [SO PyBind] OpDesc -> X86/python/_m5/param_OpDesc.cc
+ [     CXX] X86/python/_m5/param_OpDesc.cc -> .o
+ [SO PyBind] PIFPrefetcher -> X86/python/_m5/param_PIFPrefetcher.cc
+ [     CXX] X86/python/_m5/param_PIFPrefetcher.cc -> .o
+ [SO PyBind] PS2Device -> X86/python/_m5/param_PS2Device.cc
+ [     CXX] X86/python/_m5/param_PS2Device.cc -> .o
+ [SO PyBind] PS2Keyboard -> X86/python/_m5/param_PS2Keyboard.cc
+ [     CXX] X86/python/_m5/param_PS2Keyboard.cc -> .o
+ [SO PyBind] PS2Mouse -> X86/python/_m5/param_PS2Mouse.cc
+ [     CXX] X86/python/_m5/param_PS2Mouse.cc -> .o
+ [SO PyBind] PS2TouchKit -> X86/python/_m5/param_PS2TouchKit.cc
+ [     CXX] X86/python/_m5/param_PS2TouchKit.cc -> .o
+ [SO PyBind] Pc -> X86/python/_m5/param_Pc.cc
+ [     CXX] X86/python/_m5/param_Pc.cc -> .o
+ [SO PyBind] PcSpeaker -> X86/python/_m5/param_PcSpeaker.cc
+ [     CXX] X86/python/_m5/param_PcSpeaker.cc -> .o
+ [SO PyBind] PciDevice -> X86/python/_m5/param_PciDevice.cc
+ [     CXX] X86/python/_m5/param_PciDevice.cc -> .o
+ [SO PyBind] PciHost -> X86/python/_m5/param_PciHost.cc
+ [     CXX] X86/python/_m5/param_PciHost.cc -> .o
+ [SO PyBind] PciVirtIO -> X86/python/_m5/param_PciVirtIO.cc
+ [SO PARAM] PciVirtIO -> X86/params/PciVirtIO.hh
+ [SO PARAM] VirtIODeviceBase -> X86/params/VirtIODeviceBase.hh
+ [     CXX] X86/python/_m5/param_PciVirtIO.cc -> .o
+ [SO PyBind] PerfectCompressor -> X86/python/_m5/param_PerfectCompressor.cc
+ [     CXX] X86/python/_m5/param_PerfectCompressor.cc -> .o
+ [SO PyBind] PioDevice -> X86/python/_m5/param_PioDevice.cc
+ [     CXX] X86/python/_m5/param_PioDevice.cc -> .o
+ [SO PyBind] Platform -> X86/python/_m5/param_Platform.cc
+ [     CXX] X86/python/_m5/param_Platform.cc -> .o
+ [SO PyBind] PowerDomain -> X86/python/_m5/param_PowerDomain.cc
+ [     CXX] X86/python/_m5/param_PowerDomain.cc -> .o
+ [SO PyBind] PowerModel -> X86/python/_m5/param_PowerModel.cc
+ [     CXX] X86/python/_m5/param_PowerModel.cc -> .o
+ [SO PyBind] PowerModelState -> X86/python/_m5/param_PowerModelState.cc
+ [     CXX] X86/python/_m5/param_PowerModelState.cc -> .o
+ [SO PyBind] PowerState -> X86/python/_m5/param_PowerState.cc
+ [     CXX] X86/python/_m5/param_PowerState.cc -> .o
+ [SO PyBind] PrintObject -> X86/python/_m5/param_PrintObject.cc
+ [SO PARAM] PrintObject -> X86/params/PrintObject.hh
+ [     CXX] X86/python/_m5/param_PrintObject.cc -> .o
+ [SO PyBind] ProbeListenerObject -> X86/python/_m5/param_ProbeListenerObject.cc
+ [     CXX] X86/python/_m5/param_ProbeListenerObject.cc -> .o
+ [SO PyBind] Process -> X86/python/_m5/param_Process.cc
+ [     CXX] X86/python/_m5/param_Process.cc -> .o
+ [SO PyBind] PyTrafficGen -> X86/python/_m5/param_PyTrafficGen.cc
+ [     CXX] X86/python/_m5/param_PyTrafficGen.cc -> .o
+ [SO PyBind] QoSFixedPriorityPolicy -> X86/python/_m5/param_QoSFixedPriorityPolicy.cc
+ [     CXX] X86/python/_m5/param_QoSFixedPriorityPolicy.cc -> .o
+ [SO PyBind] QoSMemCtrl -> X86/python/_m5/param_QoSMemCtrl.cc
+ [     CXX] X86/python/_m5/param_QoSMemCtrl.cc -> .o
+ [SO PyBind] QoSMemSinkCtrl -> X86/python/_m5/param_QoSMemSinkCtrl.cc
+ [     CXX] X86/python/_m5/param_QoSMemSinkCtrl.cc -> .o
+ [SO PyBind] QoSMemSinkInterface -> X86/python/_m5/param_QoSMemSinkInterface.cc
+ [     CXX] X86/python/_m5/param_QoSMemSinkInterface.cc -> .o
+ [SO PyBind] QoSPolicy -> X86/python/_m5/param_QoSPolicy.cc
+ [     CXX] X86/python/_m5/param_QoSPolicy.cc -> .o
+ [SO PyBind] QoSPropFairPolicy -> X86/python/_m5/param_QoSPropFairPolicy.cc
+ [     CXX] X86/python/_m5/param_QoSPropFairPolicy.cc -> .o
+ [SO PyBind] QoSTurnaroundPolicy -> X86/python/_m5/param_QoSTurnaroundPolicy.cc
+ [     CXX] X86/python/_m5/param_QoSTurnaroundPolicy.cc -> .o
+ [SO PyBind] QoSTurnaroundPolicyIdeal -> X86/python/_m5/param_QoSTurnaroundPolicyIdeal.cc
+ [     CXX] X86/python/_m5/param_QoSTurnaroundPolicyIdeal.cc -> .o
+ [SO PyBind] QueuedPrefetcher -> X86/python/_m5/param_QueuedPrefetcher.cc
+ [     CXX] X86/python/_m5/param_QueuedPrefetcher.cc -> .o
+ [SO PyBind] RandomRP -> X86/python/_m5/param_RandomRP.cc
+ [SO PARAM] RandomRP -> X86/params/RandomRP.hh
+ [     CXX] X86/python/_m5/param_RandomRP.cc -> .o
+ [SO PyBind] RangeAddrMapper -> X86/python/_m5/param_RangeAddrMapper.cc
+ [     CXX] X86/python/_m5/param_RangeAddrMapper.cc -> .o
+ [SO PyBind] RawDiskImage -> X86/python/_m5/param_RawDiskImage.cc
+ [     CXX] X86/python/_m5/param_RawDiskImage.cc -> .o
+ [SO PyBind] RedirectPath -> X86/python/_m5/param_RedirectPath.cc
+ [     CXX] X86/python/_m5/param_RedirectPath.cc -> .o
+ [SO PyBind] RepeatedQwordsCompressor -> X86/python/_m5/param_RepeatedQwordsCompressor.cc
+ [     CXX] X86/python/_m5/param_RepeatedQwordsCompressor.cc -> .o
+ [SO PyBind] Root -> X86/python/_m5/param_Root.cc
+ [     CXX] X86/python/_m5/param_Root.cc -> .o
+ [SO PyBind] RubyCache -> X86/python/_m5/param_RubyCache.cc
+ [     CXX] X86/python/_m5/param_RubyCache.cc -> .o
+ [SO PyBind] RubyController -> X86/python/_m5/param_RubyController.cc
+ [     CXX] X86/python/_m5/param_RubyController.cc -> .o
+ [SO PyBind] RubyDirectedTester -> X86/python/_m5/param_RubyDirectedTester.cc
+ [     CXX] X86/python/_m5/param_RubyDirectedTester.cc -> .o
+ [SO PyBind] RubyDirectoryMemory -> X86/python/_m5/param_RubyDirectoryMemory.cc
+ [     CXX] X86/python/_m5/param_RubyDirectoryMemory.cc -> .o
+ [SO PyBind] RubyHTMSequencer -> X86/python/_m5/param_RubyHTMSequencer.cc
+ [     CXX] X86/python/_m5/param_RubyHTMSequencer.cc -> .o
+ [SO PyBind] RubyNetwork -> X86/python/_m5/param_RubyNetwork.cc
+ [     CXX] X86/python/_m5/param_RubyNetwork.cc -> .o
+ [SO PyBind] RubyPort -> X86/python/_m5/param_RubyPort.cc
+ [     CXX] X86/python/_m5/param_RubyPort.cc -> .o
+ [SO PyBind] RubyPortProxy -> X86/python/_m5/param_RubyPortProxy.cc
+ [SO PARAM] RubyPortProxy -> X86/params/RubyPortProxy.hh
+ [     CXX] X86/python/_m5/param_RubyPortProxy.cc -> .o
+ [SO PyBind] RubyPrefetcher -> X86/python/_m5/param_RubyPrefetcher.cc
+ [     CXX] X86/python/_m5/param_RubyPrefetcher.cc -> .o
+ [SO PyBind] RubySequencer -> X86/python/_m5/param_RubySequencer.cc
+ [     CXX] X86/python/_m5/param_RubySequencer.cc -> .o
+ [SO PyBind] RubySystem -> X86/python/_m5/param_RubySystem.cc
+ [     CXX] X86/python/_m5/param_RubySystem.cc -> .o
+ [SO PyBind] RubyTester -> X86/python/_m5/param_RubyTester.cc
+ [     CXX] X86/python/_m5/param_RubyTester.cc -> .o
+ [SO PyBind] RubyWireBuffer -> X86/python/_m5/param_RubyWireBuffer.cc
+ [     CXX] X86/python/_m5/param_RubyWireBuffer.cc -> .o
+ [SO PyBind] SBOOEPrefetcher -> X86/python/_m5/param_SBOOEPrefetcher.cc
+ [     CXX] X86/python/_m5/param_SBOOEPrefetcher.cc -> .o
+ [SO PyBind] STeMSPrefetcher -> X86/python/_m5/param_STeMSPrefetcher.cc
+ [     CXX] X86/python/_m5/param_STeMSPrefetcher.cc -> .o
+ [SO PyBind] SecondChanceRP -> X86/python/_m5/param_SecondChanceRP.cc
+ [SO PARAM] SecondChanceRP -> X86/params/SecondChanceRP.hh
+ [     CXX] X86/python/_m5/param_SecondChanceRP.cc -> .o
+ [SO PyBind] SectorTags -> X86/python/_m5/param_SectorTags.cc
+ [     CXX] X86/python/_m5/param_SectorTags.cc -> .o
+ [SO PyBind] SerialDevice -> X86/python/_m5/param_SerialDevice.cc
+ [     CXX] X86/python/_m5/param_SerialDevice.cc -> .o
+ [SO PyBind] SerialLink -> X86/python/_m5/param_SerialLink.cc
+ [SO PARAM] SerialLink -> X86/params/SerialLink.hh
+ [     CXX] X86/python/_m5/param_SerialLink.cc -> .o
+ [SO PyBind] SerialNullDevice -> X86/python/_m5/param_SerialNullDevice.cc
+ [     CXX] X86/python/_m5/param_SerialNullDevice.cc -> .o
+ [SO PyBind] SeriesRequestGenerator -> X86/python/_m5/param_SeriesRequestGenerator.cc
+ [     CXX] X86/python/_m5/param_SeriesRequestGenerator.cc -> .o
+ [SO PyBind] SetAssociative -> X86/python/_m5/param_SetAssociative.cc
+ [     CXX] X86/python/_m5/param_SetAssociative.cc -> .o
+ [SO PyBind] SignaturePathPrefetcher -> X86/python/_m5/param_SignaturePathPrefetcher.cc
+ [     CXX] X86/python/_m5/param_SignaturePathPrefetcher.cc -> .o
+ [SO PyBind] SignaturePathPrefetcherV2 -> X86/python/_m5/param_SignaturePathPrefetcherV2.cc
+ [     CXX] X86/python/_m5/param_SignaturePathPrefetcherV2.cc -> .o
+ [SO PyBind] SimObject -> X86/python/_m5/param_SimObject.cc
+ [     CXX] X86/python/_m5/param_SimObject.cc -> .o
+ [SO PyBind] SimPoint -> X86/python/_m5/param_SimPoint.cc
+ [     CXX] X86/python/_m5/param_SimPoint.cc -> .o
+ [SO PyBind] SimpleCache -> X86/python/_m5/param_SimpleCache.cc
+ [     CXX] X86/python/_m5/param_SimpleCache.cc -> .o
+ [SO PyBind] SimpleDisk -> X86/python/_m5/param_SimpleDisk.cc
+ [     CXX] X86/python/_m5/param_SimpleDisk.cc -> .o
+ [SO PyBind] SimpleExtLink -> X86/python/_m5/param_SimpleExtLink.cc
+ [     CXX] X86/python/_m5/param_SimpleExtLink.cc -> .o
+ [SO PyBind] SimpleIndirectPredictor -> X86/python/_m5/param_SimpleIndirectPredictor.cc
+ [SO PARAM] SimpleIndirectPredictor -> X86/params/SimpleIndirectPredictor.hh
+ [     CXX] X86/python/_m5/param_SimpleIndirectPredictor.cc -> .o
+ [SO PyBind] SimpleIntLink -> X86/python/_m5/param_SimpleIntLink.cc
+ [     CXX] X86/python/_m5/param_SimpleIntLink.cc -> .o
+ [SO PyBind] SimpleMemDelay -> X86/python/_m5/param_SimpleMemDelay.cc
+ [SO PARAM] SimpleMemDelay -> X86/params/SimpleMemDelay.hh
+ [     CXX] X86/python/_m5/param_SimpleMemDelay.cc -> .o
+ [SO PyBind] SimpleMemobj -> X86/python/_m5/param_SimpleMemobj.cc
+ [     CXX] X86/python/_m5/param_SimpleMemobj.cc -> .o
+ [SO PyBind] SimpleMemory -> X86/python/_m5/param_SimpleMemory.cc
+ [     CXX] X86/python/_m5/param_SimpleMemory.cc -> .o
+ [SO PyBind] SimpleNetwork -> X86/python/_m5/param_SimpleNetwork.cc
+ [     CXX] X86/python/_m5/param_SimpleNetwork.cc -> .o
+ [SO PyBind] SimpleObject -> X86/python/_m5/param_SimpleObject.cc
+ [     CXX] X86/python/_m5/param_SimpleObject.cc -> .o
+ [SO PyBind] SimpleTrace -> X86/python/_m5/param_SimpleTrace.cc
+ [     CXX] X86/python/_m5/param_SimpleTrace.cc -> .o
+ [SO PyBind] SimpleUart -> X86/python/_m5/param_SimpleUart.cc
+ [     CXX] X86/python/_m5/param_SimpleUart.cc -> .o
+ [SO PyBind] Sinic -> X86/python/_m5/param_Sinic.cc
+ [SO PARAM] Sinic -> X86/params/Sinic.hh
+ [     CXX] X86/python/_m5/param_Sinic.cc -> .o
+ [SO PyBind] SkewedAssociative -> X86/python/_m5/param_SkewedAssociative.cc
+ [     CXX] X86/python/_m5/param_SkewedAssociative.cc -> .o
+ [SO PyBind] SlimAMPMPrefetcher -> X86/python/_m5/param_SlimAMPMPrefetcher.cc
+ [     CXX] X86/python/_m5/param_SlimAMPMPrefetcher.cc -> .o
+ [SO PyBind] SnoopFilter -> X86/python/_m5/param_SnoopFilter.cc
+ [     CXX] X86/python/_m5/param_SnoopFilter.cc -> .o
+ [SO PyBind] SouthBridge -> X86/python/_m5/param_SouthBridge.cc
+ [     CXX] X86/python/_m5/param_SouthBridge.cc -> .o
+ [SO PyBind] SrcClockDomain -> X86/python/_m5/param_SrcClockDomain.cc
+ [     CXX] X86/python/_m5/param_SrcClockDomain.cc -> .o
+ [SO PyBind] StackDistProbe -> X86/python/_m5/param_StackDistProbe.cc
+ [     CXX] X86/python/_m5/param_StackDistProbe.cc -> .o
+ [SO PyBind] StatisticalCorrector -> X86/python/_m5/param_StatisticalCorrector.cc
+ [     CXX] X86/python/_m5/param_StatisticalCorrector.cc -> .o
+ [SO PyBind] StridePrefetcher -> X86/python/_m5/param_StridePrefetcher.cc
+ [     CXX] X86/python/_m5/param_StridePrefetcher.cc -> .o
+ [SO PyBind] StridePrefetcherHashedSetAssociative -> X86/python/_m5/param_StridePrefetcherHashedSetAssociative.cc
+ [     CXX] X86/python/_m5/param_StridePrefetcherHashedSetAssociative.cc -> .o
+ [SO PyBind] SubSystem -> X86/python/_m5/param_SubSystem.cc
+ [     CXX] X86/python/_m5/param_SubSystem.cc -> .o
+ [SO PyBind] Switch -> X86/python/_m5/param_Switch.cc
+ [     CXX] X86/python/_m5/param_Switch.cc -> .o
+ [SO PyBind] System -> X86/python/_m5/param_System.cc
+ [     CXX] X86/python/_m5/param_System.cc -> .o
+ [SO PyBind] SystemC_Kernel -> X86/python/_m5/param_SystemC_Kernel.cc
+ [     CXX] X86/python/_m5/param_SystemC_Kernel.cc -> .o
+ [SO PyBind] SystemC_ScModule -> X86/python/_m5/param_SystemC_ScModule.cc
+ [     CXX] X86/python/_m5/param_SystemC_ScModule.cc -> .o
+ [SO PyBind] SystemC_ScObject -> X86/python/_m5/param_SystemC_ScObject.cc
+ [     CXX] X86/python/_m5/param_SystemC_ScObject.cc -> .o
+ [SO PyBind] TAGE -> X86/python/_m5/param_TAGE.cc
+ [     CXX] X86/python/_m5/param_TAGE.cc -> .o
+ [SO PyBind] TAGEBase -> X86/python/_m5/param_TAGEBase.cc
+ [     CXX] X86/python/_m5/param_TAGEBase.cc -> .o
+ [SO PyBind] TAGE_SC_L -> X86/python/_m5/param_TAGE_SC_L.cc
+ [SO PARAM] TAGE_SC_L -> X86/params/TAGE_SC_L.hh
+ [SO PARAM] TAGE_SC_L_LoopPredictor -> X86/params/TAGE_SC_L_LoopPredictor.hh
+ [SO PARAM] TAGE_SC_L_TAGE -> X86/params/TAGE_SC_L_TAGE.hh
+ [     CXX] X86/python/_m5/param_TAGE_SC_L.cc -> .o
+ [SO PyBind] TAGE_SC_L_64KB -> X86/python/_m5/param_TAGE_SC_L_64KB.cc
+ [SO PARAM] TAGE_SC_L_64KB -> X86/params/TAGE_SC_L_64KB.hh
+ [SO PARAM] TAGE_SC_L_64KB_StatisticalCorrector -> X86/params/TAGE_SC_L_64KB_StatisticalCorrector.hh
+ [SO PARAM] TAGE_SC_L_TAGE_64KB -> X86/params/TAGE_SC_L_TAGE_64KB.hh
+ [     CXX] X86/python/_m5/param_TAGE_SC_L_64KB.cc -> .o
+ [SO PyBind] TAGE_SC_L_64KB_StatisticalCorrector -> X86/python/_m5/param_TAGE_SC_L_64KB_StatisticalCorrector.cc
+ [     CXX] X86/python/_m5/param_TAGE_SC_L_64KB_StatisticalCorrector.cc -> .o
+ [SO PyBind] TAGE_SC_L_8KB -> X86/python/_m5/param_TAGE_SC_L_8KB.cc
+ [SO PARAM] TAGE_SC_L_8KB -> X86/params/TAGE_SC_L_8KB.hh
+ [SO PARAM] TAGE_SC_L_8KB_StatisticalCorrector -> X86/params/TAGE_SC_L_8KB_StatisticalCorrector.hh
+ [SO PARAM] TAGE_SC_L_TAGE_8KB -> X86/params/TAGE_SC_L_TAGE_8KB.hh
+ [     CXX] X86/python/_m5/param_TAGE_SC_L_8KB.cc -> .o
+ [SO PyBind] TAGE_SC_L_8KB_StatisticalCorrector -> X86/python/_m5/param_TAGE_SC_L_8KB_StatisticalCorrector.cc
+ [     CXX] X86/python/_m5/param_TAGE_SC_L_8KB_StatisticalCorrector.cc -> .o
+ [SO PyBind] TAGE_SC_L_LoopPredictor -> X86/python/_m5/param_TAGE_SC_L_LoopPredictor.cc
+ [SO PyBind] TAGE_SC_L_TAGE -> X86/python/_m5/param_TAGE_SC_L_TAGE.cc
+ [     CXX] X86/python/_m5/param_TAGE_SC_L_LoopPredictor.cc -> .o
+ [     CXX] X86/python/_m5/param_TAGE_SC_L_TAGE.cc -> .o
+ [SO PyBind] TAGE_SC_L_TAGE_64KB -> X86/python/_m5/param_TAGE_SC_L_TAGE_64KB.cc
+ [     CXX] X86/python/_m5/param_TAGE_SC_L_TAGE_64KB.cc -> .o
+ [SO PyBind] TAGE_SC_L_TAGE_8KB -> X86/python/_m5/param_TAGE_SC_L_TAGE_8KB.cc
+ [     CXX] X86/python/_m5/param_TAGE_SC_L_TAGE_8KB.cc -> .o
+ [SO PyBind] TaggedPrefetcher -> X86/python/_m5/param_TaggedPrefetcher.cc
+ [     CXX] X86/python/_m5/param_TaggedPrefetcher.cc -> .o
+ [SO PyBind] Terminal -> X86/python/_m5/param_Terminal.cc
+ [     CXX] X86/python/_m5/param_Terminal.cc -> .o
+ [SO PyBind] ThermalCapacitor -> X86/python/_m5/param_ThermalCapacitor.cc
+ [     CXX] X86/python/_m5/param_ThermalCapacitor.cc -> .o
+ [SO PyBind] ThermalDomain -> X86/python/_m5/param_ThermalDomain.cc
+ [     CXX] X86/python/_m5/param_ThermalDomain.cc -> .o
+ [SO PyBind] ThermalModel -> X86/python/_m5/param_ThermalModel.cc
+ [     CXX] X86/python/_m5/param_ThermalModel.cc -> .o
+ [SO PyBind] ThermalNode -> X86/python/_m5/param_ThermalNode.cc
+ [     CXX] X86/python/_m5/param_ThermalNode.cc -> .o
+ [SO PyBind] ThermalReference -> X86/python/_m5/param_ThermalReference.cc
+ [     CXX] X86/python/_m5/param_ThermalReference.cc -> .o
+ [SO PyBind] ThermalResistor -> X86/python/_m5/param_ThermalResistor.cc
+ [     CXX] X86/python/_m5/param_ThermalResistor.cc -> .o
+ [SO PyBind] TickedObject -> X86/python/_m5/param_TickedObject.cc
+ [     CXX] X86/python/_m5/param_TickedObject.cc -> .o
+ [SO PyBind] TimingExpr -> X86/python/_m5/param_TimingExpr.cc
+ [SO PARAM] TimingExpr -> X86/params/TimingExpr.hh
+ [SO PARAM] TimingExprBin -> X86/params/TimingExprBin.hh
+ [SO PARAM] TimingExprIf -> X86/params/TimingExprIf.hh
+ [SO PARAM] TimingExprLet -> X86/params/TimingExprLet.hh
+ [SO PARAM] TimingExprLiteral -> X86/params/TimingExprLiteral.hh
+ [SO PARAM] TimingExprReadIntReg -> X86/params/TimingExprReadIntReg.hh
+ [SO PARAM] TimingExprRef -> X86/params/TimingExprRef.hh
+ [SO PARAM] TimingExprSrcReg -> X86/params/TimingExprSrcReg.hh
+ [SO PARAM] TimingExprUn -> X86/params/TimingExprUn.hh
+ [     CXX] X86/python/_m5/param_TimingExpr.cc -> .o
+ [SO PyBind] TimingExprBin -> X86/python/_m5/param_TimingExprBin.cc
+ [     CXX] X86/python/_m5/param_TimingExprBin.cc -> .o
+ [SO PyBind] TimingExprIf -> X86/python/_m5/param_TimingExprIf.cc
+ [SO PyBind] TimingExprLet -> X86/python/_m5/param_TimingExprLet.cc
+ [     CXX] X86/python/_m5/param_TimingExprIf.cc -> .o
+ [     CXX] X86/python/_m5/param_TimingExprLet.cc -> .o
+ [SO PyBind] TimingExprLiteral -> X86/python/_m5/param_TimingExprLiteral.cc
+ [     CXX] X86/python/_m5/param_TimingExprLiteral.cc -> .o
+ [SO PyBind] TimingExprReadIntReg -> X86/python/_m5/param_TimingExprReadIntReg.cc
+ [     CXX] X86/python/_m5/param_TimingExprReadIntReg.cc -> .o
+ [SO PyBind] TimingExprRef -> X86/python/_m5/param_TimingExprRef.cc
+ [     CXX] X86/python/_m5/param_TimingExprRef.cc -> .o
+ [SO PyBind] TimingExprSrcReg -> X86/python/_m5/param_TimingExprSrcReg.cc
+ [     CXX] X86/python/_m5/param_TimingExprSrcReg.cc -> .o
+ [SO PyBind] TimingExprUn -> X86/python/_m5/param_TimingExprUn.cc
+ [     CXX] X86/python/_m5/param_TimingExprUn.cc -> .o
+ [SO PyBind] TimingSimpleCPU -> X86/python/_m5/param_TimingSimpleCPU.cc
+ [     CXX] X86/python/_m5/param_TimingSimpleCPU.cc -> .o
+ [SO PyBind] TlmToGem5Bridge32 -> X86/python/_m5/param_TlmToGem5Bridge32.cc
+ [     CXX] X86/python/_m5/param_TlmToGem5Bridge32.cc -> .o
+ [SO PyBind] TlmToGem5Bridge64 -> X86/python/_m5/param_TlmToGem5Bridge64.cc
+ [     CXX] X86/python/_m5/param_TlmToGem5Bridge64.cc -> .o
+ [SO PyBind] TlmToGem5BridgeBase -> X86/python/_m5/param_TlmToGem5BridgeBase.cc
+ [     CXX] X86/python/_m5/param_TlmToGem5BridgeBase.cc -> .o
+ [SO PyBind] TournamentBP -> X86/python/_m5/param_TournamentBP.cc
+ [SO PARAM] TournamentBP -> X86/params/TournamentBP.hh
+ [     CXX] X86/python/_m5/param_TournamentBP.cc -> .o
+ [SO PyBind] TreePLRURP -> X86/python/_m5/param_TreePLRURP.cc
+ [SO PARAM] TreePLRURP -> X86/params/TreePLRURP.hh
+ [     CXX] X86/python/_m5/param_TreePLRURP.cc -> .o
+ [SO PyBind] Uart -> X86/python/_m5/param_Uart.cc
+ [     CXX] X86/python/_m5/param_Uart.cc -> .o
+ [SO PyBind] Uart8250 -> X86/python/_m5/param_Uart8250.cc
+ [     CXX] X86/python/_m5/param_Uart8250.cc -> .o
+ [SO PyBind] VirtIO9PBase -> X86/python/_m5/param_VirtIO9PBase.cc
+ [SO PARAM] VirtIO9PBase -> X86/params/VirtIO9PBase.hh
+ [     CXX] X86/python/_m5/param_VirtIO9PBase.cc -> .o
+ [SO PyBind] VirtIO9PDiod -> X86/python/_m5/param_VirtIO9PDiod.cc
+ [SO PARAM] VirtIO9PDiod -> X86/params/VirtIO9PDiod.hh
+ [SO PARAM] VirtIO9PProxy -> X86/params/VirtIO9PProxy.hh
+ [     CXX] X86/python/_m5/param_VirtIO9PDiod.cc -> .o
+ [SO PyBind] VirtIO9PProxy -> X86/python/_m5/param_VirtIO9PProxy.cc
+ [     CXX] X86/python/_m5/param_VirtIO9PProxy.cc -> .o
+ [SO PyBind] VirtIO9PSocket -> X86/python/_m5/param_VirtIO9PSocket.cc
+ [SO PARAM] VirtIO9PSocket -> X86/params/VirtIO9PSocket.hh
+ [     CXX] X86/python/_m5/param_VirtIO9PSocket.cc -> .o
+ [SO PyBind] VirtIOBlock -> X86/python/_m5/param_VirtIOBlock.cc
+ [SO PARAM] VirtIOBlock -> X86/params/VirtIOBlock.hh
+ [     CXX] X86/python/_m5/param_VirtIOBlock.cc -> .o
+ [SO PyBind] VirtIOConsole -> X86/python/_m5/param_VirtIOConsole.cc
+ [SO PARAM] VirtIOConsole -> X86/params/VirtIOConsole.hh
+ [     CXX] X86/python/_m5/param_VirtIOConsole.cc -> .o
+ [SO PyBind] VirtIODeviceBase -> X86/python/_m5/param_VirtIODeviceBase.cc
+ [     CXX] X86/python/_m5/param_VirtIODeviceBase.cc -> .o
+ [SO PyBind] VirtIODummyDevice -> X86/python/_m5/param_VirtIODummyDevice.cc
+ [SO PARAM] VirtIODummyDevice -> X86/params/VirtIODummyDevice.hh
+ [     CXX] X86/python/_m5/param_VirtIODummyDevice.cc -> .o
+ [SO PyBind] VncInput -> X86/python/_m5/param_VncInput.cc
+ [     CXX] X86/python/_m5/param_VncInput.cc -> .o
+ [SO PyBind] VncServer -> X86/python/_m5/param_VncServer.cc
+ [     CXX] X86/python/_m5/param_VncServer.cc -> .o
+ [SO PyBind] VoltageDomain -> X86/python/_m5/param_VoltageDomain.cc
+ [     CXX] X86/python/_m5/param_VoltageDomain.cc -> .o
+ [SO PyBind] WeightedLRURP -> X86/python/_m5/param_WeightedLRURP.cc
+ [SO PARAM] WeightedLRURP -> X86/params/WeightedLRURP.hh
+ [     CXX] X86/python/_m5/param_WeightedLRURP.cc -> .o
+ [SO PyBind] Workload -> X86/python/_m5/param_Workload.cc
+ [     CXX] X86/python/_m5/param_Workload.cc -> .o
+ [SO PyBind] WriteAllocator -> X86/python/_m5/param_WriteAllocator.cc
+ [     CXX] X86/python/_m5/param_WriteAllocator.cc -> .o
+ [SO PyBind] X86ACPIRSDP -> X86/python/_m5/param_X86ACPIRSDP.cc
+ [     CXX] X86/python/_m5/param_X86ACPIRSDP.cc -> .o
+ [SO PyBind] X86ACPIRSDT -> X86/python/_m5/param_X86ACPIRSDT.cc
+ [     CXX] X86/python/_m5/param_X86ACPIRSDT.cc -> .o
+ [SO PyBind] X86ACPISysDescTable -> X86/python/_m5/param_X86ACPISysDescTable.cc
+ [     CXX] X86/python/_m5/param_X86ACPISysDescTable.cc -> .o
+ [SO PyBind] X86ACPIXSDT -> X86/python/_m5/param_X86ACPIXSDT.cc
+ [     CXX] X86/python/_m5/param_X86ACPIXSDT.cc -> .o
+ [SO PyBind] X86E820Entry -> X86/python/_m5/param_X86E820Entry.cc
+ [     CXX] X86/python/_m5/param_X86E820Entry.cc -> .o
+ [SO PyBind] X86E820Table -> X86/python/_m5/param_X86E820Table.cc
+ [     CXX] X86/python/_m5/param_X86E820Table.cc -> .o
+ [SO PyBind] X86FsLinux -> X86/python/_m5/param_X86FsLinux.cc
+ [     CXX] X86/python/_m5/param_X86FsLinux.cc -> .o
+ [SO PyBind] X86FsWorkload -> X86/python/_m5/param_X86FsWorkload.cc
+ [     CXX] X86/python/_m5/param_X86FsWorkload.cc -> .o
+ [SO PyBind] X86ISA -> X86/python/_m5/param_X86ISA.cc
+ [     CXX] X86/python/_m5/param_X86ISA.cc -> .o
+ [SO PyBind] X86IntelMPAddrSpaceMapping -> X86/python/_m5/param_X86IntelMPAddrSpaceMapping.cc
+ [SO PARAM] X86IntelMPAddrSpaceMapping -> X86/params/X86IntelMPAddrSpaceMapping.hh
+ [     CXX] X86/python/_m5/param_X86IntelMPAddrSpaceMapping.cc -> .o
+ [SO PyBind] X86IntelMPBaseConfigEntry -> X86/python/_m5/param_X86IntelMPBaseConfigEntry.cc
+ [SO PyBind] X86IntelMPBus -> X86/python/_m5/param_X86IntelMPBus.cc
+ [SO PARAM] X86IntelMPBus -> X86/params/X86IntelMPBus.hh
+ [     CXX] X86/python/_m5/param_X86IntelMPBaseConfigEntry.cc -> .o
+ [     CXX] X86/python/_m5/param_X86IntelMPBus.cc -> .o
+ [SO PyBind] X86IntelMPBusHierarchy -> X86/python/_m5/param_X86IntelMPBusHierarchy.cc
+ [SO PARAM] X86IntelMPBusHierarchy -> X86/params/X86IntelMPBusHierarchy.hh
+ [     CXX] X86/python/_m5/param_X86IntelMPBusHierarchy.cc -> .o
+ [SO PyBind] X86IntelMPCompatAddrSpaceMod -> X86/python/_m5/param_X86IntelMPCompatAddrSpaceMod.cc
+ [SO PARAM] X86IntelMPCompatAddrSpaceMod -> X86/params/X86IntelMPCompatAddrSpaceMod.hh
+ [     CXX] X86/python/_m5/param_X86IntelMPCompatAddrSpaceMod.cc -> .o
+ [SO PyBind] X86IntelMPConfigTable -> X86/python/_m5/param_X86IntelMPConfigTable.cc
+ [     CXX] X86/python/_m5/param_X86IntelMPConfigTable.cc -> .o
+ [SO PyBind] X86IntelMPExtConfigEntry -> X86/python/_m5/param_X86IntelMPExtConfigEntry.cc
+ [     CXX] X86/python/_m5/param_X86IntelMPExtConfigEntry.cc -> .o
+ [SO PyBind] X86IntelMPFloatingPointer -> X86/python/_m5/param_X86IntelMPFloatingPointer.cc
+ [     CXX] X86/python/_m5/param_X86IntelMPFloatingPointer.cc -> .o
+ [SO PyBind] X86IntelMPIOAPIC -> X86/python/_m5/param_X86IntelMPIOAPIC.cc
+ [SO PARAM] X86IntelMPIOAPIC -> X86/params/X86IntelMPIOAPIC.hh
+ [     CXX] X86/python/_m5/param_X86IntelMPIOAPIC.cc -> .o
+ [SO PyBind] X86IntelMPIOIntAssignment -> X86/python/_m5/param_X86IntelMPIOIntAssignment.cc
+ [SO PARAM] X86IntelMPIOIntAssignment -> X86/params/X86IntelMPIOIntAssignment.hh
+ [     CXX] X86/python/_m5/param_X86IntelMPIOIntAssignment.cc -> .o
+ [SO PyBind] X86IntelMPLocalIntAssignment -> X86/python/_m5/param_X86IntelMPLocalIntAssignment.cc
+ [SO PARAM] X86IntelMPLocalIntAssignment -> X86/params/X86IntelMPLocalIntAssignment.hh
+ [     CXX] X86/python/_m5/param_X86IntelMPLocalIntAssignment.cc -> .o
+ [SO PyBind] X86IntelMPProcessor -> X86/python/_m5/param_X86IntelMPProcessor.cc
+ [SO PARAM] X86IntelMPProcessor -> X86/params/X86IntelMPProcessor.hh
+ [     CXX] X86/python/_m5/param_X86IntelMPProcessor.cc -> .o
+ [SO PyBind] X86KvmCPU -> X86/python/_m5/param_X86KvmCPU.cc
+ [     CXX] X86/python/_m5/param_X86KvmCPU.cc -> .o
+ [SO PyBind] X86LocalApic -> X86/python/_m5/param_X86LocalApic.cc
+ [     CXX] X86/python/_m5/param_X86LocalApic.cc -> .o
+ [SO PyBind] X86NativeTrace -> X86/python/_m5/param_X86NativeTrace.cc
+ [     CXX] X86/python/_m5/param_X86NativeTrace.cc -> .o
+ [SO PyBind] X86PagetableWalker -> X86/python/_m5/param_X86PagetableWalker.cc
+ [     CXX] X86/python/_m5/param_X86PagetableWalker.cc -> .o
+ [SO PyBind] X86SMBiosBiosInformation -> X86/python/_m5/param_X86SMBiosBiosInformation.cc
+ [SO PARAM] X86SMBiosBiosInformation -> X86/params/X86SMBiosBiosInformation.hh
+ [     CXX] X86/python/_m5/param_X86SMBiosBiosInformation.cc -> .o
+ [SO PyBind] X86SMBiosSMBiosStructure -> X86/python/_m5/param_X86SMBiosSMBiosStructure.cc
+ [     CXX] X86/python/_m5/param_X86SMBiosSMBiosStructure.cc -> .o
+ [SO PyBind] X86SMBiosSMBiosTable -> X86/python/_m5/param_X86SMBiosSMBiosTable.cc
+ [     CXX] X86/python/_m5/param_X86SMBiosSMBiosTable.cc -> .o
+ [SO PyBind] X86TLB -> X86/python/_m5/param_X86TLB.cc
+ [     CXX] X86/python/_m5/param_X86TLB.cc -> .o
+ [SO PyBind] ZeroCompressor -> X86/python/_m5/param_ZeroCompressor.cc
+ [     CXX] X86/python/_m5/param_ZeroCompressor.cc -> .o
+ [ TRACING]  -> X86/debug/flags.cc
+ [     CXX] X86/debug/flags.cc -> .o
+ [     CXX] X86/python/marshal.cc -> .o
+ [ DEFINES]  -> X86/python/m5/defines.py
+ [    INFO] COPYING, LICENSE, README -> X86/python/m5/info.py
+ [     CXX] X86/tutorial/part2/print_object.cc -> .o
+ [     CXX] X86/base/atomicio.cc -> .o
+ [     CXX] X86/base/bitfield.cc -> .o
+ [CONFIG H] USE_PNG, 1 -> X86/config/use_png.hh
+ [     CXX] X86/base/imgwriter.cc -> .o
+ [    LINK]  -> X86/tutorial/part2/lib.o.partial
+ [     CXX] X86/base/bmpwriter.cc -> .o
+ [     CXX] X86/base/channel_addr.cc -> .o
+ [     CXX] X86/base/cprintf.cc -> .o
+ [     CXX] X86/base/debug.cc -> .o
+ [      CC] X86/base/fenv.c -> .o
+ [    LINK]  -> X86/marshal
+ [     CXX] X86/base/pngwriter.cc -> .o
+ [     CXX] X86/base/fiber.cc -> .o
+ [EMBED PY] X86/marshal, X86/mem/ExternalMaster.py -> X86/mem/ExternalMaster.py.cc
+ [     CXX] X86/mem/ExternalMaster.py.cc -> .o
+ [EMBED PY] X86/marshal, python/m5/proxy.py -> python/m5/proxy.py.cc
+ [     CXX] X86/python/m5/proxy.py.cc -> .o
+ [EMBED PY] X86/marshal, sim/ClockDomain.py -> sim/ClockDomain.py.cc
+ [EMBED PY] X86/marshal, dev/net/Ethernet.py -> dev/net/Ethernet.py.cc
+ [     CXX] X86/sim/ClockDomain.py.cc -> .o
+ [     CXX] X86/dev/net/Ethernet.py.cc -> .o
+ [EMBED PY] X86/marshal, sim/power/PowerModelState.py -> sim/power/PowerModelState.py.cc
+ [     CXX] X86/sim/power/PowerModelState.py.cc -> .o
+ [EMBED PY] X86/marshal, X86/mem/cache/prefetch/Prefetcher.py -> X86/mem/cache/prefetch/Prefetcher.py.cc
+ [     CXX] X86/mem/cache/prefetch/Prefetcher.py.cc -> .o
+ [EMBED PY] X86/marshal, python/m5/ext/__init__.py -> python/m5/ext/__init__.py.cc
+ [     CXX] X86/python/m5/ext/__init__.py.cc -> .o
+ [EMBED PY] X86/marshal, cpu/simple/AtomicSimpleCPU.py -> cpu/simple/AtomicSimpleCPU.py.cc
+ [     CXX] X86/cpu/simple/AtomicSimpleCPU.py.cc -> .o
+ [EMBED PY] X86/marshal, cpu/FuncUnit.py -> cpu/FuncUnit.py.cc
+ [EMBED PY] X86/marshal, dev/x86/I8237.py -> dev/x86/I8237.py.cc
+ [     CXX] X86/cpu/FuncUnit.py.cc -> .o
+ [     CXX] X86/dev/x86/I8237.py.cc -> .o
+ [EMBED PY] X86/marshal, dev/serial/Terminal.py -> dev/serial/Terminal.py.cc
+ [EMBED PY] X86/marshal, learning_gem5/part2/HelloObject.py -> learning_gem5/part2/HelloObject.py.cc
+ [     CXX] X86/dev/serial/Terminal.py.cc -> .o
+ [     CXX] X86/learning_gem5/part2/HelloObject.py.cc -> .o
+ [EMBED PY] X86/marshal, python/m5/util/fdthelper.py -> python/m5/util/fdthelper.py.cc
+ [     CXX] X86/python/m5/util/fdthelper.py.cc -> .o
+ [EMBED PY] X86/marshal, sim/VoltageDomain.py -> sim/VoltageDomain.py.cc
+ [     CXX] X86/sim/VoltageDomain.py.cc -> .o
+ [EMBED PY] X86/marshal, systemc/core/SystemC.py -> systemc/core/SystemC.py.cc
+ [EMBED PY] X86/marshal, X86/mem/ruby/network/simple/SimpleLink.py -> X86/mem/ruby/network/simple/SimpleLink.py.cc
+ [EMBED PY] X86/marshal, X86/mem/ruby/network/simple/SimpleNetwork.py -> X86/mem/ruby/network/simple/SimpleNetwork.py.cc
+ [     CXX] X86/systemc/core/SystemC.py.cc -> .o
+ [     CXX] X86/mem/ruby/network/simple/SimpleLink.py.cc -> .o
+ [     CXX] X86/mem/ruby/network/simple/SimpleNetwork.py.cc -> .o
+ [EMBED PY] X86/marshal, python/m5/main.py -> python/m5/main.py.cc
+ [EMBED PY] X86/marshal, dev/ps2/PS2.py -> dev/ps2/PS2.py.cc
+ [     CXX] X86/dev/ps2/PS2.py.cc -> .o
+ [     CXX] X86/python/m5/main.py.cc -> .o
+ [EMBED PY] X86/marshal, sim/Process.py -> sim/Process.py.cc
+ [     CXX] X86/sim/Process.py.cc -> .o
+ [EMBED PY] X86/marshal, X86/mem/qos/QoSMemSinkCtrl.py -> X86/mem/qos/QoSMemSinkCtrl.py.cc
+ [EMBED PY] X86/marshal, dev/virtio/VirtIO9P.py -> dev/virtio/VirtIO9P.py.cc
+ [     CXX] X86/mem/qos/QoSMemSinkCtrl.py.cc -> .o
+ [     CXX] X86/dev/virtio/VirtIO9P.py.cc -> .o
+ [EMBED PY] X86/marshal, sim/probe/Probe.py -> sim/probe/Probe.py.cc
+ [     CXX] X86/sim/probe/Probe.py.cc -> .o
+ [EMBED PY] X86/marshal, systemc/python/tlm.py -> systemc/python/tlm.py.cc
+ [     CXX] X86/systemc/python/tlm.py.cc -> .o
+ [EMBED PY] X86/marshal, python/m5/options.py -> python/m5/options.py.cc
+ [     CXX] X86/python/m5/options.py.cc -> .o
+ [EMBED PY] X86/marshal, python/m5/util/sorteddict.py -> python/m5/util/sorteddict.py.cc
+ [     CXX] X86/python/m5/util/sorteddict.py.cc -> .o
+ [EMBED PY] X86/marshal, X86/mem/ruby/structures/DirectoryMemory.py -> X86/mem/ruby/structures/DirectoryMemory.py.cc
+ [EMBED PY] X86/marshal, base/filters/BloomFilters.py -> base/filters/BloomFilters.py.cc
+ [     CXX] X86/mem/ruby/structures/DirectoryMemory.py.cc -> .o
+ [     CXX] X86/base/filters/BloomFilters.py.cc -> .o
+ [EMBED PY] X86/marshal, X86/mem/probes/BaseMemProbe.py -> X86/mem/probes/BaseMemProbe.py.cc
+ [     CXX] X86/mem/probes/BaseMemProbe.py.cc -> .o
+ [EMBED PY] X86/marshal, cpu/testers/memtest/MemTest.py -> cpu/testers/memtest/MemTest.py.cc
+ [     CXX] X86/cpu/testers/memtest/MemTest.py.cc -> .o
+ [EMBED PY] X86/marshal, cpu/DummyChecker.py -> cpu/DummyChecker.py.cc
+ [EMBED PY] X86/marshal, python/m5/debug.py -> python/m5/debug.py.cc
+ [     CXX] X86/cpu/DummyChecker.py.cc -> .o
+ [     CXX] X86/python/m5/debug.py.cc -> .o
+ [EMBED PY] X86/marshal, dev/serial/Uart.py -> dev/serial/Uart.py.cc
+ [EMBED PY] X86/marshal, arch/generic/BaseISA.py -> arch/generic/BaseISA.py.cc
+ [     CXX] X86/dev/serial/Uart.py.cc -> .o
+ [     CXX] X86/arch/generic/BaseISA.py.cc -> .o
+ [EMBED PY] X86/marshal, X86/mem/ruby/network/MessageBuffer.py -> X86/mem/ruby/network/MessageBuffer.py.cc
+ [     CXX] X86/mem/ruby/network/MessageBuffer.py.cc -> .o
+ [EMBED PY] X86/marshal, sim/power/ThermalModel.py -> sim/power/ThermalModel.py.cc
+ [EMBED PY] X86/marshal, X86/mem/ruby/system/RubySystem.py -> X86/mem/ruby/system/RubySystem.py.cc
+ [     CXX] X86/sim/power/ThermalModel.py.cc -> .o
+ [     CXX] X86/mem/ruby/system/RubySystem.py.cc -> .o
+ [EMBED PY] X86/marshal, X86/mem/ruby/system/Sequencer.py -> X86/mem/ruby/system/Sequencer.py.cc
+ [     CXX] X86/mem/ruby/system/Sequencer.py.cc -> .o
+ [EMBED PY] X86/marshal, python/m5/util/smartdict.py -> python/m5/util/smartdict.py.cc
+ [     CXX] X86/python/m5/util/smartdict.py.cc -> .o
+ [EMBED PY] X86/marshal, sim/DVFSHandler.py -> sim/DVFSHandler.py.cc
+ [EMBED PY] X86/marshal, X86/mem/MemObject.py -> X86/mem/MemObject.py.cc
+ [     CXX] X86/sim/DVFSHandler.py.cc -> .o
+ [     CXX] X86/mem/MemObject.py.cc -> .o
+ [EMBED PY] X86/marshal, python/m5/util/jobfile.py -> python/m5/util/jobfile.py.cc
+ [EMBED PY] X86/marshal, arch/x86/bios/SMBios.py -> arch/x86/bios/SMBios.py.cc
+ [     CXX] X86/python/m5/util/jobfile.py.cc -> .o
+ [     CXX] X86/arch/x86/bios/SMBios.py.cc -> .o
+ [EMBED PY] X86/marshal, sim/PowerState.py -> sim/PowerState.py.cc
+ [     CXX] X86/sim/PowerState.py.cc -> .o
+ [EMBED PY] X86/marshal, arch/generic/BaseTLB.py -> arch/generic/BaseTLB.py.cc
+ [EMBED PY] X86/marshal, python/m5/ticks.py -> python/m5/ticks.py.cc
+ [     CXX] X86/python/m5/ticks.py.cc -> .o
+ [     CXX] X86/arch/generic/BaseTLB.py.cc -> .o
+ [EMBED PY] X86/marshal, dev/Platform.py -> dev/Platform.py.cc
+ [EMBED PY] X86/marshal, python/m5/util/code_formatter.py -> python/m5/util/code_formatter.py.cc
+ [     CXX] X86/dev/Platform.py.cc -> .o
+ [     CXX] X86/python/m5/util/code_formatter.py.cc -> .o
+ [EMBED PY] X86/marshal, X86/mem/ruby/protocol/L1Cache_Controller.py -> X86/mem/ruby/protocol/L1Cache_Controller.py.cc
+ [     CXX] X86/mem/ruby/protocol/L1Cache_Controller.py.cc -> .o
+ [EMBED PY] X86/marshal, learning_gem5/part2/SimpleCache.py -> learning_gem5/part2/SimpleCache.py.cc
+ [     CXX] X86/learning_gem5/part2/SimpleCache.py.cc -> .o
+ [EMBED PY] X86/marshal, python/importer.py -> python/importer.py.cc
+ [     CXX] X86/python/importer.py.cc -> .o
+ [EMBED PY] X86/marshal, learning_gem5/part2/SimpleObject.py -> learning_gem5/part2/SimpleObject.py.cc
+ [     CXX] X86/learning_gem5/part2/SimpleObject.py.cc -> .o
+ [EMBED PY] X86/marshal, arch/x86/bios/ACPI.py -> arch/x86/bios/ACPI.py.cc
+ [     CXX] X86/arch/x86/bios/ACPI.py.cc -> .o
+ [EMBED PY] X86/marshal, dev/pci/PciDevice.py -> dev/pci/PciDevice.py.cc
+ [EMBED PY] X86/marshal, X86/mem/SerialLink.py -> X86/mem/SerialLink.py.cc
+ [     CXX] X86/dev/pci/PciDevice.py.cc -> .o
+ [     CXX] X86/mem/SerialLink.py.cc -> .o
+ [EMBED PY] X86/marshal, X86/mem/ruby/protocol/Directory_Controller.py -> X86/mem/ruby/protocol/Directory_Controller.py.cc
+ [     CXX] X86/mem/ruby/protocol/Directory_Controller.py.cc -> .o
+ [EMBED PY] X86/marshal, python/m5/util/dot_writer_ruby.py -> python/m5/util/dot_writer_ruby.py.cc
+ [     CXX] X86/python/m5/util/dot_writer_ruby.py.cc -> .o
+ [EMBED PY] X86/marshal, X86/mem/XBar.py -> X86/mem/XBar.py.cc
+ [EMBED PY] X86/marshal, X86/mem/AbstractMemory.py -> X86/mem/AbstractMemory.py.cc
+ [     CXX] X86/mem/XBar.py.cc -> .o
+ [     CXX] X86/mem/AbstractMemory.py.cc -> .o
+ [EMBED PY] X86/marshal, X86/mem/MemInterface.py -> X86/mem/MemInterface.py.cc
+ [EMBED PY] X86/marshal, X86/mem/qos/QoSTurnaround.py -> X86/mem/qos/QoSTurnaround.py.cc
+ [     CXX] X86/mem/MemInterface.py.cc -> .o
+ [EMBED PY] X86/marshal, systemc/Tlm.py -> systemc/Tlm.py.cc
+ [     CXX] X86/mem/qos/QoSTurnaround.py.cc -> .o
+ [     CXX] X86/systemc/Tlm.py.cc -> .o
+ [EMBED PY] X86/marshal, python/m5/__init__.py -> python/m5/__init__.py.cc
+ [EMBED PY] X86/marshal, X86/mem/probes/MemFootprintProbe.py -> X86/mem/probes/MemFootprintProbe.py.cc
+ [     CXX] X86/python/m5/__init__.py.cc -> .o
+ [     CXX] X86/mem/probes/MemFootprintProbe.py.cc -> .o
+ [EMBED PY] X86/marshal, cpu/simple/probes/SimPoint.py -> cpu/simple/probes/SimPoint.py.cc
+ [     CXX] X86/cpu/simple/probes/SimPoint.py.cc -> .o
+ [EMBED PY] X86/marshal, arch/x86/X86ISA.py -> arch/x86/X86ISA.py.cc
+ [     CXX] X86/arch/x86/X86ISA.py.cc -> .o
+ [EMBED PY] X86/marshal, dev/pci/PciHost.py -> dev/pci/PciHost.py.cc
+ [EMBED PY] X86/marshal, arch/generic/BaseInterrupts.py -> arch/generic/BaseInterrupts.py.cc
+ [EMBED PY] X86/marshal, python/m5/SimObject.py -> python/m5/SimObject.py.cc
+ [     CXX] X86/dev/pci/PciHost.py.cc -> .o
+ [     CXX] X86/arch/generic/BaseInterrupts.py.cc -> .o
+ [     CXX] X86/python/m5/SimObject.py.cc -> .o
+ [EMBED PY] X86/marshal, sim/TickedObject.py -> sim/TickedObject.py.cc
+ [     CXX] X86/sim/TickedObject.py.cc -> .o
+ [EMBED PY] X86/marshal, learning_gem5/part2/SimpleMemobj.py -> learning_gem5/part2/SimpleMemobj.py.cc
+ [     CXX] X86/learning_gem5/part2/SimpleMemobj.py.cc -> .o
+ [EMBED PY] X86/marshal, X86/mem/CommMonitor.py -> X86/mem/CommMonitor.py.cc
+ [EMBED PY] X86/marshal, python/m5/objects/__init__.py -> python/m5/objects/__init__.py.cc
+ [     CXX] X86/mem/CommMonitor.py.cc -> .o
+ [     CXX] X86/python/m5/objects/__init__.py.cc -> .o
+ [EMBED PY] X86/marshal, cpu/testers/traffic_gen/BaseTrafficGen.py -> cpu/testers/traffic_gen/BaseTrafficGen.py.cc
+ [     CXX] X86/cpu/testers/traffic_gen/BaseTrafficGen.py.cc -> .o
+ [EMBED PY] X86/marshal, python/m5/util/convert.py -> python/m5/util/convert.py.cc
+ [     CXX] X86/python/m5/util/convert.py.cc -> .o
+ [EMBED PY] X86/marshal, X86/mem/ruby/network/garnet/GarnetNetwork.py -> X86/mem/ruby/network/garnet/GarnetNetwork.py.cc
+ [EMBED PY] X86/marshal, cpu/o3/FUPool.py -> cpu/o3/FUPool.py.cc
+ [     CXX] X86/mem/ruby/network/garnet/GarnetNetwork.py.cc -> .o
+ [EMBED PY] X86/marshal, dev/virtio/VirtIO.py -> dev/virtio/VirtIO.py.cc
+ [     CXX] X86/cpu/o3/FUPool.py.cc -> .o
+ [     CXX] X86/dev/virtio/VirtIO.py.cc -> .o
+ [EMBED PY] X86/marshal, python/m5/ext/pyfdt/pyfdt.py -> python/m5/ext/pyfdt/pyfdt.py.cc
+ [EMBED PY] X86/marshal, dev/x86/PcSpeaker.py -> dev/x86/PcSpeaker.py.cc
+ [     CXX] X86/python/m5/ext/pyfdt/pyfdt.py.cc -> .o
+ [     CXX] X86/dev/x86/PcSpeaker.py.cc -> .o
+ [EMBED PY] X86/marshal, dev/x86/SouthBridge.py -> dev/x86/SouthBridge.py.cc
+ [     CXX] X86/dev/x86/SouthBridge.py.cc -> .o
+ [EMBED PY] X86/marshal, python/m5/util/pybind.py -> python/m5/util/pybind.py.cc
+ [     CXX] X86/python/m5/util/pybind.py.cc -> .o
+ [EMBED PY] X86/marshal, cpu/kvm/BaseKvmCPU.py -> cpu/kvm/BaseKvmCPU.py.cc
+ [     CXX] X86/cpu/kvm/BaseKvmCPU.py.cc -> .o
+ [EMBED PY] X86/marshal, dev/virtio/VirtIOConsole.py -> dev/virtio/VirtIOConsole.py.cc
+ [     CXX] X86/dev/virtio/VirtIOConsole.py.cc -> .o
+ [EMBED PY] X86/marshal, X86/mem/ruby/network/BasicLink.py -> X86/mem/ruby/network/BasicLink.py.cc
+ [EMBED PY] X86/marshal, python/m5/util/__init__.py -> python/m5/util/__init__.py.cc
+ [     CXX] X86/mem/ruby/network/BasicLink.py.cc -> .o
+ [     CXX] X86/python/m5/util/__init__.py.cc -> .o
+ [EMBED PY] X86/marshal, systemc/tlm_bridge/TlmBridge.py -> systemc/tlm_bridge/TlmBridge.py.cc
+ [     CXX] X86/systemc/tlm_bridge/TlmBridge.py.cc -> .o
+ [EMBED PY] X86/marshal, X86/mem/NVMInterface.py -> X86/mem/NVMInterface.py.cc
+ [     CXX] X86/mem/NVMInterface.py.cc -> .o
+ [EMBED PY] X86/marshal, sim/power/MathExprPowerModel.py -> sim/power/MathExprPowerModel.py.cc
+ [     CXX] X86/sim/power/MathExprPowerModel.py.cc -> .o
+ [EMBED PY] X86/marshal, X86/mem/SimpleMemory.py -> X86/mem/SimpleMemory.py.cc
+ [EMBED PY] X86/marshal, python/m5/util/terminal_formatter.py -> python/m5/util/terminal_formatter.py.cc
+ [     CXX] X86/mem/SimpleMemory.py.cc -> .o
+ [     CXX] X86/python/m5/util/terminal_formatter.py.cc -> .o
+ [EMBED PY] X86/marshal, cpu/CheckerCPU.py -> cpu/CheckerCPU.py.cc
+ [     CXX] X86/cpu/CheckerCPU.py.cc -> .o
+ [EMBED PY] X86/marshal, cpu/pred/BranchPredictor.py -> cpu/pred/BranchPredictor.py.cc
+ [     CXX] X86/cpu/pred/BranchPredictor.py.cc -> .o
+ [EMBED PY] X86/marshal, systemc/python/systemc.py -> systemc/python/systemc.py.cc
+ [     CXX] X86/systemc/python/systemc.py.cc -> .o
+ [EMBED PY] X86/marshal, cpu/simple/TimingSimpleCPU.py -> cpu/simple/TimingSimpleCPU.py.cc
+ [     CXX] X86/cpu/simple/TimingSimpleCPU.py.cc -> .o
+ [EMBED PY] X86/marshal, python/m5/event.py -> python/m5/event.py.cc
+ [EMBED PY] X86/marshal, X86/mem/ruby/protocol/DMA_Controller.py -> X86/mem/ruby/protocol/DMA_Controller.py.cc
+ [     CXX] X86/mem/ruby/protocol/DMA_Controller.py.cc -> .o
+ [     CXX] X86/python/m5/event.py.cc -> .o
+ [EMBED PY] X86/marshal, X86/mem/Bridge.py -> X86/mem/Bridge.py.cc
+ [     CXX] X86/mem/Bridge.py.cc -> .o
+ [EMBED PY] X86/marshal, python/m5/internal/params.py -> python/m5/internal/params.py.cc
+ [     CXX] X86/python/m5/internal/params.py.cc -> .o
+ [EMBED PY] X86/marshal, X86/mem/ruby/structures/WireBuffer.py -> X86/mem/ruby/structures/WireBuffer.py.cc
+ [     CXX] X86/mem/ruby/structures/WireBuffer.py.cc -> .o
+ [EMBED PY] X86/marshal, python/m5/defines.py -> python/m5/defines.py.cc
+ [     CXX] X86/python/m5/defines.py.cc -> .o
+ [EMBED PY] X86/marshal, cpu/BaseCPU.py -> cpu/BaseCPU.py.cc
+ [     CXX] X86/cpu/BaseCPU.py.cc -> .o
+ [EMBED PY] X86/marshal, cpu/testers/rubytest/RubyTester.py -> cpu/testers/rubytest/RubyTester.py.cc
+ [     CXX] X86/cpu/testers/rubytest/RubyTester.py.cc -> .o
+ [EMBED PY] X86/marshal, cpu/simple/NonCachingSimpleCPU.py -> cpu/simple/NonCachingSimpleCPU.py.cc
+ [     CXX] X86/cpu/simple/NonCachingSimpleCPU.py.cc -> .o
+ [EMBED PY] X86/marshal, python/m5/core.py -> python/m5/core.py.cc
+ [EMBED PY] X86/marshal, sim/Root.py -> sim/Root.py.cc
+ [     CXX] X86/sim/Root.py.cc -> .o
+ [     CXX] X86/python/m5/core.py.cc -> .o
+ [EMBED PY] X86/marshal, dev/x86/Pc.py -> dev/x86/Pc.py.cc
+ [     CXX] X86/dev/x86/Pc.py.cc -> .o
+ [EMBED PY] X86/marshal, sim/power/ThermalDomain.py -> sim/power/ThermalDomain.py.cc
+ [     CXX] X86/sim/power/ThermalDomain.py.cc -> .o
+ [EMBED PY] X86/marshal, cpu/kvm/X86KvmCPU.py -> cpu/kvm/X86KvmCPU.py.cc
+ [     CXX] X86/cpu/kvm/X86KvmCPU.py.cc -> .o
+ [EMBED PY] X86/marshal, X86/mem/cache/Cache.py -> X86/mem/cache/Cache.py.cc
+ [     CXX] X86/mem/cache/Cache.py.cc -> .o
+ [EMBED PY] X86/marshal, X86/mem/MemCtrl.py -> X86/mem/MemCtrl.py.cc
+ [EMBED PY] X86/marshal, dev/storage/SimpleDisk.py -> dev/storage/SimpleDisk.py.cc
+ [     CXX] X86/mem/MemCtrl.py.cc -> .o
+ [     CXX] X86/dev/storage/SimpleDisk.py.cc -> .o
+ [EMBED PY] X86/marshal, sim/SubSystem.py -> sim/SubSystem.py.cc
+ [     CXX] X86/sim/SubSystem.py.cc -> .o
+ [EMBED PY] X86/marshal, X86/mem/ExternalSlave.py -> X86/mem/ExternalSlave.py.cc
+ [EMBED PY] X86/marshal, dev/x86/I8042.py -> dev/x86/I8042.py.cc
+ [EMBED PY] X86/marshal, sim/RedirectPath.py -> sim/RedirectPath.py.cc
+ [     CXX] X86/mem/ExternalSlave.py.cc -> .o
+ [     CXX] X86/dev/x86/I8042.py.cc -> .o
+ [     CXX] X86/sim/RedirectPath.py.cc -> .o
+ [EMBED PY] X86/marshal, arch/x86/X86FsWorkload.py -> arch/x86/X86FsWorkload.py.cc
+ [     CXX] X86/arch/x86/X86FsWorkload.py.cc -> .o
+ [EMBED PY] X86/marshal, X86/mem/qos/QoSMemSinkInterface.py -> X86/mem/qos/QoSMemSinkInterface.py.cc
+ [     CXX] X86/mem/qos/QoSMemSinkInterface.py.cc -> .o
+ [EMBED PY] X86/marshal, python/m5/simulate.py -> python/m5/simulate.py.cc
+ [EMBED PY] X86/marshal, dev/x86/Cmos.py -> dev/x86/Cmos.py.cc
+ [     CXX] X86/python/m5/simulate.py.cc -> .o
+ [     CXX] X86/dev/x86/Cmos.py.cc -> .o
+ [EMBED PY] X86/marshal, cpu/kvm/KvmVM.py -> cpu/kvm/KvmVM.py.cc
+ [     CXX] X86/cpu/kvm/KvmVM.py.cc -> .o
+ [EMBED PY] X86/marshal, X86/mem/ruby/slicc_interface/Controller.py -> X86/mem/ruby/slicc_interface/Controller.py.cc
+ [     CXX] X86/mem/ruby/slicc_interface/Controller.py.cc -> .o
+ [EMBED PY] X86/marshal, python/m5/util/terminal.py -> python/m5/util/terminal.py.cc
+ [EMBED PY] X86/marshal, cpu/o3/O3Checker.py -> cpu/o3/O3Checker.py.cc
+ [     CXX] X86/cpu/o3/O3Checker.py.cc -> .o
+ [     CXX] X86/python/m5/util/terminal.py.cc -> .o
+ [EMBED PY] X86/marshal, python/m5/params.py -> python/m5/params.py.cc
+ [     CXX] X86/python/m5/params.py.cc -> .o
+ [EMBED PY] X86/marshal, cpu/IntrControl.py -> cpu/IntrControl.py.cc
+ [     CXX] X86/cpu/IntrControl.py.cc -> .o
+ [EMBED PY] X86/marshal, base/Graphics.py -> base/Graphics.py.cc
+ [     CXX] X86/base/Graphics.py.cc -> .o
+ [EMBED PY] X86/marshal, X86/mem/HMCController.py -> X86/mem/HMCController.py.cc
+ [     CXX] X86/mem/HMCController.py.cc -> .o
+ [EMBED PY] X86/marshal, python/m5/util/dot_writer.py -> python/m5/util/dot_writer.py.cc
+ [     CXX] X86/python/m5/util/dot_writer.py.cc -> .o
+ [EMBED PY] X86/marshal, X86/mem/MemChecker.py -> X86/mem/MemChecker.py.cc
+ [     CXX] X86/mem/MemChecker.py.cc -> .o
+ [EMBED PY] X86/marshal, dev/IntPin.py -> dev/IntPin.py.cc
+ [     CXX] X86/dev/IntPin.py.cc -> .o
+ [EMBED PY] X86/marshal, X86/mem/DRAMInterface.py -> X86/mem/DRAMInterface.py.cc
+ [EMBED PY] X86/marshal, X86/mem/qos/QoSPolicy.py -> X86/mem/qos/QoSPolicy.py.cc
+ [     CXX] X86/mem/DRAMInterface.py.cc -> .o
+ [     CXX] X86/mem/qos/QoSPolicy.py.cc -> .o
+ [EMBED PY] X86/marshal, sim/power/PowerModel.py -> sim/power/PowerModel.py.cc
+ [EMBED PY] X86/marshal, arch/x86/bios/IntelMP.py -> arch/x86/bios/IntelMP.py.cc
+ [EMBED PY] X86/marshal, X86/mem/cache/replacement_policies/ReplacementPolicies.py -> X86/mem/cache/replacement_policies/ReplacementPolicies.py.cc
+ [     CXX] X86/sim/power/PowerModel.py.cc -> .o
+ [     CXX] X86/arch/x86/bios/IntelMP.py.cc -> .o
+ [     CXX] X86/mem/cache/replacement_policies/ReplacementPolicies.py.cc -> .o
+ [EMBED PY] X86/marshal, X86/mem/ruby/network/BasicRouter.py -> X86/mem/ruby/network/BasicRouter.py.cc
+ [     CXX] X86/mem/ruby/network/BasicRouter.py.cc -> .o
+ [EMBED PY] X86/marshal, cpu/CPUTracers.py -> cpu/CPUTracers.py.cc
+ [     CXX] X86/cpu/CPUTracers.py.cc -> .o
+ [EMBED PY] X86/marshal, cpu/TimingExpr.py -> cpu/TimingExpr.py.cc
+ [     CXX] X86/cpu/TimingExpr.py.cc -> .o
+ [EMBED PY] X86/marshal, cpu/testers/directedtest/RubyDirectedTester.py -> cpu/testers/directedtest/RubyDirectedTester.py.cc
+ [     CXX] X86/cpu/testers/directedtest/RubyDirectedTester.py.cc -> .o
+ [EMBED PY] X86/marshal, dev/storage/Ide.py -> dev/storage/Ide.py.cc
+ [     CXX] X86/dev/storage/Ide.py.cc -> .o
+ [EMBED PY] X86/marshal, sim/System.py -> sim/System.py.cc
+ [     CXX] X86/sim/System.py.cc -> .o
+ [EMBED PY] X86/marshal, dev/Device.py -> dev/Device.py.cc
+ [     CXX] X86/dev/Device.py.cc -> .o
+ [EMBED PY] X86/marshal, X86/mem/cache/compressors/Compressors.py -> X86/mem/cache/compressors/Compressors.py.cc
+ [     CXX] X86/mem/cache/compressors/Compressors.py.cc -> .o
+ [EMBED PY] X86/marshal, X86/mem/ruby/network/Network.py -> X86/mem/ruby/network/Network.py.cc
+ [     CXX] X86/mem/ruby/network/Network.py.cc -> .o
+ [EMBED PY] X86/marshal, arch/x86/X86NativeTrace.py -> arch/x86/X86NativeTrace.py.cc
+ [     CXX] X86/arch/x86/X86NativeTrace.py.cc -> .o
+ [EMBED PY] X86/marshal, arch/x86/bios/E820.py -> arch/x86/bios/E820.py.cc
+ [     CXX] X86/arch/x86/bios/E820.py.cc -> .o
+ [EMBED PY] X86/marshal, arch/x86/X86TLB.py -> arch/x86/X86TLB.py.cc
+ [     CXX] X86/arch/x86/X86TLB.py.cc -> .o
+ [EMBED PY] X86/marshal, X86/mem/ruby/structures/RubyPrefetcher.py -> X86/mem/ruby/structures/RubyPrefetcher.py.cc
+ [     CXX] X86/mem/ruby/structures/RubyPrefetcher.py.cc -> .o
+ [EMBED PY] X86/marshal, python/m5/util/multidict.py -> python/m5/util/multidict.py.cc
+ [EMBED PY] X86/marshal, sim/PowerDomain.py -> sim/PowerDomain.py.cc
+ [     CXX] X86/python/m5/util/multidict.py.cc -> .o
+ [     CXX] X86/sim/PowerDomain.py.cc -> .o
+ [EMBED PY] X86/marshal, python/m5/info.py -> python/m5/info.py.cc
+ [EMBED PY] X86/marshal, arch/generic/ISACommon.py -> arch/generic/ISACommon.py.cc
+ [     CXX] X86/python/m5/info.py.cc -> .o
+ [     CXX] X86/arch/generic/ISACommon.py.cc -> .o
+ [EMBED PY] X86/marshal, python/m5/trace.py -> python/m5/trace.py.cc
+ [     CXX] X86/python/m5/trace.py.cc -> .o
+ [EMBED PY] X86/marshal, cpu/o3/FuncUnitConfig.py -> cpu/o3/FuncUnitConfig.py.cc
+ [     CXX] X86/cpu/o3/FuncUnitConfig.py.cc -> .o
+ [EMBED PY] X86/marshal, arch/x86/X86LocalApic.py -> arch/x86/X86LocalApic.py.cc
+ [     CXX] X86/arch/x86/X86LocalApic.py.cc -> .o
+ [EMBED PY] X86/marshal, X86/mem/probes/StackDistProbe.py -> X86/mem/probes/StackDistProbe.py.cc
+ [     CXX] X86/mem/probes/StackDistProbe.py.cc -> .o
+ [EMBED PY] X86/marshal, dev/BadDevice.py -> dev/BadDevice.py.cc
+ [     CXX] X86/dev/BadDevice.py.cc -> .o
+ [EMBED PY] X86/marshal, dev/x86/I8254.py -> dev/x86/I8254.py.cc
+ [EMBED PY] X86/marshal, dev/serial/Serial.py -> dev/serial/Serial.py.cc
+ [     CXX] X86/dev/x86/I8254.py.cc -> .o
+ [EMBED PY] X86/marshal, X86/mem/MemDelay.py -> X86/mem/MemDelay.py.cc
+ [     CXX] X86/dev/serial/Serial.py.cc -> .o
+ [     CXX] X86/mem/MemDelay.py.cc -> .o
+ [EMBED PY] X86/marshal, dev/x86/I82094AA.py -> dev/x86/I82094AA.py.cc
+ [EMBED PY] X86/marshal, X86/mem/cache/tags/Tags.py -> X86/mem/cache/tags/Tags.py.cc
+ [     CXX] X86/dev/x86/I82094AA.py.cc -> .o
+ [     CXX] X86/mem/cache/tags/Tags.py.cc -> .o
+ [EMBED PY] X86/marshal, X86/mem/ruby/network/garnet/GarnetLink.py -> X86/mem/ruby/network/garnet/GarnetLink.py.cc
+ [     CXX] X86/mem/ruby/network/garnet/GarnetLink.py.cc -> .o
+ [EMBED PY] X86/marshal, X86/mem/cache/tags/indexing_policies/IndexingPolicies.py -> X86/mem/cache/tags/indexing_policies/IndexingPolicies.py.cc
+ [     CXX] X86/mem/cache/tags/indexing_policies/IndexingPolicies.py.cc -> .o
+ [EMBED PY] X86/marshal, sim/InstTracer.py -> sim/InstTracer.py.cc
+ [     CXX] X86/sim/InstTracer.py.cc -> .o
+ [EMBED PY] X86/marshal, cpu/simple/BaseSimpleCPU.py -> cpu/simple/BaseSimpleCPU.py.cc
+ [EMBED PY] X86/marshal, dev/pci/CopyEngine.py -> dev/pci/CopyEngine.py.cc
+ [     CXX] X86/cpu/simple/BaseSimpleCPU.py.cc -> .o
+ [     CXX] X86/dev/pci/CopyEngine.py.cc -> .o
+ [EMBED PY] X86/marshal, dev/x86/I8259.py -> dev/x86/I8259.py.cc
+ [     CXX] X86/dev/x86/I8259.py.cc -> .o
+ [EMBED PY] X86/marshal, cpu/o3/probe/SimpleTrace.py -> cpu/o3/probe/SimpleTrace.py.cc
+ [EMBED PY] X86/marshal, python/m5/stats/__init__.py -> python/m5/stats/__init__.py.cc
+ [     CXX] X86/python/m5/stats/__init__.py.cc -> .o
+ [     CXX] X86/cpu/o3/probe/SimpleTrace.py.cc -> .o
+ [EMBED PY] X86/marshal, sim/ClockedObject.py -> sim/ClockedObject.py.cc
+ [     CXX] X86/sim/ClockedObject.py.cc -> .o
+ [EMBED PY] X86/marshal, python/m5/ext/pyfdt/__init__.py -> python/m5/ext/pyfdt/__init__.py.cc
+ [     CXX] X86/python/m5/ext/pyfdt/__init__.py.cc -> .o
+ [EMBED PY] X86/marshal, cpu/testers/garnet_synthetic_traffic/GarnetSyntheticTraffic.py -> cpu/testers/garnet_synthetic_traffic/GarnetSyntheticTraffic.py.cc
+ [     CXX] X86/cpu/testers/garnet_synthetic_traffic/GarnetSyntheticTraffic.py.cc -> .o
+ [EMBED PY] X86/marshal, cpu/testers/traffic_gen/PyTrafficGen.py -> cpu/testers/traffic_gen/PyTrafficGen.py.cc
+ [     CXX] X86/cpu/testers/traffic_gen/PyTrafficGen.py.cc -> .o
+ [EMBED PY] X86/marshal, cpu/o3/O3CPU.py -> cpu/o3/O3CPU.py.cc
+ [     CXX] X86/cpu/o3/O3CPU.py.cc -> .o
+ [EMBED PY] X86/marshal, cpu/StaticInstFlags.py -> cpu/StaticInstFlags.py.cc
+ [EMBED PY] X86/marshal, dev/virtio/VirtIOBlock.py -> dev/virtio/VirtIOBlock.py.cc
+ [     CXX] X86/cpu/StaticInstFlags.py.cc -> .o
+ [     CXX] X86/dev/virtio/VirtIOBlock.py.cc -> .o
+ [EMBED PY] X86/marshal, python/m5/util/attrdict.py -> python/m5/util/attrdict.py.cc
+ [     CXX] X86/python/m5/util/attrdict.py.cc -> .o
+ [EMBED PY] X86/marshal, python/m5/config.py -> python/m5/config.py.cc
+ [EMBED PY] X86/marshal, tutorial/part2/PrintObject.py -> tutorial/part2/PrintObject.py.cc
+ [     CXX] X86/python/m5/config.py.cc -> .o
+ [     CXX] X86/tutorial/part2/PrintObject.py.cc -> .o
+ [EMBED PY] X86/marshal, base/vnc/Vnc.py -> base/vnc/Vnc.py.cc
+ [     CXX] X86/base/vnc/Vnc.py.cc -> .o
+ [EMBED PY] X86/marshal, sim/Workload.py -> sim/Workload.py.cc
+ [     CXX] X86/sim/Workload.py.cc -> .o
+ [EMBED PY] X86/marshal, X86/mem/ruby/network/fault_model/FaultModel.py -> X86/mem/ruby/network/fault_model/FaultModel.py.cc
+ [     CXX] X86/mem/ruby/network/fault_model/FaultModel.py.cc -> .o
+ [EMBED PY] X86/marshal, python/m5/util/grammar.py -> python/m5/util/grammar.py.cc
+ [EMBED PY] X86/marshal, X86/mem/AddrMapper.py -> X86/mem/AddrMapper.py.cc
+ [EMBED PY] X86/marshal, dev/storage/DiskImage.py -> dev/storage/DiskImage.py.cc
+ [     CXX] X86/mem/AddrMapper.py.cc -> .o
+ [     CXX] X86/python/m5/util/grammar.py.cc -> .o
+ [     CXX] X86/dev/storage/DiskImage.py.cc -> .o
+ [EMBED PY] X86/marshal, python/m5/internal/__init__.py -> python/m5/internal/__init__.py.cc
+ [     CXX] X86/python/m5/internal/__init__.py.cc -> .o
+ [EMBED PY] X86/marshal, dev/i2c/I2C.py -> dev/i2c/I2C.py.cc
+ [EMBED PY] X86/marshal, X86/mem/ruby/structures/RubyCache.py -> X86/mem/ruby/structures/RubyCache.py.cc
+ [EMBED PY] X86/marshal, X86/mem/qos/QoSMemCtrl.py -> X86/mem/qos/QoSMemCtrl.py.cc
+ [     CXX] X86/dev/i2c/I2C.py.cc -> .o
+ [     CXX] X86/mem/ruby/structures/RubyCache.py.cc -> .o
+ [     CXX] X86/mem/qos/QoSMemCtrl.py.cc -> .o
+ [     CXX] X86/base/framebuffer.cc -> .o
+ [     CXX] X86/base/hostinfo.cc -> .o
+ [     CXX] X86/base/inet.cc -> .o
+ [     CXX] X86/base/inifile.cc -> .o
+ [     CXX] X86/base/logging.cc -> .o
+ [     CXX] X86/base/match.cc -> .o
+ [     CXX] X86/base/output.cc -> .o
+ [     CXX] X86/base/pixel.cc -> .o
+ [     CXX] X86/base/pollevent.cc -> .o
+ [    LINK]  -> X86/kern/lib.o.partial
+ [     CXX] X86/base/random.cc -> .o
+ [ TRACING]  -> X86/debug/GDBAll.hh
+ [     CXX] X86/base/remote_gdb.cc -> .o
+ [     CXX] X86/base/socket.cc -> .o
+ [     CXX] X86/base/statistics.cc -> .o
+ [     CXX] X86/base/str.cc -> .o
+ [CONFIG H] USE_POSIX_CLOCK, 1 -> X86/config/use_posix_clock.hh
+ [     CXX] X86/base/time.cc -> .o
+ [     CXX] X86/base/version.cc -> .o
+ [ TRACING]  -> X86/debug/FmtFlag.hh
+ [ TRACING]  -> X86/debug/FmtStackTrace.hh
+ [ TRACING]  -> X86/debug/FmtTicksOff.hh
+ [     CXX] X86/base/trace.cc -> .o
+ [     CXX] X86/base/types.cc -> .o
+ [     CXX] X86/base/loader/dtb_file.cc -> .o
+ [     CXX] X86/base/loader/elf_object.cc -> .o
+ [     CXX] X86/base/loader/image_file_data.cc -> .o
+ [     CXX] X86/base/loader/memory_image.cc -> .o
+ [     CXX] X86/base/loader/object_file.cc -> .o
+ [     CXX] X86/base/loader/symtab.cc -> .o
+ [ TRACING]  -> X86/debug/Stats.hh
+ [     CXX] X86/base/stats/group.cc -> .o
+ [     CXX] X86/base/stats/text.cc -> .o
+ [     CXX] X86/base/stats/hdf5.cc -> .o
+ [     CXX] X86/systemc/tlm_utils/convenience_socket_bases.cc -> .o
+ [     CXX] X86/systemc/tlm_utils/instance_specific_extensions.cc -> .o
+ [ TRACING]  -> X86/debug/VIO.hh
+ [     CXX] X86/dev/virtio/base.cc -> .o
+ [ TRACING]  -> X86/debug/VIOIface.hh
+ [     CXX] X86/dev/virtio/pci.cc -> .o
+ [ TRACING]  -> X86/debug/VIOConsole.hh
+ [     CXX] X86/dev/virtio/console.cc -> .o
+ [    LINK]  -> X86/systemc/tlm_utils/lib.o.partial
+ [ TRACING]  -> X86/debug/VIOBlock.hh
+ [     CXX] X86/dev/virtio/block.cc -> .o
+ [ TRACING]  -> X86/debug/VIO9P.hh
+ [ TRACING]  -> X86/debug/VIO9PData.hh
+ [     CXX] X86/dev/virtio/fs9p.cc -> .o
+ [     CXX] X86/mem/cache/tags/base.cc -> .o
+ [     CXX] X86/mem/cache/tags/base_set_assoc.cc -> .o
+ [    LINK]  -> X86/base/lib.o.partial
+ [     CXX] X86/mem/cache/tags/compressed_tags.cc -> .o
+ [     CXX] X86/mem/cache/tags/fa_lru.cc -> .o
+ [     CXX] X86/mem/cache/tags/sector_blk.cc -> .o
+ [     CXX] X86/mem/cache/tags/sector_tags.cc -> .o
+ [     CXX] X86/mem/cache/tags/super_blk.cc -> .o
+ [ TRACING]  -> X86/debug/Ethernet.hh
+ [ TRACING]  -> X86/debug/EthernetData.hh
+ [ TRACING]  -> X86/debug/EthernetAll.hh
+ [     CXX] X86/dev/net/etherdevice.cc -> .o
+ [     CXX] X86/dev/net/etherswitch.cc -> .o
+ [     CXX] X86/dev/net/etherbus.cc -> .o
+ [     CXX] X86/dev/net/etherdump.cc -> .o
+ [     CXX] X86/dev/net/etherint.cc -> .o
+ [    LINK]  -> X86/dev/virtio/lib.o.partial
+ [     CXX] X86/dev/net/etherlink.cc -> .o
+ [     CXX] X86/dev/net/etherpkt.cc -> .o
+ [     CXX] X86/dev/net/ethertap.cc -> .o
+ [     CXX] X86/dev/net/pktfifo.cc -> .o
+ [ TRACING]  -> X86/debug/DistEthernet.hh
+ [ TRACING]  -> X86/debug/DistEthernetPkt.hh
+ [     CXX] X86/dev/net/dist_iface.cc -> .o
+ [     CXX] X86/dev/net/dist_etherlink.cc -> .o
+ [ TRACING]  -> X86/debug/DistEthernetCmd.hh
+ [     CXX] X86/dev/net/tcp_iface.cc -> .o
+ [    LINK]  -> X86/mem/cache/tags/lib.o.partial
+ [     CXX] X86/dev/net/i8254xGBe.cc -> .o
+ [     CXX] X86/dev/net/ns_gige.cc -> .o
+ [     CXX] X86/dev/net/sinic.cc -> .o
+ [ TRACING]  -> X86/debug/CommMonitor.hh
+ [     CXX] X86/mem/comm_monitor.cc -> .o
+ [ TRACING]  -> X86/debug/LLSC.hh
+ [ TRACING]  -> X86/debug/MemoryAccess.hh
+ [     CXX] X86/mem/abstract_mem.cc -> .o
+ [     CXX] X86/mem/addr_mapper.cc -> .o
+ [ TRACING]  -> X86/debug/Bridge.hh
+ [     CXX] X86/mem/bridge.cc -> .o
+ [ TRACING]  -> X86/debug/AddrRanges.hh
+ [ TRACING]  -> X86/debug/CoherentXBar.hh
+ [     CXX] X86/mem/coherent_xbar.cc -> .o
+ [     CXX] X86/mem/drampower.cc -> .o
+ [ TRACING]  -> X86/debug/ExternalPort.hh
+ [     CXX] X86/mem/external_master.cc -> .o
+ [     CXX] X86/mem/external_slave.cc -> .o
+ [ TRACING]  -> X86/debug/DRAM.hh
+ [ TRACING]  -> X86/debug/MemCtrl.hh
+ [ TRACING]  -> X86/debug/NVM.hh
+ [     CXX] X86/mem/mem_ctrl.cc -> .o
+ [ TRACING]  -> X86/debug/DRAMPower.hh
+ [ TRACING]  -> X86/debug/DRAMState.hh
+ [     CXX] X86/mem/mem_interface.cc -> .o
+ [ TRACING]  -> X86/debug/NoncoherentXBar.hh
+ [ TRACING]  -> X86/debug/XBar.hh
+ [     CXX] X86/mem/noncoherent_xbar.cc -> .o
+ [     CXX] X86/mem/packet.cc -> .o
+ [     CXX] X86/mem/port.cc -> .o
+ [ TRACING]  -> X86/debug/PacketQueue.hh
+ [     CXX] X86/mem/packet_queue.cc -> .o
+ [     CXX] X86/mem/port_proxy.cc -> .o
+ [     CXX] X86/mem/physical.cc -> .o
+ [     CXX] X86/mem/simple_mem.cc -> .o
+ [ TRACING]  -> X86/debug/SnoopFilter.hh
+ [     CXX] X86/mem/snoop_filter.cc -> .o
+ [ TRACING]  -> X86/debug/StackDist.hh
+ [     CXX] X86/mem/stack_dist_calc.cc -> .o
+ [    LINK]  -> X86/dev/net/lib.o.partial
+ [ TRACING]  -> X86/debug/TokenPort.hh
+ [     CXX] X86/mem/token_port.cc -> .o
+ [     CXX] X86/mem/tport.cc -> .o
+ [     CXX] X86/mem/xbar.cc -> .o
+ [ TRACING]  -> X86/debug/HMCController.hh
+ [     CXX] X86/mem/hmc_controller.cc -> .o
+ [     CXX] X86/mem/htm.cc -> .o
+ [ TRACING]  -> X86/debug/SerialLink.hh
+ [     CXX] X86/mem/serial_link.cc -> .o
+ [     CXX] X86/mem/mem_delay.cc -> .o
+ [     CXX] X86/mem/translating_port_proxy.cc -> .o
+ [     CXX] X86/mem/se_translating_port_proxy.cc -> .o
+ [     CXX] X86/mem/page_table.cc -> .o
+ [     CXX] X86/mem/mem_checker.cc -> .o
+ [ TRACING]  -> X86/debug/MemCheckerMonitor.hh
+ [     CXX] X86/mem/mem_checker_monitor.cc -> .o
+ [ TRACING]  -> X86/debug/CacheRepl.hh
+ [ TRACING]  -> X86/debug/CacheVerbose.hh
+ [     CXX] X86/mem/cache/base.cc -> .o
+ [ TRACING]  -> X86/debug/CacheTags.hh
+ [     CXX] X86/mem/cache/cache.cc -> .o
+ [     CXX] X86/mem/cache/cache_blk.cc -> .o
+ [     CXX] X86/mem/cache/mshr.cc -> .o
+ [     CXX] X86/mem/cache/mshr_queue.cc -> .o
+ [     CXX] X86/mem/cache/noncoherent_cache.cc -> .o
+ [     CXX] X86/mem/cache/write_queue.cc -> .o
+ [     CXX] X86/mem/cache/write_queue_entry.cc -> .o
+ [     CXX] X86/mem/ruby/network/fault_model/FaultModel.cc -> .o
+ [     CXX] X86/mem/ruby/common/Address.cc -> .o
+ [     CXX] X86/mem/ruby/common/BoolVec.cc -> .o
+ [    LINK]  -> X86/mem/ruby/network/fault_model/lib.o.partial
+ [     CXX] X86/mem/ruby/common/Consumer.cc -> .o
+ [     CXX] X86/mem/ruby/common/DataBlock.cc -> .o
+ [    LINK]  -> X86/mem/lib.o.partial
+ [     CXX] X86/mem/ruby/common/Histogram.cc -> .o
+ [     CXX] X86/mem/ruby/common/IntVec.cc -> .o
+ [     CXX] X86/mem/ruby/common/NetDest.cc -> .o
+ [     CXX] X86/mem/ruby/common/SubBlock.cc -> .o
+ [     CXX] X86/mem/ruby/common/WriteMask.cc -> .o
+ [ TRACING]  -> X86/debug/Branch.hh
+ [     CXX] X86/cpu/pred/bpred_unit.cc -> .o
+ [     CXX] X86/cpu/pred/2bit_local.cc -> .o
+ [     CXX] X86/cpu/pred/btb.cc -> .o
+ [ TRACING]  -> X86/debug/Indirect.hh
+ [     CXX] X86/cpu/pred/simple_indirect.cc -> .o
+ [     CXX] X86/cpu/pred/indirect.cc -> .o
+ [     CXX] X86/cpu/pred/ras.cc -> .o
+ [     CXX] X86/cpu/pred/tournament.cc -> .o
+ [    LINK]  -> X86/mem/ruby/common/lib.o.partial
+ [     CXX] X86/cpu/pred/bi_mode.cc -> .o
+ [ TRACING]  -> X86/debug/Tage.hh
+ [     CXX] X86/cpu/pred/tage_base.cc -> .o
+ [     CXX] X86/cpu/pred/tage.cc -> .o
+ [ TRACING]  -> X86/debug/LTage.hh
+ [     CXX] X86/cpu/pred/loop_predictor.cc -> .o
+ [     CXX] X86/cpu/pred/ltage.cc -> .o
+ [     CXX] X86/cpu/pred/multiperspective_perceptron.cc -> .o
+ [     CXX] X86/cpu/pred/multiperspective_perceptron_8KB.cc -> .o
+ [     CXX] X86/cpu/pred/multiperspective_perceptron_64KB.cc -> .o
+ [     CXX] X86/cpu/pred/multiperspective_perceptron_tage.cc -> .o
+ [    LINK]  -> X86/mem/cache/lib.o.partial
+ [     CXX] X86/cpu/pred/multiperspective_perceptron_tage_8KB.cc -> .o
+ [     CXX] X86/cpu/pred/multiperspective_perceptron_tage_64KB.cc -> .o
+ [     CXX] X86/cpu/pred/statistical_corrector.cc -> .o
+ [ TRACING]  -> X86/debug/TageSCL.hh
+ [     CXX] X86/cpu/pred/tage_sc_l.cc -> .o
+ [     CXX] X86/cpu/pred/tage_sc_l_8KB.cc -> .o
+ [     CXX] X86/cpu/pred/tage_sc_l_64KB.cc -> .o
+ [     CXX] X86/cpu/pc_event.cc -> .o
+ [     CXX] X86/cpu/activity.cc -> .o
+ [ TRACING]  -> X86/debug/Thread.hh
+ [     CXX] X86/cpu/base.cc -> .o
+ [ TRACING]  -> X86/debug/ExecAll.hh
+ [     CXX] X86/cpu/exetrace.cc -> .o
+ [     CXX] X86/cpu/exec_context.cc -> .o
+ [     CXX] X86/cpu/func_unit.cc -> .o
+ [     CXX] X86/cpu/inteltrace.cc -> .o
+ [ TRACING]  -> X86/debug/IntrControl.hh
+ [     CXX] X86/cpu/intr_control.cc -> .o
+ [ TRACING]  -> X86/debug/GDBMisc.hh
+ [     CXX] X86/cpu/nativetrace.cc -> .o
+ [    LINK]  -> X86/cpu/pred/lib.o.partial
+ [     CXX] X86/cpu/profile.cc -> .o
+ [     CXX] X86/cpu/reg_class.cc -> .o
+ [     CXX] X86/cpu/static_inst.cc -> .o
+ [     CXX] X86/cpu/simple_thread.cc -> .o
+ [ TRACING]  -> X86/debug/Context.hh
+ [     CXX] X86/cpu/thread_context.cc -> .o
+ [     CXX] X86/cpu/thread_state.cc -> .o
+ [     CXX] X86/cpu/timing_expr.cc -> .o
+ [     CXX] X86/cpu/checker/cpu.cc -> .o
+ [     CXX] X86/cpu/dummy_checker.cc -> .o
+ [     CXX] X86/arch/x86/bios/e820.cc -> .o
+ [     CXX] X86/arch/x86/bios/smbios.cc -> .o
+ [     CXX] X86/arch/x86/bios/intelmp.cc -> .o
+ [     CXX] X86/arch/x86/bios/acpi.cc -> .o
+ [     CXX] X86/dev/io_device.cc -> .o
+ [ TRACING]  -> X86/debug/IsaFake.hh
+ [     CXX] X86/dev/isa_fake.cc -> .o
+ [ TRACING]  -> X86/debug/DMA.hh
+ [     CXX] X86/dev/dma_device.cc -> .o
+ [     CXX] X86/dev/intpin.cc -> .o
+ [     CXX] X86/dev/platform.cc -> .o
+ [     CXX] X86/dev/baddev.cc -> .o
+ [    LINK]  -> X86/arch/x86/bios/lib.o.partial
+ [     CXX] X86/dev/intel_8254_timer.cc -> .o
+ [ TRACING]  -> X86/debug/MC146818.hh
+ [     CXX] X86/dev/mc146818.cc -> .o
+ [     CXX] X86/dev/pixelpump.cc -> .o
+ [     CXX] X86/mem/ruby/system/CacheRecorder.cc -> .o
+ [    LINK]  -> X86/cpu/lib.o.partial
+ [ TRACING]  -> X86/debug/RubyDma.hh
+ [ TRACING]  -> X86/debug/RubyPort.hh
+ [     CXX] X86/mem/ruby/system/DMASequencer.cc -> .o
+ [     CXX] X86/mem/ruby/system/HTMSequencer.cc -> .o
+ [ TRACING]  -> X86/debug/Ruby.hh
+ [     CXX] X86/mem/ruby/system/RubyPort.cc -> .o
+ [     CXX] X86/mem/ruby/system/RubyPortProxy.cc -> .o
+ [ TRACING]  -> X86/debug/RubySystem.hh
+ [     CXX] X86/mem/ruby/system/RubySystem.cc -> .o
+ [ TRACING]  -> X86/debug/RubySequencer.hh
+ [     CXX] X86/mem/ruby/system/Sequencer.cc -> .o
+ [     CXX] X86/mem/cache/replacement_policies/bip_rp.cc -> .o
+ [    LINK]  -> X86/dev/lib.o.partial
+ [     CXX] X86/mem/cache/replacement_policies/brrip_rp.cc -> .o
+ [     CXX] X86/mem/cache/replacement_policies/fifo_rp.cc -> .o
+ [     CXX] X86/mem/cache/replacement_policies/lfu_rp.cc -> .o
+ [     CXX] X86/mem/cache/replacement_policies/lru_rp.cc -> .o
+ [     CXX] X86/mem/cache/replacement_policies/mru_rp.cc -> .o
+ [     CXX] X86/mem/cache/replacement_policies/random_rp.cc -> .o
+ [     CXX] X86/mem/cache/replacement_policies/second_chance_rp.cc -> .o
+ [     CXX] X86/mem/cache/replacement_policies/tree_plru_rp.cc -> .o
+ [     CXX] X86/mem/cache/replacement_policies/weighted_lru_rp.cc -> .o
+ [    SHCC] fputils/fp64.c -> .os
+ [    SHCC] fputils/fp80.c -> .os
+ [    SHCC] libelf/elf_begin.c -> .os
+ [    SHCC] libelf/elf_cntl.c -> .os
+ [      AR]  -> fputils/libfputils.a
+ [  RANLIB]  -> fputils/libfputils.a
+ [    SHCC] libelf/elf_data.c -> .os
+ [    SHCC] libelf/elf_end.c -> .os
+ [    SHCC] libelf/elf_errmsg.c -> .os
+ [    SHCC] libelf/elf_errno.c -> .os
+ [    SHCC] libelf/elf_fill.c -> .os
+ [    SHCC] libelf/elf_flag.c -> .os
+ [    SHCC] libelf/elf_getarhdr.c -> .os
+ [    SHCC] libelf/elf_getarsym.c -> .os
+ [    SHCC] libelf/elf_getbase.c -> .os
+ [    SHCC] libelf/elf_getident.c -> .os
+ [    SHCC] libelf/elf_hash.c -> .os
+ [    SHCC] libelf/elf_kind.c -> .os
+ [    SHCC] libelf/elf_memory.c -> .os
+ [    SHCC] libelf/elf_next.c -> .os
+ [    SHCC] libelf/elf_phnum.c -> .os
+ [    SHCC] libelf/elf_rand.c -> .os
+ [    SHCC] libelf/elf_rawfile.c -> .os
+ [    SHCC] libelf/elf_scn.c -> .os
+ [    SHCC] libelf/elf_shnum.c -> .os
+ [    SHCC] libelf/elf_shstrndx.c -> .os
+ [    SHCC] libelf/elf_strptr.c -> .os
+ [    SHCC] libelf/elf_update.c -> .os
+ [    SHCC] libelf/elf_version.c -> .os
+ [    SHCC] libelf/gelf_checksum.c -> .os
+ [    SHCC] libelf/gelf_dyn.c -> .os
+ [    SHCC] libelf/gelf_ehdr.c -> .os
+ [    SHCC] libelf/gelf_fsize.c -> .os
+ [    SHCC] libelf/gelf_getclass.c -> .os
+ [    SHCC] libelf/gelf_phdr.c -> .os
+ [    SHCC] libelf/gelf_rel.c -> .os
+ [    SHCC] libelf/gelf_rela.c -> .os
+ [    SHCC] libelf/gelf_shdr.c -> .os
+ [    SHCC] libelf/gelf_sym.c -> .os
+ [    SHCC] libelf/gelf_symshndx.c -> .os
+ [    SHCC] libelf/gelf_xlate.c -> .os
+ [    SHCC] libelf/libelf.c -> .os
+ [    SHCC] libelf/libelf_align.c -> .os
+ [    SHCC] libelf/libelf_allocate.c -> .os
+ [    SHCC] libelf/libelf_ar.c -> .os
+ [    SHCC] libelf/libelf_checksum.c -> .os
+ [    SHCC] libelf/libelf_data.c -> .os
+ [    SHCC] libelf/libelf_ehdr.c -> .os
+ [    SHCC] libelf/libelf_extended.c -> .os
+ [    SHCC] libelf/libelf_phdr.c -> .os
+ [    LINK]  -> X86/mem/cache/replacement_policies/lib.o.partial
+ [    SHCC] libelf/libelf_shdr.c -> .os
+ [    SHCC] libelf/libelf_xlate.c -> .os
+ [      M4] libelf/elf_types.m4, libelf_convert.m4 -> libelf_convert.c
+ [      M4] libelf/elf_types.m4, libelf_fsize.m4 -> libelf_fsize.c
+ [      M4] libelf/elf_types.m4, libelf_msize.m4 -> libelf_msize.c
+ [   SHCXX] nomali/lib/gpu.cc -> .os
+ [    SHCC] libelf/libelf_msize.c -> .os
+ [    SHCC] libelf/libelf_fsize.c -> .os
+ [    SHCC] libelf/libelf_convert.c -> .os
+ [   SHCXX] nomali/lib/gpublock.cc -> .os
+ [   SHCXX] nomali/lib/gpucontrol.cc -> .os
+ [   SHCXX] nomali/lib/jobcontrol.cc -> .os
+ [   SHCXX] nomali/lib/jobslot.cc -> .os
+ [   SHCXX] nomali/lib/mali_midgard.cc -> .os
+ [   SHCXX] nomali/lib/mali_t6xx.cc -> .os
+ [   SHCXX] nomali/lib/mali_t7xx.cc -> .os
+ [   SHCXX] nomali/lib/addrspace.cc -> .os
+ [   SHCXX] nomali/lib/mmu.cc -> .os
+ [   SHCXX] nomali/lib/nomali_api.cc -> .os
+ [   SHCXX] iostream3/zfstream.cc -> .os
+ [    SHCC] libfdt/fdt.c -> .os
+ [    SHCC] libfdt/fdt_ro.c -> .os
+ [      AR]  -> libelf/libelf.a
+ [    SHCC] libfdt/fdt_rw.c -> .os
+ [    SHCC] libfdt/fdt_sw.c -> .os
+ [  RANLIB]  -> libelf/libelf.a
+ [    SHCC] libfdt/fdt_wip.c -> .os
+ [    SHCC] libfdt/fdt_empty_tree.c -> .os
+ [      AR]  -> nomali/libnomali.a
+ [    SHCC] libfdt/fdt_strerror.c -> .os
+ [   SHCXX] drampower/src/CommandAnalysis.cc -> .os
+ [  RANLIB]  -> nomali/libnomali.a
+ [   SHCXX] drampower/src/MemArchitectureSpec.cc -> .os
+ [      AR]  -> iostream3/libiostream3.a
+ [      AR]  -> libfdt/libfdt.a
+ [   SHCXX] drampower/src/MemCommand.cc -> .os
+ [  RANLIB]  -> iostream3/libiostream3.a
+ [   SHCXX] drampower/src/MemPowerSpec.cc -> .os
+ [   SHCXX] drampower/src/MemTimingSpec.cc -> .os
+ [  RANLIB]  -> libfdt/libfdt.a
+ [   SHCXX] drampower/src/MemoryPowerModel.cc -> .os
+ [   SHCXX] drampower/src/MemorySpecification.cc -> .os
+ [   SHCXX] drampower/src/Parameter.cc -> .os
+ [   SHCXX] drampower/src/Parametrisable.cc -> .os
+ [   SHCXX] drampower/src/libdrampower/LibDRAMPower.cc -> .os
+ [   SHCXX] drampower/src/CAHelpers.cc -> .os
+ [   SHCXX] drampower/src/CmdHandlers.cc -> .os
+ [   SHCXX] drampower/src/MemBankWiseParams.cc -> .os
+ [      AR]  -> drampower/libdrampower.a
+ [    LINK]  -> X86/mem/ruby/system/lib.o.partial
+ [  RANLIB]  -> drampower/libdrampower.a
+ [     CXX] X86/base/date.cc -> .o
+ [    LINK]  -> X86/gem5.opt
+collect2: error: ld returned 1 exit status
+scons: *** [build/X86/gem5.opt] Error 1
+scons: building terminated because of errors.
+*** Summary of Warnings ***
+Warning: Your compiler doesn't support incremental linking and lto at the same time, so lto is being disabled. To force lto on anyway, use the --force-lto option. That will disable partial linking.
+Warning: Protocol buffer compiler (protoc) not found.
+         Please install protobuf-compiler for tracing support.
